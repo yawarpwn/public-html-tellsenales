@@ -122,7 +122,7 @@
     <link rel="stylesheet" href="/assets/index.002c4ecf.css" />
 <link rel="stylesheet" href="/assets/index.e1a9a73f.css" />
 <link rel="stylesheet" href="/assets/index.7081ad21.css" />
-<link rel="stylesheet" href="/assets/index.c7886537.css" />
+<link rel="stylesheet" href="/assets/index.70c53f77.css" />
 <link rel="stylesheet" href="/assets/index.72db1641.css" /><script type="module">function o(r,e,t){return Math.min(Math.max(t,r),e)}function c(r,e,t){return r*(1-t)+e*t}class d extends HTMLElement{x=0;y=0;rect;interval;constructor(){if(super(),!("matchMedia"in window))return;const e=window.matchMedia("(prefers-reduced-motion: no-preference)").matches,t=window.matchMedia("(hover: hover)").matches;e&&t&&(window.addEventListener("resize",()=>this.resize()),this.addEventListener("mousemove",s=>this.move(s)),this.addEventListener("mouseleave",s=>{s.target.isSameNode(this)&&this.reset()}))}connectedCallback(){this.resize()}resize(){this.rect=this.getBoundingClientRect(),this.reset()}move(e){const t=(e.pageX-this.rect.left)/this.rect.width-.5,s=(e.pageY-this.rect.top)/this.rect.height-.5,i=5,n=7.5,a=o(i*-1,i,c(i*-1,i,t*2)),h=o(n*-1,n,c(n,n*-1,s*2));requestAnimationFrame(()=>{this.style.setProperty("--rot-x",`${h}deg`),this.style.setProperty("--rot-y",`${a}deg`)})}reset(){requestAnimationFrame(()=>{this.style.setProperty("--rot-x","0deg"),this.style.setProperty("--rot-y","0deg")})}}customElements.define("hero-card",d);
 </script></head>
     <body class="astro-5YUKSHZH">
