@@ -10,6 +10,10 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# seguridad senalizaciones
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina\-poliester\/$ "https\:\/\/tellsenales\.com\/seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina-poliester\/" [R=301,L]
+
 # Proteccion vial
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/proteccion\-vial$ "https\:\/\/tellsenales\.com\/seguridad\/c\/proteccion\-vial\/" [R=301,L]
@@ -34,6 +38,10 @@ RewriteRule ^seguridad\/ropa\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/ropa\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/ropa\-seguridad\/" [R=301,L]
 
+# Seguridad Epp
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/c\/proteccion/-auditiva\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/epps\/" [R=301,L]
+
 # Lucha contra incendio
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/lucha\-contra\-incendio$ "https\:\/\/tellsenales\.com\/seguridad\/c\/lucha\-contra\-incendio\/" [R=301,L]
@@ -45,6 +53,8 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/viniles$ "https\:\/\/tellsenales\.com\/seguridad\/c\/viniles\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/viniles\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/viniles\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/vinil\-reflectivo\-grado\-ingenieria\-verde\-61\-cm\/$ "https\:\/\/tellsenales\.com\/seguridad\/vinil\-reflectivo\-grado\-ingenieria\-reflexlite\-de\-61cm\/" [R=301,L]
 
 # Senales viales
 RewriteCond %{HTTP_HOST} ^.*$
@@ -127,11 +137,28 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales\/obras\/epps\/$ "https\:\/\/tellsenales\.com\/senales\/c\/obras\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales\/obras\/tranqueras\/$ "https\:\/\/tellsenales\.com\/senales\/c\/obras\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/obras\/$ "https\:\/\/tellsenales\.com\/senales\/c\/obras\/" [R=301,L]
+
+# senales aluminio
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/obras\/decorativas\/aluminio\/$ "https\:\/\/tellsenales\.com\/senales\/c\/decorativas\/" [R=301,L]
+
+# servicios to galeria
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^servicios\/$ "https\:\/\/tellsenales\.com\/galeria\/" [R=301,L]
 
 
 # senales covid 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales\/covid\/bioseguridad$ "https\:\/\/tellsenales\.com\/senales\/c\/covid-19\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/covid-19\/$ "https\:\/\/tellsenales\.com\/senales\/c\/covid-19\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/covid-19/\bioseguridad\/$ "https\:\/\/tellsenales\.com\/senales\/c\/covid-19\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/covid-19/\bioseguridad$ "https\:\/\/tellsenales\.com\/senales\/c\/covid-19\/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/tacha-reflectiva\-amarilla\-3\-m\/$ "https\:\/\/tellsenales.com\/seguridad\/tacha\-reflectiva\-amarilla\-3m\/" [R=301,L]

@@ -560,12 +560,12 @@
     </div>
 </div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"><div class="ais-InstantSearch">
-        <div class="right-panel">
-            <div id="searchbox" class="ais-SearchBox"></div>
-            <div id="hits"></div>
-            <div id="pagination"></div>
-        </div>
-    </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"><div class="ais-InstantSearch">
+            <div class="right-panel">
+                <div id="searchbox" class="ais-SearchBox"></div>
+                <div id="hits"></div>
+                <div id="pagination"></div>
+            </div>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"><div class="ais-InstantSearch">
         <div class="right-panel">
             <div id="searchbox" class="ais-SearchBox"></div>
             <div id="hits"></div>
@@ -690,17 +690,19 @@
             container: '#hits',
             templates: {
                 item(hit) {
-          const {    img,  code} = hit
+                    const { img, code } = hit
                     return `
           <div class="card__image-container">
             <img src="${img.url}" align="left" alt="{{name}}" />
           </div>
           <div class"card-body">
-            <span class="uppercase font-bold text-[10px]">Codigo: ${instantsearch.highlight({
-attribute: 'code',
-highlightedTagName: 'mark',
-hit
-})}</span>
+            <span class="uppercase font-bold text-[10px]">Codigo: ${instantsearch.highlight(
+                {
+                    attribute: 'code',
+                    highlightedTagName: 'mark',
+                    hit
+                }
+            )}</span>
             <div class="hit-name min-h-[60px] mt-2">
               <p>${instantsearch.highlight({
                   attribute: 'name',
@@ -721,9 +723,6 @@ hit
     search.start()
 </script>
 <style>
-    .card {
-    }
-
     .card__image-container {
         position: relative;
         height: 0;
@@ -746,45 +745,46 @@ hit
         color: var(--theme-text);
     }
     .ais-Hits-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
     }
 
     @media (min-width: 50em) {
-
-      .ais-Hits-list {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
+        .ais-Hits-list {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
     }
 
     .ais-Hits-item {
-     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      box-shadow: var(--tw-shadow);
-      width: auto;
-      margin: 0;
-      border: none;
-      border-radius: 0.5rem;
+        --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+            0 2px 4px -2px rgb(0 0 0 / 0.1);
+        box-shadow: var(--tw-shadow);
+        width: auto;
+        margin: 0;
+        border: none;
+        border-radius: 0.5rem;
     }
 
-  .ais-Pagination-item--selected .ais-Pagination-link {
-      color: #fff;
-      background-color: hsl(262 80% 50%);
-      border-color: hsl(262 80% 50%);
-  }
-   .ais-Pagination-link {
+    .ais-Pagination-item--selected .ais-Pagination-link {
+        color: #fff;
+        background-color: hsl(262 80% 50%);
+        border-color: hsl(262 80% 50%);
+    }
+    .ais-Pagination-link {
         color: hsl(262 80% 50%);
-      transition: color .2s ease-out;
-  }
+        transition: color 0.2s ease-out;
+    }
 
-   .ais-Pagination-link:hover {
+    .ais-Pagination-link:hover {
         color: hsl(262 80% 50%);
-  }
-  .ais-Hits {
+    }
+    .ais-Hits {
         color: inherit;
         padding: 0.8rem;
         margin-top: 2rem;
-      }
-
+    }
+    .ais-SearchBox-input {
+        color: #000;
+    }
 </style>
