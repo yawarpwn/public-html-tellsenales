@@ -1,0 +1,1 @@
+/* empty css                       */import{o}from"./jsxRuntime.module.aa97c2ea.js";import"./preact.module.db8bc18f.js";function s({rating:r}){return console.log(r),o("div",{class:"card__start-raking",children:r})}export{s as default};

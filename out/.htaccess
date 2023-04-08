@@ -148,6 +148,8 @@ RewriteRule ^senales\/obras\/decorativas\/aluminio\/$ "https\:\/\/tellsenales\.c
 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^servicios\/$ "https\:\/\/tellsenales\.com\/galeria\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^servicios$ "https\:\/\/tellsenales\.com\/galeria\/" [R=301,L]
 
 
 # senales covid 
