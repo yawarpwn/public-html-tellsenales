@@ -88,9 +88,20 @@
 <link rel="stylesheet" href="/_astro/index.abd76220.css" />
 <link rel="stylesheet" href="/_astro/index.5f54df14.css" />
 <link rel="stylesheet" href="/_astro/index.131882bb.css" />
-<link rel="stylesheet" href="/_astro/_slug_.1d8f72c5.css" />
+<link rel="stylesheet" href="/_astro/_slug_.210399a9.css" />
 <link rel="stylesheet" href="/_astro/index.e39cd781.css" />
-<link rel="stylesheet" href="/_astro/index.b1e68564.css" /></head>
+<link rel="stylesheet" href="/_astro/index.2f0974df.css" /><script type="module">class t extends HTMLElement{connectedCallback(){this.rating=this.getAttribute("rating"),this.render()}styles(){}render(){this.innerHTML=`
+            <style>
+            .start-rating {
+                  height: 16px;
+                  width: 83px;
+                  background-image: url(/assets/images/stars-sprite-small.png);
+                  margin: 4px 0;
+            }
+            </style>
+            <div class='start-rating' style="background-position: 0 ${(this.rating+1)*16}px;" src=''></div>
+            `}}customElements.define("start-rating",t);
+</script></head>
     <body class="astro-XIQZPJ5E">
         <main class="astro-XIQZPJ5E">
             <header class="astro-MYRN6SJA">
@@ -143,7 +154,7 @@
 	c0-3.1,2.5-5.6,5.6-5.6l0,0c0.1,0,0.2,0,0.3,0v2.7c-0.1,0-0.2,0-0.3,0c-1.6,0-2.8,1.3-2.8,2.8s1.3,2.8,2.8,2.8c1.6,0,3-1.2,3-2.8
 	l0-12.8h2.6c0.2,2.4,2.1,4.2,4.5,4.4L19.8,10.3" fill="currentColor"></path></svg></a><a href="https://www.linkedin.com/company/tellsenales/" target="_blank" aria-label="Visita nuestro Linkedin oficial" rel="noopener noreferrer" class="flex items-center text-current"><svg height="22" viewBox="0 0 24 24" width="22" class="social-icon"><path d="M3.3,9H7v12H3.3V9z M5.1,3c1.2,0,2.2,1,2.2,2.2c0,1.2-1,2.2-2.2,2.2C3.9,7.3,3,6.4,3,5.2C3,4,3.9,3,5.1,3 M9.4,21h3.7v-5.9
 		c0-1.6,0.3-3.1,2.2-3.1c1.9,0,1.9,1.8,1.9,3.2V21H21v-6.6c0-3.2-0.7-5.7-4.5-5.7c-1.8,0-3,1-3.5,1.9h0V9H9.4V21z" fill="currentColor"></path></svg></a></div>
-                    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Q1JUW" component-url="/_astro/theme-toggle-button.2b6b1ed6.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;isInsideHeader&quot;:[0,true],&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle hide-toggle-on-smaller-screens"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
+                    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Q1JUW" component-url="/_astro/theme-toggle-button.abde1b76.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;isInsideHeader&quot;:[0,true],&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle hide-toggle-on-smaller-screens"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
                 </div>
             </div>
             <div class="flex items-center gap-2 astro-MYRN6SJA">
@@ -160,10 +171,10 @@
         <kbd aria-hidden="true" class="astro-U6WGCOTT">K</kbd>
     </span>
 </button>
-<script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));</script><astro-island uid="1FeMjW" component-url="/_astro/doc-search.7145bc9f.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;DocSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
+<script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));</script><astro-island uid="1FeMjW" component-url="/_astro/doc-search.23a27808.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;DocSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
                 <!-- <Autocomplete client:only="preact" /> -->
                 <div class="flex md:hidden items-center astro-MYRN6SJA">
-                    <script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><astro-island uid="Z1qlXP8" component-url="/_astro/menu-toggle.0874f51e.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;MenuToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="header-button min-h-[45px]" id="menu-toggle" aria-label="toggle menu button"><div class="menu-wrap "><div class="line"></div><div class="line"></div></div></button></astro-island>
+                    <script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><astro-island uid="Z1qlXP8" component-url="/_astro/menu-toggle.76b1712e.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;MenuToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="header-button min-h-[45px]" id="menu-toggle" aria-label="toggle menu button"><div class="menu-wrap "><div class="line"></div><div class="line"></div></div></button></astro-island>
                 </div>
             </div>
         </nav>
@@ -332,7 +343,7 @@
         </li>
 
         <li style="text-align: center;" class="astro-W63KTB5L">
-            <astro-island uid="Z1fv5sb" component-url="/_astro/theme-toggle-button.2b6b1ed6.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-W63KTB5L&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle "><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
+            <astro-island uid="Z1fv5sb" component-url="/_astro/theme-toggle-button.abde1b76.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-W63KTB5L&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle "><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
         </li>
     </ul>
 </nav>
@@ -526,7 +537,7 @@
 
         <!-- Product List -->
         <div class="grid grid-cols-2 md:grid-cols-4 px-4 md:px-0 gap-2">
-            <script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));</script><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+            <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 1" src="https://images.ctfassets.net/hg6rgg2sftfx/1T2MisBHWThYG7zXlJ5Hoe/6e177ba60a1266f76388df1356f83bf2/obras-epp_Mesa_de_trabajo_1.webp" loading="lazy">
@@ -538,7 +549,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 1</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -548,7 +559,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 2" src="https://images.ctfassets.net/hg6rgg2sftfx/577l9rAyLKpRz2wGNWP7wz/fd6bf260ba5bf957c8ca48947ca425d4/obras-epp-02.webp" loading="lazy">
@@ -560,7 +572,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 2</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -570,7 +582,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 3" src="https://images.ctfassets.net/hg6rgg2sftfx/6zGOBQ2RVetLvQ4AyXhaw1/c0843df87442292b824d12105f04be6d/obras-epp-09.png" loading="lazy">
@@ -582,7 +595,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 3</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -592,7 +605,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 4" src="https://images.ctfassets.net/hg6rgg2sftfx/1hdcdTlQol8D2V7r79hlXT/243fbf34cc51154e0626ef37594f7def/obras-epp-04.webp" loading="lazy">
@@ -604,7 +618,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 4</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -614,7 +628,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 5" src="https://images.ctfassets.net/hg6rgg2sftfx/264WkOX5Ea4xUqnAhXaTbd/ddf6636ccadbc7379ecd94e6dd0879c5/obras-epp-05.webp" loading="lazy">
@@ -626,7 +641,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 5</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -636,7 +651,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 6" src="https://images.ctfassets.net/hg6rgg2sftfx/3JUAjgDQflkZe2MPhGN8Kl/1c2f0100b32728511b88791997242d0f/obras-epp-06.webp" loading="lazy">
@@ -648,7 +664,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 6</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -658,7 +674,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 7" src="https://images.ctfassets.net/hg6rgg2sftfx/5ZHl06dnZQyK4RFv8lW86M/bca91798c2af4723e3412892db989a2b/obras-epp-07.webp" loading="lazy">
@@ -670,7 +687,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 7</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -680,7 +697,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal Obligatorio EPP 8" src="https://images.ctfassets.net/hg6rgg2sftfx/5qGdxWkjj3rvWo27syObXU/9c3c30b110cfdb048ed9128e737159ba/obras-epp-08.webp" loading="lazy">
@@ -692,7 +710,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal obligatorio epp 8</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -702,7 +720,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Calle clausurada" src="https://images.ctfassets.net/hg6rgg2sftfx/WpjfvWM4txnIDmeg7L5Vq/0070c926b3cee1a881c28f857127a091/OBRAS-05.webp" loading="lazy">
@@ -714,7 +733,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Calle clausurada</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -724,7 +743,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Carril der/izq Cerrado a ... M" src="https://images.ctfassets.net/hg6rgg2sftfx/5XLV2QyRf6SsptvxT7mdCx/b0db39255f7d05e58d9f5bd7d41eac6d/OBRAS-09.webp" loading="lazy">
@@ -736,7 +756,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Carril der/izq cerrado a ... m</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -746,7 +766,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Despacio Obras" src="https://images.ctfassets.net/hg6rgg2sftfx/13WZdNxuouwAwfPLDGbXUD/58dff1dad81a7e1646c810240b6b6a77/OBRAS-10.webp" loading="lazy">
@@ -758,7 +779,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Despacio obras</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -768,7 +789,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Desvio a ... M" src="https://images.ctfassets.net/hg6rgg2sftfx/3H5hIZzwVXYsm89ZHDIyrT/e535c61582d44c924e0d85eee36823ab/OBRAS_Mesa_de_trabajo_1.webp" loading="lazy">
@@ -780,7 +802,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Desvio a ... m</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -790,7 +812,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Disminuir velocidad" src="https://images.ctfassets.net/hg6rgg2sftfx/7y3XTPgFifyxXQykTMxZxn/f06ecf61a339a20ce06b66d8b644bc7e/OBRAS-11.webp" loading="lazy">
@@ -802,7 +825,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Disminuir velocidad</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -812,7 +835,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Fin de desvio" src="https://images.ctfassets.net/hg6rgg2sftfx/1xaUBsNfjN82N91rTafhpy/4f74b1cb1e27fc5f2a74fc104cd5f2cc/OBRAS-03.webp" loading="lazy">
@@ -824,7 +848,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Fin de desvio</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -834,7 +858,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Hombres Trabajando" src="https://images.ctfassets.net/hg6rgg2sftfx/45hILmwkv7XLOtJwyw2trr/ec62047a1636baf7e9a9ea1b9e762f42/OBRAS-19.webp" loading="lazy">
@@ -846,7 +871,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Hombres trabajando</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -856,7 +881,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Inicio de devio" src="https://images.ctfassets.net/hg6rgg2sftfx/74G9HFWUNR9jpSm5a6GcR1/be9ce513e909011f168c93ac9f9c4c6b/OBRAS-02.webp" loading="lazy">
@@ -868,7 +894,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Inicio de devio</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -878,7 +904,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Obras  a ..." src="https://images.ctfassets.net/hg6rgg2sftfx/7BPik9lzixiQNpBdlTgPKA/fd8d0c1933b11a1493942328aec2530d/OBRAS-12.webp" loading="lazy">
@@ -890,7 +917,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Obras  a ...</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -900,7 +927,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Peaton tome su derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5Y00UgpZOMMBmYqyCeT4tc/51cf2dd093e1c3e7d7e401203312a9a0/OBRAS-16.webp" loading="lazy">
@@ -912,7 +940,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Peaton tome su derecha</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -922,7 +950,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Peaton tome su izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/TAyjLQy1pScbn0bqsCHO3/90eacf34fb63d562a3516ccf22079533/OBRAS-17.webp" loading="lazy">
@@ -934,7 +963,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Peaton tome su izquierda</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -944,7 +973,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Solo un carril derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/3DF9uL5lwKkPKYvHU1uV6J/8a2a1c390efe532ee636b40f3c93cef9/OBRAS-07.webp" loading="lazy">
@@ -956,7 +986,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Solo un carril derecha</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -966,7 +996,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Solo un carril izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/2ixnVcaSBBErcxtogqDOzX/85a629fc9774305e9dcfba018917f1dd/OBRAS-08.webp" loading="lazy">
@@ -978,7 +1009,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Solo un carril izquierda</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -988,7 +1019,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Solo un carrila a ..." src="https://images.ctfassets.net/hg6rgg2sftfx/AUEk7D6Di92nb1fQRqUGa/bc5e4ac4c6ff71246f636c0c2e2af6a4/OBRAS-06.webp" loading="lazy">
@@ -1000,7 +1032,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Solo un carrila a ...</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1010,7 +1042,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Via doble sentido" src="https://images.ctfassets.net/hg6rgg2sftfx/1KrM0YkceNfK3GYmwrLwdx/db4e849d26c1db83c8e874a4e29e99e2/OBRAS-18.webp" loading="lazy">
@@ -1022,7 +1055,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Via doble sentido</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1032,7 +1065,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Avenida clausurada" src="https://images.ctfassets.net/hg6rgg2sftfx/3hQM3k6ufJjiJjjwAhmx9j/15d6db635b4e24b2b9e66c4f9b4de8d3/OBRAS-tranquera-08.webp" loading="lazy">
@@ -1044,7 +1078,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Avenida clausurada</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1054,7 +1088,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Calle clausurada solo propietarios" src="https://images.ctfassets.net/hg6rgg2sftfx/3gWbsfK4yFhkOORKl6x0td/b56a14f32fcee4602bba6443aae2a106/OBRAS-tranquera-09.webp" loading="lazy">
@@ -1066,7 +1101,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Calle clausurada solo propietarios</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1076,7 +1111,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Desvio derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/24pckaTru63OXEneDWxGd2/7b62e11fc6aa932b6da5a715d732715c/OBRAS-tranquera-05.webp" loading="lazy">
@@ -1088,7 +1124,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Desvio derecha</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1098,7 +1134,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Desvio izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/3rLn3ujncV6rPdIE3TRgxR/3a2fc5bb0ede99f41c4999cf3e05be5f/OBRAS-tranquera-06.webp" loading="lazy">
@@ -1110,7 +1147,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Desvio izquierda</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1120,7 +1157,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tranquera calle clausurada" src="https://images.ctfassets.net/hg6rgg2sftfx/2b25cyPNYGuFiouXqMIQ9S/da384e1ad57a57c68cabab52e9cd0c0b/OBRAS-tranquera_Mesa_de_trabajo_1.webp" loading="lazy">
@@ -1132,7 +1170,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tranquera calle clausurada</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1142,7 +1180,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tranquera calle clausurada derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/29QpDeCgT2LWbfYHm6YquB/1e834d20ffa9f4009dd773627e4fbe9c/OBRAS-tranquera-02.webp" loading="lazy">
@@ -1154,7 +1193,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tranquera calle clausurada derecha</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1164,7 +1203,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tranquera calle clausurada izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/1aqK3yce5WWagBr3qr6bkd/ca13de27caaac50012b45c493a13fe45/OBRAS-tranquera-03.webp" loading="lazy">
@@ -1176,7 +1216,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tranquera calle clausurada izquierda</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1186,7 +1226,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tranquera informacion obra" src="https://images.ctfassets.net/hg6rgg2sftfx/2N2Bd5FddIAn6dz4C408zS/af78d138b84ba5bf2c897c49443fae19/OBRAS-tranquera-04.webp" loading="lazy">
@@ -1198,7 +1239,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tranquera informacion obra</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1208,7 +1249,8 @@
                     </div>
         </div>
     </div>
-</div><div href="/seguridad/undefined" class="astro-H7G2PNPG">
+</div>
+  <div href="/seguridad/undefined" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tranquera peligro obras" src="https://images.ctfassets.net/hg6rgg2sftfx/4mTCpYR3urxZMlza1C1VGW/d1a849a060e222ff9bb954f2211d7d75/OBRAS-tranquera-07.webp" loading="lazy">
@@ -1220,7 +1262,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tranquera peligro obras</p>
             </div>
-            <astro-island uid="ZNAcGi" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,null],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking"></div></astro-island>
+            <start-rating class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] hidden astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1231,6 +1273,7 @@
         </div>
     </div>
 </div>
+  
         </div>
     </div>
 
@@ -1308,7 +1351,7 @@
 </div>
             </div>
             
-            <astro-island uid="Z2fJeFs" component-url="/_astro/whatsapp-btn-popup.9c750e16.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-XIQZPJ5E&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;WhatsappBtnPopup&quot;,&quot;value&quot;:true}" await-children=""><div class="fixed bottom-[15px] right-[30px] z-[45] animate-bounce "><div class="
+            <script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));</script><astro-island uid="Z2fJeFs" component-url="/_astro/whatsapp-btn-popup.c1d4bd0a.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-XIQZPJ5E&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;WhatsappBtnPopup&quot;,&quot;value&quot;:true}" await-children=""><div class="fixed bottom-[15px] right-[30px] z-[45] animate-bounce "><div class="
           duration-400 transition ease-in-out
           visible translate-y-0 opacity-100
           absolute right-full top-[10px] mr-1  hidden w-[155px] 

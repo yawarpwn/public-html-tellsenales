@@ -83,14 +83,25 @@
                 document.documentElement.classList.add('dark')
             }
         </script>
-    <link rel="stylesheet" href="/_astro/_tag_.ac210010.css" />
+    <link rel="stylesheet" href="/_astro/_slug_.210399a9.css" />
+<link rel="stylesheet" href="/_astro/_tag_.ac210010.css" />
 <link rel="stylesheet" href="/_astro/index.6276a5b3.css" />
-<link rel="stylesheet" href="/_astro/_slug_.1d8f72c5.css" />
 <link rel="stylesheet" href="/_astro/index.abd76220.css" />
 <link rel="stylesheet" href="/_astro/index.5f54df14.css" />
 <link rel="stylesheet" href="/_astro/index.131882bb.css" />
 <link rel="stylesheet" href="/_astro/index.e39cd781.css" />
-<link rel="stylesheet" href="/_astro/index.b1e68564.css" /></head>
+<link rel="stylesheet" href="/_astro/index.2f0974df.css" /><script type="module">class t extends HTMLElement{connectedCallback(){this.rating=this.getAttribute("rating"),this.render()}styles(){}render(){this.innerHTML=`
+            <style>
+            .start-rating {
+                  height: 16px;
+                  width: 83px;
+                  background-image: url(/assets/images/stars-sprite-small.png);
+                  margin: 4px 0;
+            }
+            </style>
+            <div class='start-rating' style="background-position: 0 ${(this.rating+1)*16}px;" src=''></div>
+            `}}customElements.define("start-rating",t);
+</script></head>
     <body class="astro-XIQZPJ5E">
         <main class="astro-XIQZPJ5E">
             <header class="astro-MYRN6SJA">
@@ -143,7 +154,7 @@
 	c0-3.1,2.5-5.6,5.6-5.6l0,0c0.1,0,0.2,0,0.3,0v2.7c-0.1,0-0.2,0-0.3,0c-1.6,0-2.8,1.3-2.8,2.8s1.3,2.8,2.8,2.8c1.6,0,3-1.2,3-2.8
 	l0-12.8h2.6c0.2,2.4,2.1,4.2,4.5,4.4L19.8,10.3" fill="currentColor"></path></svg></a><a href="https://www.linkedin.com/company/tellsenales/" target="_blank" aria-label="Visita nuestro Linkedin oficial" rel="noopener noreferrer" class="flex items-center text-current"><svg height="22" viewBox="0 0 24 24" width="22" class="social-icon"><path d="M3.3,9H7v12H3.3V9z M5.1,3c1.2,0,2.2,1,2.2,2.2c0,1.2-1,2.2-2.2,2.2C3.9,7.3,3,6.4,3,5.2C3,4,3.9,3,5.1,3 M9.4,21h3.7v-5.9
 		c0-1.6,0.3-3.1,2.2-3.1c1.9,0,1.9,1.8,1.9,3.2V21H21v-6.6c0-3.2-0.7-5.7-4.5-5.7c-1.8,0-3,1-3.5,1.9h0V9H9.4V21z" fill="currentColor"></path></svg></a></div>
-                    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Q1JUW" component-url="/_astro/theme-toggle-button.2b6b1ed6.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;isInsideHeader&quot;:[0,true],&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle hide-toggle-on-smaller-screens"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
+                    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Q1JUW" component-url="/_astro/theme-toggle-button.abde1b76.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;isInsideHeader&quot;:[0,true],&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle hide-toggle-on-smaller-screens"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
                 </div>
             </div>
             <div class="flex items-center gap-2 astro-MYRN6SJA">
@@ -160,10 +171,10 @@
         <kbd aria-hidden="true" class="astro-U6WGCOTT">K</kbd>
     </span>
 </button>
-<script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));</script><astro-island uid="1FeMjW" component-url="/_astro/doc-search.7145bc9f.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;DocSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
+<script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));</script><astro-island uid="1FeMjW" component-url="/_astro/doc-search.23a27808.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;DocSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
                 <!-- <Autocomplete client:only="preact" /> -->
                 <div class="flex md:hidden items-center astro-MYRN6SJA">
-                    <script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><astro-island uid="Z1qlXP8" component-url="/_astro/menu-toggle.0874f51e.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;MenuToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="header-button min-h-[45px]" id="menu-toggle" aria-label="toggle menu button"><div class="menu-wrap "><div class="line"></div><div class="line"></div></div></button></astro-island>
+                    <script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><astro-island uid="Z1qlXP8" component-url="/_astro/menu-toggle.76b1712e.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;MenuToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="header-button min-h-[45px]" id="menu-toggle" aria-label="toggle menu button"><div class="menu-wrap "><div class="line"></div><div class="line"></div></div></button></astro-island>
                 </div>
             </div>
         </nav>
@@ -332,7 +343,7 @@
         </li>
 
         <li style="text-align: center;" class="astro-W63KTB5L">
-            <astro-island uid="Z1fv5sb" component-url="/_astro/theme-toggle-button.2b6b1ed6.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-W63KTB5L&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle "><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
+            <astro-island uid="Z1fv5sb" component-url="/_astro/theme-toggle-button.abde1b76.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-W63KTB5L&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle "><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" /></label></div></astro-island>
         </li>
     </ul>
 </nav>
@@ -547,7 +558,7 @@
 
     
     <div class="grid grid-cols-2 md:grid-cols-4 px-4 md:px-0 gap-2">
-        <script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));</script><a href="/seguridad/baliza-caminera-solar-para-conos" class="astro-H7G2PNPG">
+        <a href="/seguridad/baliza-caminera-solar-para-conos" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Baliza caminera solar para conos" src="https://images.ctfassets.net/hg6rgg2sftfx/4r6aETH6ekuh86uW9DCCaf/748c6ca4c3f750a007d778e0f6bc68fe/baliza_caminera_solar_para_cono_rojo.tif.webp" loading="lazy">
@@ -559,7 +570,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Baliza caminera solar para conos</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -569,7 +580,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/barra-retractil-de-amarillo" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/barra-retractil-de-amarillo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Barra retráctil de Amarillo" src="https://images.ctfassets.net/hg6rgg2sftfx/39YVNKt24CdVlW9drVelZZ/6c4cbd623b16118d2e92fbd5f3dd583e/vara-rect.webp" loading="lazy">
@@ -581,7 +593,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Barra retráctil de amarillo</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -591,7 +603,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cachaco-de-concreto" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cachaco-de-concreto" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cachaco de concreto" src="https://images.ctfassets.net/hg6rgg2sftfx/3QqC5nBDo7fu9l8YNPARTX/3d69e05248aa02b840caa3fa293d4bfa/cachaco_de_concreto.webp" loading="lazy">
@@ -603,7 +616,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cachaco de concreto</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -613,7 +626,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cadena-plastica-amarillo-negro" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cadena-plastica-amarillo-negro" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cadena plástica amarillo - negro" src="https://images.ctfassets.net/hg6rgg2sftfx/S8bN4SIDZIrbCWPZgKn00/043d031d8801334597ec2d93b198ee5e/cadena_amarillo_negro.webp" loading="lazy">
@@ -625,7 +639,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cadena plástica amarillo - negro</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -644,7 +658,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/camilla-rigida-de-rescate" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/camilla-rigida-de-rescate" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Camilla Rigida de rescate" src="https://images.ctfassets.net/hg6rgg2sftfx/3UayfupTmq1vDa5ZeVPUMf/099a2a2af1c7c611402234c9460bed1c/camilla-rigida.webp" loading="lazy">
@@ -656,7 +671,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Camilla rigida de rescate</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -675,7 +690,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/prosinfer-capuchones-de-seguridad" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/prosinfer-capuchones-de-seguridad" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Capuchones de Seguridad " src="https://images.ctfassets.net/hg6rgg2sftfx/28f6CCoDdKXDZguS2cwDDF/8fba25e358588f2f44c79a2d45b0b59f/tapuchon_de_seguridad.webp" loading="lazy">
@@ -687,7 +703,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Capuchones de seguridad </p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -697,7 +713,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cilindro-vial" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cilindro-vial" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cilindro vial" src="https://images.ctfassets.net/hg6rgg2sftfx/19qpeX6uArezGQLSff6VdT/1730e93533ded47911897f3710b2711e/cilindro_vial.webp" loading="lazy">
@@ -709,7 +726,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cilindro vial</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -719,7 +736,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cinta-peligro-amarillo-o-rojo" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cinta-peligro-amarillo-o-rojo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Peligro Amarillo o Rojo" src="https://images.ctfassets.net/hg6rgg2sftfx/6jNmGw0mYHMlqaSimiN0YR/0e586e90b859f0f114529a579e947ecf/cinta_peligro.webp" loading="lazy">
@@ -731,7 +749,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cinta peligro amarillo o rojo</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -741,7 +759,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cinta-reflectiva-para-conos" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cinta-reflectiva-para-conos" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva para conos" src="https://images.ctfassets.net/hg6rgg2sftfx/6q1Ynuf6XYHSkarLF7zA9r/5128028c275c744ff415f95a53755b50/cinta_para_cono.webp" loading="lazy">
@@ -753,7 +772,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cinta reflectiva para conos</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -763,7 +782,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cono-de-seguridad-naranja-12-30cm" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cono-de-seguridad-naranja-12-30cm" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cono de Seguridad Naranja 12&#34; / 30cm" src="https://images.ctfassets.net/hg6rgg2sftfx/6qvVlmdMyT2OHYk1NWixMo/4b185b1cd00bee6596231aa0036c099b/cono_12.webp" loading="lazy">
@@ -775,7 +795,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cono de seguridad naranja 12&quot; / 30cm</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -785,7 +805,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cono-de-seguridad-naranja-18-45cm" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cono-de-seguridad-naranja-18-45cm" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cono de Seguridad Naranja 18&#34; / 45cm" src="https://images.ctfassets.net/hg6rgg2sftfx/56dX0tMiZbkHF5CUkIyeP9/872155429bd0291eebd1933242c81310/cono_18_.webp" loading="lazy">
@@ -797,7 +818,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cono de seguridad naranja 18&quot; / 45cm</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -807,7 +828,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cono-de-seguridad-naranja-28-70cm" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cono-de-seguridad-naranja-28-70cm" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cono de Seguridad Naranja 28&#34; / 70cm" src="https://images.ctfassets.net/hg6rgg2sftfx/01afD6i5ooaxk5DjHT7EnM/18d29c2cada45b0fde24bbb46be55858/cono_28.webp" loading="lazy">
@@ -819,7 +841,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cono de seguridad naranja 28&quot; / 70cm</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -829,7 +851,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/cono-de-seguridad-naranja-36-70cm" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/cono-de-seguridad-naranja-36-70cm" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cono de Seguridad Naranja 36&#34; / 90cm" src="https://images.ctfassets.net/hg6rgg2sftfx/4JUVFywZQwNBu8iJfo3mkT/2930b04ef0fb75eddee2b08b8bce92c1/cono_36.webp" loading="lazy">
@@ -841,7 +864,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Cono de seguridad naranja 36&quot; / 90cm</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -851,7 +874,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/delineador-vial" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/delineador-vial" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Delineador vial" src="https://images.ctfassets.net/hg6rgg2sftfx/6gCpIfYSZFjclPX9wdScov/a6794763193189f91b84de1430d72681/delineador_vial.webp" loading="lazy">
@@ -863,7 +887,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Delineador vial</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -873,7 +897,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/lampara-minera-astralux-led-sma-recargable-askl2m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/lampara-minera-astralux-led-sma-recargable-askl2m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Lampara minera Astralux Led SMA Recargable ASKL2M" src="https://images.ctfassets.net/hg6rgg2sftfx/5myqjqvG14GW4pot1I1YlX/7303f23ec65b78cfa5742acbb830b46f/LAMPARA_MINERA_ASTRALUX_LED_SMA_RECARGABLE_ASKL2M.webp" loading="lazy">
@@ -885,7 +910,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Lampara minera astralux led sma recargable askl2m</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -904,7 +929,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/lintera-minera-askl4m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/lintera-minera-askl4m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Lampara minera Astralux Led SMA Recargable ASKL4M" src="https://images.ctfassets.net/hg6rgg2sftfx/1orLCFHvMRho6VqirQqd6D/67e7a881eff68f1bdaf18dad4b09fed4/linter_minera_askl4m.webp" loading="lazy">
@@ -916,7 +942,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Lampara minera astralux led sma recargable askl4m</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -935,7 +961,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/lampara-de-senalizacion-amarilla" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/lampara-de-senalizacion-amarilla" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Lámpara de señalización - Amarilla" src="https://images.ctfassets.net/hg6rgg2sftfx/2mopCKu1gm7Fo3nB3Ssuq4/d194032a699a83172689f1df7148f400/lampara_de_senalizacion_vial_amarillo.webp" loading="lazy">
@@ -947,7 +974,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Lámpara de señalización - amarilla</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -957,7 +984,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/malla-de-seguridad-narajando" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/malla-de-seguridad-narajando" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Malla de Seguridad narajando liviano o pesado" src="https://images.ctfassets.net/hg6rgg2sftfx/6DssWUfR3AO7DI2dF18s3e/8da567aedd3a95d0b90da2e770a97334/malla_seguridad_anaranjado.webp" loading="lazy">
@@ -969,7 +997,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Malla de seguridad narajando liviano o pesado</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -979,7 +1007,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/paleta-de-seguridad-pare-siga" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/paleta-de-seguridad-pare-siga" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Paleta de seguridad Pare-Siga" src="https://images.ctfassets.net/hg6rgg2sftfx/6E0ayTn92fFQzIxxc6eFSX/05ebad1e2fa14e1043525da7005fbc11/paleta_pare_siga.webp" loading="lazy">
@@ -991,7 +1020,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Paleta de seguridad pare-siga</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1010,7 +1039,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/paleta-pare-siga-de-plasticos" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/paleta-pare-siga-de-plasticos" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Paleta pare - siga de plasticos" src="https://images.ctfassets.net/hg6rgg2sftfx/3nAyUdEWANzVR6fUnsviYo/107e9f50739045e87ef64c292235a1eb/pare_siga_plastico.png" loading="lazy">
@@ -1022,7 +1052,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Paleta pare - siga de plasticos</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1041,7 +1071,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/poste-de-senalizacion-para-cadenas-de-plastico" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/poste-de-senalizacion-para-cadenas-de-plastico" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Poste de señalización para cadenas de plástico" src="https://images.ctfassets.net/hg6rgg2sftfx/6btGfUxRhgCV1Kjb1WxFX7/c3f9f744b900f122d1aa8b318ca6cd67/parante_senalizacion.webp" loading="lazy">
@@ -1053,7 +1084,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Poste de señalización para cadenas de plástico</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1063,7 +1094,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/senal-piso-mojado-pvc" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/senal-piso-mojado-pvc" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señal piso mojado pvc" src="https://images.ctfassets.net/hg6rgg2sftfx/2vP259IWATIhdE4GMMePwj/c14375f553a284e2acdb1b45d5d7329b/piso_mojado.webp" loading="lazy">
@@ -1075,7 +1107,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señal piso mojado pvc</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1085,7 +1117,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/senalizador-tubular-alien" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/senalizador-tubular-alien" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Señalizador Tubular Alien" src="https://images.ctfassets.net/hg6rgg2sftfx/263kmEFAlUoNjAxwzYHpVD/1de8091d5a717899c66cab222c4c0d8f/cachaco_con_base.webp" loading="lazy">
@@ -1097,7 +1130,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Señalizador tubular alien</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1107,7 +1140,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tacha-reflectiva-amarilla-3m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tacha-reflectiva-amarilla-3m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tacha reflectiva Amarilla 3M" src="https://images.ctfassets.net/hg6rgg2sftfx/2w3095MxYQILDwoFxOw9Y9/1568dd827a90965daea02ce0e83c6a37/tacha_amarilla.png" loading="lazy">
@@ -1119,7 +1153,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tacha reflectiva amarilla 3m</p>
             </div>
-            <astro-island uid="Vnie0" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,5],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">5</div></astro-island>
+            <start-rating rating="5" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1138,7 +1172,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tacha-reflectiva-bicolor-3m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tacha-reflectiva-bicolor-3m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tacha reflectiva Bicolor 3m" src="https://images.ctfassets.net/hg6rgg2sftfx/1Uusv6HYKxKRAQHiIxlhWs/34fa870fd2745b4521aabfef2eb0abcf/tacha_rojo_y_blanco.webp" loading="lazy">
@@ -1150,7 +1185,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tacha reflectiva bicolor 3m</p>
             </div>
-            <astro-island uid="Vnie0" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,5],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">5</div></astro-island>
+            <start-rating rating="5" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1169,7 +1204,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tacha-reflectiva-blanca-3m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tacha-reflectiva-blanca-3m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tacha reflectiva Blanca 3M" src="https://images.ctfassets.net/hg6rgg2sftfx/76Su3RoFkrmYpGTTjSZ0ry/9fb20a5ee9c6645f2f819cd8e58a322c/tacha_blanca.webp" loading="lazy">
@@ -1181,7 +1217,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tacha reflectiva blanca 3m</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1200,7 +1236,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tacha-reflectiva-rojo-3m" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tacha-reflectiva-rojo-3m" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tacha reflectiva Rojo 3M" src="https://images.ctfassets.net/hg6rgg2sftfx/4JU1EnmDaNbAi0kfuNbVGz/81884ad84592f5df6a70d35f3414f407/tacha_roja.webp" loading="lazy">
@@ -1212,7 +1249,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tacha reflectiva rojo 3m</p>
             </div>
-            <astro-island uid="Vnie0" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,5],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">5</div></astro-island>
+            <start-rating rating="5" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1222,7 +1259,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tachon-reflectivo-amarillo" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tachon-reflectivo-amarillo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tachon Reflectivo Amarillo" src="https://images.ctfassets.net/hg6rgg2sftfx/1RHEhQMExucjrU0CjYIq1n/adc68b1e4dca00d1ad3e0807a34538c9/tachon_amarillo.webp" loading="lazy">
@@ -1234,7 +1272,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tachon reflectivo amarillo</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1244,7 +1282,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/tachon-reflectivo-rojo" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/tachon-reflectivo-rojo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Tachon Reflectivo Rojo" src="https://images.ctfassets.net/hg6rgg2sftfx/2Ao7Qk5eU8WGn7y4LIyMtk/4b5693651644336be595c638b7ea4fde/tachon_rojo.webp" loading="lazy">
@@ -1256,7 +1295,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Tachon reflectivo rojo</p>
             </div>
-            <astro-island uid="vqd3T" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,4],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">4</div></astro-island>
+            <start-rating rating="4" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1266,7 +1305,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/taco-vial-de-seguridad-de-madera" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/taco-vial-de-seguridad-de-madera" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Taco vial de seguridad de madera" src="https://images.ctfassets.net/hg6rgg2sftfx/7r5a5DgPcbvkoJsh5uuC4D/79ad6858a3237d5463dc1ab01ca0a624/taco_vial_de_seguridad.webp" loading="lazy">
@@ -1278,7 +1318,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Taco vial de seguridad de madera</p>
             </div>
-            <astro-island uid="ZKq2qo" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,1],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">1</div></astro-island>
+            <start-rating rating="1" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] undefined astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="card__price font-bold astro-H7G2PNPG">
@@ -1288,7 +1328,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/vara-luminosa-bicolor-con-pila" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/vara-luminosa-bicolor-con-pila" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Vara Luminosa Bicolor con Pila" src="https://images.ctfassets.net/hg6rgg2sftfx/QsU2UfGGJ9jn3lBfdkGPW/12db89ff7cdce89584cb4401131b1e44/42-w.webp" loading="lazy">
@@ -1300,7 +1341,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Vara luminosa bicolor con pila</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1319,7 +1360,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/vara-luminosa-roja-recargable" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/vara-luminosa-roja-recargable" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Vara Luminosa Roja Recargable" src="https://images.ctfassets.net/hg6rgg2sftfx/zv6ueoZfm0Spe76Gm0aee/1945ffa7960e0f60afc3de84fbbfd65a/42-rc.webp" loading="lazy">
@@ -1331,7 +1373,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Vara luminosa roja recargable</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1350,7 +1392,8 @@
                     </div>
         </div>
     </div>
-</a><a href="/seguridad/vara-luminosa-rojo-con-pilas" class="astro-H7G2PNPG">
+</a>
+  <a href="/seguridad/vara-luminosa-rojo-con-pilas" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
             <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Vara Luminosa Rojo con Pilas" src="https://images.ctfassets.net/hg6rgg2sftfx/13o5UYogCA8zNLJuvlrATE/b8220d376334942f4268525dacc46f13/rojo_a_pila.webp" loading="lazy">
@@ -1362,38 +1405,7 @@
             <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
                 <p class="text-xs md:text-sm astro-H7G2PNPG">Vara luminosa rojo con pilas</p>
             </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
-            <div class="min-h-[50px] astro-H7G2PNPG">
-                        <div class="astro-H7G2PNPG">
-                            <span class="text-zinc-400 line-through astro-H7G2PNPG">
-                                S/.30.00
-                            </span>
-                            <span class="ml-2 astro-H7G2PNPG">
-                                -17%
-                            </span>
-                        </div>
-                        <div class="astro-H7G2PNPG"></div>
-                        <div class="astro-H7G2PNPG">
-                            <span class="card__price font-bold astro-H7G2PNPG">
-                                S/. 25.00
-                            </span>
-                        </div>
-                    </div>
-        </div>
-    </div>
-</a><a href="/seguridad/vara-luminosa-verde-con-pilas" class="astro-H7G2PNPG">
-    <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
-        <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Vara Luminosa Verde con Pilas " src="https://images.ctfassets.net/hg6rgg2sftfx/6rETWxUol4ijjnsqcwtmV/1362bab33e477c001e5bf37fca483b30/42-v.webp" loading="lazy">
-        </div>
-        <div class="product-card__body p-2 astro-H7G2PNPG">
-            <span class="text-xs font-bold uppercase astro-H7G2PNPG">
-                        astara
-                    </span>
-            <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
-                <p class="text-xs md:text-sm astro-H7G2PNPG">Vara luminosa verde con pilas </p>
-            </div>
-            <astro-island uid="5t7SN" component-url="/_astro/start-rating.81301e2b.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;rating&quot;:[0,3],&quot;class&quot;:[0,&quot;astro-H7G2PNPG&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;StartRating&quot;,&quot;value&quot;:true}" await-children=""><div class="card__start-raking">3</div></astro-island>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
             <div class="min-h-[50px] astro-H7G2PNPG">
                         <div class="astro-H7G2PNPG">
                             <span class="text-zinc-400 line-through astro-H7G2PNPG">
@@ -1413,6 +1425,39 @@
         </div>
     </div>
 </a>
+  <a href="/seguridad/vara-luminosa-verde-con-pilas" class="astro-H7G2PNPG">
+    <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
+        <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Vara Luminosa Verde con Pilas " src="https://images.ctfassets.net/hg6rgg2sftfx/6rETWxUol4ijjnsqcwtmV/1362bab33e477c001e5bf37fca483b30/42-v.webp" loading="lazy">
+        </div>
+        <div class="product-card__body p-2 astro-H7G2PNPG">
+            <span class="text-xs font-bold uppercase astro-H7G2PNPG">
+                        astara
+                    </span>
+            <div class="min-h-[60px] mt-2 astro-H7G2PNPG">
+                <p class="text-xs md:text-sm astro-H7G2PNPG">Vara luminosa verde con pilas </p>
+            </div>
+            <start-rating rating="3" class="astro-H7G2PNPG"></start-rating>
+            <div class="min-h-[50px] astro-H7G2PNPG">
+                        <div class="astro-H7G2PNPG">
+                            <span class="text-zinc-400 line-through astro-H7G2PNPG">
+                                S/.30.00
+                            </span>
+                            <span class="ml-2 astro-H7G2PNPG">
+                                -17%
+                            </span>
+                        </div>
+                        <div class="astro-H7G2PNPG"></div>
+                        <div class="astro-H7G2PNPG">
+                            <span class="card__price font-bold astro-H7G2PNPG">
+                                S/. 25.00
+                            </span>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</a>
+  
     </div>
 
 
@@ -1489,7 +1534,7 @@
 </div>
             </div>
             
-            <astro-island uid="Z2fJeFs" component-url="/_astro/whatsapp-btn-popup.9c750e16.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-XIQZPJ5E&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;WhatsappBtnPopup&quot;,&quot;value&quot;:true}" await-children=""><div class="fixed bottom-[15px] right-[30px] z-[45] animate-bounce "><div class="
+            <script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));</script><astro-island uid="Z2fJeFs" component-url="/_astro/whatsapp-btn-popup.c1d4bd0a.js" component-export="default" renderer-url="/_astro/client.93ca92fb.js" props="{&quot;class&quot;:[0,&quot;astro-XIQZPJ5E&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;WhatsappBtnPopup&quot;,&quot;value&quot;:true}" await-children=""><div class="fixed bottom-[15px] right-[30px] z-[45] animate-bounce "><div class="
           duration-400 transition ease-in-out
           visible translate-y-0 opacity-100
           absolute right-full top-[10px] mr-1  hidden w-[155px] 
