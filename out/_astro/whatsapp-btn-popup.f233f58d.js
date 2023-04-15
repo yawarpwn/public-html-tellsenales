@@ -1,4 +1,4 @@
-import{h as a}from"./hooks.module.1e10fbc5.js";import{_ as i}from"./preact.module.db8bc18f.js";/* empty css                       */import{o as e}from"./jsxRuntime.module.aa97c2ea.js";const s="51971531018",r=`https://wa.me/${s}?text= `;function p(){const[t,l]=a(!1);return e(i,{children:[e("div",{className:"fixed bottom-[15px] right-[30px] z-[45] animate-bounce ",children:[e("div",{className:`
+import{h as a}from"./hooks.module.1e10fbc5.js";import{_ as i}from"./preact.module.db8bc18f.js";/* empty css                       */import{o as e}from"./jsxRuntime.module.aa97c2ea.js";const s="51971531018",r=`https://wa.me/${s}?text= `;function p(){const[t,l]=a(!1);return e(i,{children:[e("div",{className:"fixed bottom-[5px] right-[5px] z-[45] animate-bounce ",children:[e("div",{className:`
           duration-400 transition ease-in-out
           ${t?"invisible translate-y-10 opacity-0 ":"visible translate-y-0 opacity-100"}
           absolute right-full top-[10px] mr-1  hidden w-[155px] 
