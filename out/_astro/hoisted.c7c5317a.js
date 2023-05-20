@@ -1,4 +1,4 @@
-import"https://vjs.zencdn.net/8.3.0/video.min.js";import"./hoisted.e4914c89.js";const e=document.querySelector("swiper-container"),t={injectStyles:[`
+import"./hoisted.e4914c89.js";const e=document.querySelector("swiper-container"),t={injectStyles:[`
           :host {
             --swiper-theme-color: var(--theme-accent-secondary);
             --swiper-navigation-size: 20px;
