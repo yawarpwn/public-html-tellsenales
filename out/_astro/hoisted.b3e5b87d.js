@@ -1,4 +1,4 @@
-import"./hoisted.bf3be18f.js";class t extends HTMLElement{connectedCallback(){this.rating=this.getAttribute("rating"),this.render()}styles(){}render(){this.innerHTML=`
+import"./hoisted.a61d2d48.js";class t extends HTMLElement{connectedCallback(){this.rating=this.getAttribute("rating"),this.render()}styles(){}render(){this.innerHTML=`
             <style>
             .start-rating {
                   height: 16px;
