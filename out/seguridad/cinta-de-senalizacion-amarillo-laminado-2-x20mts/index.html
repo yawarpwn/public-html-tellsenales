@@ -84,12 +84,12 @@
             }
         </script>
     <link rel="stylesheet" href="/_astro/index.6276a5b3.css" />
-<link rel="stylesheet" href="/_astro/_slug_.3aded11a.css" />
+<link rel="stylesheet" href="/_astro/_slug_.136aaf67.css" />
 <link rel="stylesheet" href="/_astro/index.6bd46eba.css" />
-<link rel="stylesheet" href="/_astro/index.5b1f2889.css" />
+<link rel="stylesheet" href="/_astro/index.687ca769.css" />
 <link rel="stylesheet" href="/_astro/_slug_.210399a9.css" />
 <link rel="stylesheet" href="/_astro/index.dfd27568.css" />
-<link rel="stylesheet" href="/_astro/index.3801bad5.css" /><script type="module" src="/_astro/hoisted.b3e5b87d.js"></script></head>
+<link rel="stylesheet" href="/_astro/index.3801bad5.css" /><script type="module" src="/_astro/hoisted.d1591526.js"></script></head>
     <body class="astro-XIQZPJ5E">
         <main class="astro-XIQZPJ5E">
             <header class="astro-MYRN6SJA">
@@ -159,7 +159,7 @@
         <kbd aria-hidden="true" class="astro-U6WGCOTT">K</kbd>
     </span>
 </button>
-<script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><astro-island uid="Z15qaru" component-url="/_astro/index.c728e3ed.js" component-export="default" renderer-url="/_astro/client.31961952.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;ModalSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
+<script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();</script><astro-island uid="Z15qaru" component-url="/_astro/index.3ed8a417.js" component-export="default" renderer-url="/_astro/client.31961952.js" props="{&quot;class&quot;:[0,&quot;astro-U6WGCOTT&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;ModalSearch&quot;,&quot;value&quot;:&quot;preact&quot;}"></astro-island>
                 <!-- <Autocomplete client:only="preact" /> -->
                 <div class="flex md:hidden items-center astro-MYRN6SJA">
                     <script>(()=>{var i=t=>{let e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)};(self.Astro||(self.Astro={})).idle=i;window.dispatchEvent(new Event("astro:idle"));})();</script><astro-island uid="Z1qlXP8" component-url="/_astro/menu-toggle.e23301a0.js" component-export="default" renderer-url="/_astro/client.31961952.js" props="{&quot;class&quot;:[0,&quot;astro-MYRN6SJA&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;MenuToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="header-button min-h-[45px]" id="menu-toggle" aria-label="toggle menu button"><div class="menu-wrap "><div class="line"></div><div class="line"></div></div></button></astro-island>
@@ -453,7 +453,11 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                             <div class="relative wrap">
-                                <img class="" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp" loading="lazy" alt="senalizacion amarillo laminado">
+                                
+                                    <img class="" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp" loading="lazy" alt="senalizacion amarillo laminado">
+
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                    
                             </div>
                         </div>
         </div>
@@ -469,7 +473,10 @@
     <div class="swiper thumbs-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                            <img class="" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp" loading="lazy" alt="senalizacion amarillo laminado">
+                            <div class="image-wrap">
+                                <img class="" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp?fit=pad&#38;w=60&#38;h=60" loading="lazy" alt="senalizacion amarillo laminado">
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                </div>
                         </div>
         </div>
     </div>
@@ -480,7 +487,7 @@
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
     const thumbsSwiper = new Swiper('.thumbs-swiper', {
-        spaceBetween: 5,
+        spaceBetween: 10,
         slidesPerView: 5,
         freeMode: true,
         watchSlidesProgress: true,
@@ -700,14 +707,15 @@
             </div>
         </div>
     </div>
-    <div class="px-4 md:px-0">
-    <h2>Productos relacionados sugeridos</h2>
-    <div class="flex gap-2 overflow-x-scroll py-4">
-        <div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-para-conos" class="astro-H7G2PNPG">
+    <div class="px-4 md:px-0 astro-OXP7TZUA">
+    <h2 class="astro-OXP7TZUA">Productos relacionados sugeridos</h2>
+    <suggestions-carousel class="astro-OXP7TZUA">
+        <div class="carousel-wrapper flex gap-2 overflow-x-scroll pb-2 astro-OXP7TZUA">
+            <div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-para-conos" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva para conos" src="//images.ctfassets.net/hg6rgg2sftfx/6q1Ynuf6XYHSkarLF7zA9r/5128028c275c744ff415f95a53755b50/cinta_para_cono.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva para conos" src="//images.ctfassets.net/hg6rgg2sftfx/6q1Ynuf6XYHSkarLF7zA9r/5128028c275c744ff415f95a53755b50/cinta_para_cono.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -728,11 +736,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-peligro-amarillo-o-rojo" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-peligro-amarillo-o-rojo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Peligro Amarillo o Rojo" src="//images.ctfassets.net/hg6rgg2sftfx/6jNmGw0mYHMlqaSimiN0YR/0e586e90b859f0f114529a579e947ecf/cinta_peligro.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Peligro Amarillo o Rojo" src="//images.ctfassets.net/hg6rgg2sftfx/6jNmGw0mYHMlqaSimiN0YR/0e586e90b859f0f114529a579e947ecf/cinta_peligro.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -762,11 +770,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-doble-contacto-19mm-x-33mts-astara" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-doble-contacto-19mm-x-33mts-astara" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta doble contacto 19mm x 33mts Astara" src="//images.ctfassets.net/hg6rgg2sftfx/6k1kFvrQzpS0EEktxcrVU7/03919c639e37473a0f55c00f62a6cc43/cinta_doble_contacto.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta doble contacto 19mm x 33mts Astara" src="//images.ctfassets.net/hg6rgg2sftfx/6k1kFvrQzpS0EEktxcrVU7/03919c639e37473a0f55c00f62a6cc43/cinta_doble_contacto.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -796,11 +804,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-antideslizante-2-x18mts-fotoluminiscente" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-antideslizante-2-x18mts-fotoluminiscente" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts  Fotoluminiscente" src="//images.ctfassets.net/hg6rgg2sftfx/7u8z7QGS81ucz08lwOrlL5/efdf9ea81561231dfaef2d049be4b0c8/cinta_antideslizante_fotoluminiscente.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts  Fotoluminiscente" src="//images.ctfassets.net/hg6rgg2sftfx/7u8z7QGS81ucz08lwOrlL5/efdf9ea81561231dfaef2d049be4b0c8/cinta_antideslizante_fotoluminiscente.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -830,11 +838,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-grueso" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-grueso" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Doble Contacto 3M VHB 4910, Transparente, 19mm x 33 m - Grueso" src="//images.ctfassets.net/hg6rgg2sftfx/vF51kYh0kcA1kfUpTLnsA/8143384c02461b96bb1ba60508a40844/cinta_doble_contacto_4910.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Doble Contacto 3M VHB 4910, Transparente, 19mm x 33 m - Grueso" src="//images.ctfassets.net/hg6rgg2sftfx/vF51kYh0kcA1kfUpTLnsA/8143384c02461b96bb1ba60508a40844/cinta_doble_contacto_4910.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -864,11 +872,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-delgado" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-delgado" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Doble Contacto 3M VHB 4910, Transparente, 19mm x 33 m - Delgado" src="//images.ctfassets.net/hg6rgg2sftfx/6VbkaZNL7otQKfPnVs8gny/474c2a31988d82f09f149affc78ed36e/doble_contacto_4910_rojo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Doble Contacto 3M VHB 4910, Transparente, 19mm x 33 m - Delgado" src="//images.ctfassets.net/hg6rgg2sftfx/6VbkaZNL7otQKfPnVs8gny/474c2a31988d82f09f149affc78ed36e/doble_contacto_4910_rojo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -898,11 +906,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-rojo-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-rojo-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Rojo Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/5xsyHDzGdtQfOiRv5Ph1iW/e8a04cc98a3cc9e642adbff71b93896a/cinta_reflectiva_reflexlite_rojo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Rojo Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/5xsyHDzGdtQfOiRv5Ph1iW/e8a04cc98a3cc9e642adbff71b93896a/cinta_reflectiva_reflexlite_rojo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -932,11 +940,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-antideslizante-2-x18mts-negro" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-antideslizante-2-x18mts-negro" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts Negro" src="//images.ctfassets.net/hg6rgg2sftfx/2XNSAp2zOPeKmUTbPNnf85/2badbb93b1b90906197c336488cfdd7c/cinta_antideslizante_negro.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts Negro" src="//images.ctfassets.net/hg6rgg2sftfx/2XNSAp2zOPeKmUTbPNnf85/2badbb93b1b90906197c336488cfdd7c/cinta_antideslizante_negro.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -966,11 +974,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-de-senalizacion-demarcacion-amarilla-negro-2-x-20mts" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-de-senalizacion-demarcacion-amarilla-negro-2-x-20mts" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización / demarcación amarilla - negro 2&#34;x 20mts" src="//images.ctfassets.net/hg6rgg2sftfx/45cq9teoRg9XOqPY9ofHKd/21b5ce9117088f2ec8af4e729a08c69a/cinta_senalizacion_amarillo_negro.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización / demarcación amarilla - negro 2&#34;x 20mts" src="//images.ctfassets.net/hg6rgg2sftfx/45cq9teoRg9XOqPY9ofHKd/21b5ce9117088f2ec8af4e729a08c69a/cinta_senalizacion_amarillo_negro.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -991,11 +999,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-verde-mate-fotoluminiscente" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-verde-mate-fotoluminiscente" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta verde mate fotoluminiscente " src="//images.ctfassets.net/hg6rgg2sftfx/5bGFAQpcWYcJyBi7z2HZXp/bf3c3d9ab76c9363d814b5a445059c32/brillo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta verde mate fotoluminiscente " src="//images.ctfassets.net/hg6rgg2sftfx/5bGFAQpcWYcJyBi7z2HZXp/bf3c3d9ab76c9363d814b5a445059c32/brillo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1016,11 +1024,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-rojo-blanco-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-rojo-blanco-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Rojo/Blanco Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/3CFMQOkyQShAk8jrAgoWZP/46cbef2b63ff01559fb13bced16d9db7/cinta_reflectiva_reflexlite_rojo_blanco.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Rojo/Blanco Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/3CFMQOkyQShAk8jrAgoWZP/46cbef2b63ff01559fb13bced16d9db7/cinta_reflectiva_reflexlite_rojo_blanco.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1050,11 +1058,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-senalizacion-grado-ingenieria-amarillo-negro" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-senalizacion-grado-ingenieria-amarillo-negro" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta señalización grado ingeniería amarillo - negro" src="//images.ctfassets.net/hg6rgg2sftfx/4IaIRmQE44AdlWvR3R8chc/2e43803b653548fee548ed922cb06195/cinta_se__alizacion_grado_ingenieria_amarilo-negro.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta señalización grado ingeniería amarillo - negro" src="//images.ctfassets.net/hg6rgg2sftfx/4IaIRmQE44AdlWvR3R8chc/2e43803b653548fee548ed922cb06195/cinta_se__alizacion_grado_ingenieria_amarilo-negro.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1084,11 +1092,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-blanco-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-blanco-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Blanco Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/6XxEJ7gvdNiuh7hkOMi4LI/07874e969c903b9e14f8881452b956ee/cinta_reflectiva_reflexlite_blanco.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Blanco Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/6XxEJ7gvdNiuh7hkOMi4LI/07874e969c903b9e14f8881452b956ee/cinta_reflectiva_reflexlite_blanco.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1118,11 +1126,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-de-senalizacion-amarillo-negro-laminado" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-de-senalizacion-amarillo-negro-laminado" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarillo - negro laminado" src="//images.ctfassets.net/hg6rgg2sftfx/1I7uiP5bXFJoE2yeedSzCR/a419cd16f81073171a6985ec0ce287aa/cinta_senalizacion_amarillo_negro_laminado.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarillo - negro laminado" src="//images.ctfassets.net/hg6rgg2sftfx/1I7uiP5bXFJoE2yeedSzCR/a419cd16f81073171a6985ec0ce287aa/cinta_senalizacion_amarillo_negro_laminado.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1143,11 +1151,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-amarillo-limon-2-x45-7mts-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-amarillo-limon-2-x45-7mts-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta  Amarillo Limón 2&#34;x45.7mts - Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/4UYpqPCu7sOZa8NuVvcAna/6c0b809d76a42e1ee5472daa6ea9820b/cinta_reflectiva_reflexlite_amarillo_limon.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta  Amarillo Limón 2&#34;x45.7mts - Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/4UYpqPCu7sOZa8NuVvcAna/6c0b809d76a42e1ee5472daa6ea9820b/cinta_reflectiva_reflexlite_amarillo_limon.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1177,11 +1185,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-senalizacion-grado-ingenieria-amarillo" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-senalizacion-grado-ingenieria-amarillo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Señalización  Grado Ingeniería Amarillo" src="//images.ctfassets.net/hg6rgg2sftfx/7c15LgFhhd5pKxockR1fXZ/ff85bf9a2ac41760727c3cf377be7e86/cinta_se__alizacion_grado_ingenieria_amarillo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Señalización  Grado Ingeniería Amarillo" src="//images.ctfassets.net/hg6rgg2sftfx/7c15LgFhhd5pKxockR1fXZ/ff85bf9a2ac41760727c3cf377be7e86/cinta_se__alizacion_grado_ingenieria_amarillo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1211,11 +1219,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-de-senalizacion-amarilla" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-de-senalizacion-amarilla" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarilla 2&#34; x 20mts" src="//images.ctfassets.net/hg6rgg2sftfx/2d9khPAay5Nt0ChU81tzG6/f6b96e7cdd01e8dae725987bbc62d67a/cinta_senalizacion_amarillo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarilla 2&#34; x 20mts" src="//images.ctfassets.net/hg6rgg2sftfx/2d9khPAay5Nt0ChU81tzG6/f6b96e7cdd01e8dae725987bbc62d67a/cinta_senalizacion_amarillo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1236,11 +1244,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-verde" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-verde" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Verde" src="//images.ctfassets.net/hg6rgg2sftfx/7x1WinmZ2BV8WhO09CMkHs/2e89d528b47200bf35058d380a9a65fb/cinta_reflectiva_reflexlite_verde.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Verde" src="//images.ctfassets.net/hg6rgg2sftfx/7x1WinmZ2BV8WhO09CMkHs/2e89d528b47200bf35058d380a9a65fb/cinta_reflectiva_reflexlite_verde.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1270,11 +1278,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-azul" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-azul" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Azul" src="//images.ctfassets.net/hg6rgg2sftfx/MK5bEq03jNeyzh6spWsMe/53ba9f5d3af20540b786b6def4c853ce/cinta_reflectiva_reflexlite_azul.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Azul" src="//images.ctfassets.net/hg6rgg2sftfx/MK5bEq03jNeyzh6spWsMe/53ba9f5d3af20540b786b6def4c853ce/cinta_reflectiva_reflexlite_azul.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1304,11 +1312,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-verde-brillo-fotoluminiscente" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-verde-brillo-fotoluminiscente" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta verde brillo fotoluminiscente" src="//images.ctfassets.net/hg6rgg2sftfx/7gcdgCrT4WsLK3tyCuugJx/6f739dfeed70a8fda64efaa219d7fa16/cinta_foto_brillo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta verde brillo fotoluminiscente" src="//images.ctfassets.net/hg6rgg2sftfx/7gcdgCrT4WsLK3tyCuugJx/6f739dfeed70a8fda64efaa219d7fa16/cinta_foto_brillo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1329,11 +1337,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-antideslizante-2-x18mts-amarillo-negro" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-antideslizante-2-x18mts-amarillo-negro" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts Amarillo - Negro" src="//images.ctfassets.net/hg6rgg2sftfx/4X41SCgFpCWxuYthFb4G3B/97fad05fa970d2dea845f110ec7675ec/cinta_antideslizante_amarillo_negro.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta antideslizante 2&#34;x18mts Amarillo - Negro" src="//images.ctfassets.net/hg6rgg2sftfx/4X41SCgFpCWxuYthFb4G3B/97fad05fa970d2dea845f110ec7675ec/cinta_antideslizante_amarillo_negro.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1363,11 +1371,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-4-x45-7mts-rojo-blanco-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-4-x45-7mts-rojo-blanco-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 4&#34;x45.7mts Rojo/Blanco - Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/6sMpmUKFKy6mLFCnsiOWGV/549031a67fb130b1712a30f597e724c7/cinta_reflectiva_reflexlite_rojo_blanco_4_pulgadas.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 4&#34;x45.7mts Rojo/Blanco - Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/6sMpmUKFKy6mLFCnsiOWGV/549031a67fb130b1712a30f597e724c7/cinta_reflectiva_reflexlite_rojo_blanco_4_pulgadas.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1397,11 +1405,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-2-x45-7mts-amarillo-ambar-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-2-x45-7mts-amarillo-ambar-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Amarillo Ambar Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/3qh1ASND887zWBThIlnPuc/ce7c2d8a34ca40e34c495177d0e9cee1/cinta_reflectiva_reflexlite_amarillo_ambar.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 2&#34;x45.7mts Amarillo Ambar Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/3qh1ASND887zWBThIlnPuc/ce7c2d8a34ca40e34c495177d0e9cee1/cinta_reflectiva_reflexlite_amarillo_ambar.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1431,11 +1439,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-reflectiva-4-x45-7mts-amarillo-limon-reflexlite" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-reflectiva-4-x45-7mts-amarillo-limon-reflexlite" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 4&#34;x45.7mts Amarillo Limón Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/1dRRIpoAu4BadNZIcwPJbI/da0be6d7cd061a2e87b5c87a8c0e9b1a/cinta_reflectiva_reflexlite_amarillo_limon_4_pulgadas.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta reflectiva 4&#34;x45.7mts Amarillo Limón Reflexlite" src="//images.ctfassets.net/hg6rgg2sftfx/1dRRIpoAu4BadNZIcwPJbI/da0be6d7cd061a2e87b5c87a8c0e9b1a/cinta_reflectiva_reflexlite_amarillo_limon_4_pulgadas.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1465,11 +1473,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-antideslizante-2-x18mts-amarillo" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-antideslizante-2-x18mts-amarillo" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Antideslizante 2&#34;x18mts Amarillo" src="//images.ctfassets.net/hg6rgg2sftfx/1S068LlZxtCvKNeH8Jcxla/8d1bfc960e83f92ced13fdbfc36033e4/cinta_antideslizante_amarillo.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta Antideslizante 2&#34;x18mts Amarillo" src="//images.ctfassets.net/hg6rgg2sftfx/1S068LlZxtCvKNeH8Jcxla/8d1bfc960e83f92ced13fdbfc36033e4/cinta_antideslizante_amarillo.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1499,11 +1507,11 @@
     </div>
 </a>
 
-                </div><div class="w-[200px] min-w-[200px]">
-                    <a href="/seguridad/cinta-de-senalizacion-amarillo-laminado-2-x20mts" class="astro-H7G2PNPG">
+                    </div><div class="suggestion-slide w-[200px] min-w-[200px] astro-OXP7TZUA">
+                        <a href="/seguridad/cinta-de-senalizacion-amarillo-laminado-2-x20mts" class="astro-H7G2PNPG">
     <div class="product-card shadow-md rounded-md transition-all astro-H7G2PNPG">
         <div class="relative h-0 w-full pb-[100%] astro-H7G2PNPG">
-            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarillo laminado 2&#34;x20mts" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp" loading="lazy">
+            <img class="absolute inset-0 max-h-[155px] m-auto max-w-[85%] astro-H7G2PNPG" alt="Cinta de señalización amarillo laminado 2&#34;x20mts" src="//images.ctfassets.net/hg6rgg2sftfx/500rYeNx8jXYBEthcQrDlT/581f0cfd1bb8446522a01f375848ef30/senalizacion_amarillo_laminado.webp?fit=pad&#38;w=150&#38;h=150" loading="lazy">
         </div>
         <div class="product-card__body p-2 astro-H7G2PNPG">
             <span class="text-xs font-bold uppercase astro-H7G2PNPG">
@@ -1524,8 +1532,24 @@
     </div>
 </a>
 
-                </div>
-    </div>
+                    </div>
+        </div>
+
+        <div class="flex justify-center pt-4 astro-OXP7TZUA">
+            <div class="flex gap-x-4 astro-OXP7TZUA">
+                <button class="prev-button w-9 h-9 rounded-full border border-[var(--theme-accent-secondary)] text-[--theme-accent-secondary] border-solid astro-OXP7TZUA">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 astro-OXP7TZUA">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" class="astro-OXP7TZUA"></path>
+                    </svg>
+                </button>
+                <button class="next-button w-9 h-9 rounded-full border border-[var(--theme-accent-secondary)] text-[--theme-accent-secondary] border-solid astro-OXP7TZUA">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 astro-OXP7TZUA">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" class="astro-OXP7TZUA"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </suggestions-carousel>
 </div>
 
 
