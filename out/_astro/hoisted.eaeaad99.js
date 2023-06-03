@@ -61,7 +61,6 @@ pointer-event: none;
         box-sizing: border-box;
         height: auto;
         width: 300px;
-        height: 250px;
         scroll-snap-align: center;
         transform: scale(1) translateY(0);
         direction: ltr;

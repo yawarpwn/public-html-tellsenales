@@ -6,6 +6,8 @@
     --theme-mobile-toc-height: 4rem;
     --theme-left-sidebar-width: 18rem;
     --theme-right-sidebar-width: 15rem;
+    --whatsapp-gradient: linear-gradient(90deg, rgba(20, 230, 27, 0.9) 0%, rgba(47, 231, 167, 0.9) 100%);
+    --theme-gradient: linear-gradient(90deg, rgba(119,0,255,1) 0%, rgba(255,35,235,1) 100%);
     /*
 		Minimum visual horizontal spacing from the edges of the viewport,
 		and between vertically arranged elements
@@ -48,13 +50,10 @@
 	Define common fonts and colors
 */
 :root {
-    --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-        Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     --font-body: Inter, var(--font-fallback);
-    --font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono',
-        'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
-        'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace;
+    --font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+        'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 
     /*
 		Variables with --color-base prefix define
@@ -131,10 +130,7 @@
     --theme-code-text: hsla(var(--color-gray-95), 1);
     --theme-navbar-bg: var(--theme-bg);
     --theme-selection-color: hsla(var(--color-purple), 1);
-    --theme-selection-bg: hsla(
-        var(--color-purple),
-        var(--theme-accent-opacity)
-    );
+    --theme-selection-bg: hsla(var(--color-purple), var(--theme-accent-opacity));
     --theme-code-selection-bg: hsla(var(--color-purple), 0.4);
     --theme-code-mark-bg: hsl(226, 50%, 33%);
     --theme-code-mark-border: hsl(224, 50%, 54%);
@@ -148,8 +144,7 @@
     --theme-bg-gradient: linear-gradient(
         180deg,
         var(--theme-bg-gradient-top),
-        var(--theme-bg-gradient-top)
-            calc(var(--theme-navbar-height) + var(--theme-mobile-toc-height)),
+        var(--theme-bg-gradient-top) calc(var(--theme-navbar-height) + var(--theme-mobile-toc-height)),
         var(--theme-bg-gradient-bottom)
     );
 
@@ -208,18 +203,12 @@
     --docsearch-hit-background: var(--theme-bg-offset);
     --docsearch-hit-shadow: none;
     --docsearch-hit-color: var(--theme-text);
-    --docsearch-footer-shadow: inset 0 -1px 0 var(--theme-glow-highlight),
-        inset 1px 0px 0 var(--theme-glow-highlight),
+    --docsearch-footer-shadow: inset 0 -1px 0 var(--theme-glow-highlight), inset 1px 0px 0 var(--theme-glow-highlight),
         inset -1px 0px 0 var(--theme-glow-highlight),
-        inset 0 calc(-1 * var(--theme-glow-blur)) var(--theme-glow-blur)
-            calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse),
-        inset calc(-1 * var(--theme-glow-blur)) 0 var(--theme-glow-blur)
-            calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse),
-        inset var(--theme-glow-blur) 0 var(--theme-glow-blur)
-            calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse);
-    --docsearch-modal-shadow: 0 0 var(--theme-glow-blur)
-            var(--theme-glow-diffuse),
-        inset 0 0 0 1px var(--theme-glow-highlight),
+        inset 0 calc(-1 * var(--theme-glow-blur)) var(--theme-glow-blur) calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse),
+        inset calc(-1 * var(--theme-glow-blur)) 0 var(--theme-glow-blur) calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse),
+        inset var(--theme-glow-blur) 0 var(--theme-glow-blur) calc(-1 * var(--theme-glow-blur)) var(--theme-glow-diffuse);
+    --docsearch-modal-shadow: 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse), inset 0 0 0 1px var(--theme-glow-highlight),
         inset 0 0 var(--theme-glow-blur) var(--theme-glow-diffuse);
     --docsearch-container-background: hsla(var(--color-gray-10), 0.8);
     --docsearch-hit-active-color: hsla(var(--color-gray-10), 1);
