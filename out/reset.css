@@ -268,10 +268,7 @@ article > section nav :is(ul, ol) > * + * {
     margin-top: inherit;
 }
 
-article
-    > section
-    li
-    > :is(p, pre, .code-snippet, blockquote):not(:first-child) {
+article > section li > :is(p, pre, .code-snippet, blockquote):not(:first-child) {
     margin-top: 1rem;
 }
 
@@ -447,8 +444,7 @@ video {
 }
 
 .content details summary {
-    margin: calc(-1 * var(--details-padding-block))
-        calc(-1 * var(--details-padding-inline));
+    margin: calc(-1 * var(--details-padding-block)) calc(-1 * var(--details-padding-inline));
     padding: var(--details-padding-block) var(--details-padding-inline);
     font-weight: bold;
     cursor: pointer;
@@ -496,8 +492,7 @@ h2.heading {
 
 .header-link {
     font-size: 1em;
-    transition: border-inline-start-color 100ms ease-out,
-        background-color 200ms ease-out;
+    transition: border-inline-start-color 100ms ease-out, background-color 200ms ease-out;
 }
 
 .header-link a {
@@ -609,9 +604,7 @@ h2.heading {
 */
 html {
     /* Mobile TOC is displayed above page content */
-    scroll-padding-top: calc(
-        1.5rem + var(--theme-navbar-height) + var(--theme-mobile-toc-height)
-    );
+    scroll-padding-top: calc(1.5rem + var(--theme-navbar-height) + var(--theme-mobile-toc-height));
 }
 
 @media (min-width: 72em) {
@@ -626,4 +619,8 @@ html {
         /* Removes the collapsible sidebar svg animation */
         transition: none !important;
     }
+}
+
+.details ul {
+    padding-inline-start: 15px;
 }
