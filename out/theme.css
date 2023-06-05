@@ -7,7 +7,9 @@
     --theme-left-sidebar-width: 18rem;
     --theme-right-sidebar-width: 15rem;
     --whatsapp-gradient: linear-gradient(90deg, rgba(20, 230, 27, 0.9) 0%, rgba(47, 231, 167, 0.9) 100%);
+    --whatsapp-gradient-hover:  linear-gradient(270deg, rgba(40,208,149,1) 0%, rgba(12,293,18,1) 100%);
     --theme-gradient: linear-gradient(90deg, rgba(119,0,255,1) 0%, rgba(255,35,235,1) 100%);
+    --theme-gradient-hover: linear-gradient(270deg, rgba(100,5,230,1) 0%, rgba(212,32,195,1) 100%); 
     /*
 		Minimum visual horizontal spacing from the edges of the viewport,
 		and between vertically arranged elements
@@ -169,8 +171,8 @@
     --theme-text: hsla(var(--color-gray-90), 1);
     --theme-text-light: hsla(var(--color-gray-80), 1);
     --theme-text-lighter: hsla(var(--color-gray-70), 1);
-    --theme-bg: hsl(280, 97%, 16%);
-    --theme-bg-header: hsl(280, 97%, 19%, 0.8);
+    --theme-bg: hsl(280, 97%, 12%);
+    --theme-bg-header: hsl(280, 97%, 12%, 0.8);
     --theme-bg-gradient-top: var(--theme-bg);
     --theme-bg-gradient-bottom: hsl(281, 45%, 9%);
     --theme-bg-hover: hsla(var(--color-purple), 0.2);
