@@ -5,7 +5,7 @@
     --theme-navbar-height: 4rem;
     --theme-mobile-toc-height: 4rem;
     --theme-left-sidebar-width: 18rem;
-    --theme-right-sidebar-width: 15rem;
+    --theme-right-sidebar-width: 13rem;
     --whatsapp-gradient: linear-gradient(90deg, rgba(20, 230, 27, 0.9) 0%, rgba(47, 231, 167, 0.9) 100%);
     --whatsapp-gradient-hover:  linear-gradient(270deg, rgba(40,208,149,1) 0%, rgba(12,293,18,1) 100%);
     --theme-gradient: linear-gradient(90deg, rgba(119,0,255,1) 0%, rgba(255,35,235,1) 100%);
@@ -109,6 +109,7 @@
     color-scheme: light;
     --theme-accent: hsla(var(--color-orange), 1);
     --theme-accent-secondary: hsl(324, 75%, 38%);
+    --theme-accent-secondary: rgb(250,50,100);
     --theme-dim: hsla(var(--color-gray-70), 1);
     --theme-dim-light: hsla(var(--color-gray-80), 1);
     --theme-dim-lighter: hsla(var(--color-gray-90), 1);
@@ -161,7 +162,7 @@
     --color-orange: var(--color-base-orange), 60%;
     --theme-accent-opacity: 0.4;
     --theme-accent: hsla(var(--color-orange), 1);
-    --theme-accent-secondary: hsla(var(--color-orange), 1);
+    --theme-accent-secondary: rgb(250,22,96);
     --theme-text-accent: hsla(var(--color-orange), 1);
     --theme-dim: hsla(var(--color-gray-90), 0.3);
     --theme-dim-light: hsla(var(--color-gray-90), 0.2);

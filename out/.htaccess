@@ -167,3 +167,50 @@ RewriteRule ^seguridad\/tacha-reflectiva\-amarilla\-3\-m\/$ "https\:\/\/tellsena
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad/cinta\-refleclite\-2\-x45\-7mts\-amarillo\-limon\-reflexlite$ "https\:\/\/tellsenales.com\/seguridad\/cinta\-amarillo\-limon\-2\-x45\-7mts\-reflexlite\/" [R=301,L]
 
+# Cintas 2" Reflixlite 
+#rojo-blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-rojo-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#limon
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-amarillo-limon-2-x45-7mts-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Azul
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-azul/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Amarillo-ambar
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-amarillo-ambar-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#verde
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-verde/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#rojo
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-rojo-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+
+# Cintas 4" Reflixlite 
+#rojo-blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-4-x45-7mts-rojo-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-4-pulgadas-10-cm-x-45-7mts-reflexlite/" [R=301,L]
+#amarillo-limon
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-4-x45-7mts-amarillo-limon-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-4-pulgadas-10-cm-x-45-7mts-reflexlite/" [R=301,L]
+
+#GI 3M
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-rojo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-verde/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-naranjado/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+
+#Antideslizante Astara
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/seguridad/cinta-antideslizante-2-x18mts-amarillo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-amarillo-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+
