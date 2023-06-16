@@ -210,7 +210,7 @@ RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-nar
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^seguridad/seguridad/cinta-antideslizante-2-x18mts-amarillo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-amarillo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-amarillo-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
 
