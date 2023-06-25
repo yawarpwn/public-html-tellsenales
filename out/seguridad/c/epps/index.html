@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/theme.css">
 <link rel="stylesheet" href="/reset.css">
 <link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/animations.css">
 <!--
 <link rel="stylesheet" href="/theme-light.css" />
 <!--link rel="stylesheet" href="/theme-dark.css" />
@@ -41,27 +42,39 @@
 
 <!-- Google tag (gtag.js) -->
 <script>
-    const loadScript = (src) =>
-        new Promise((resolve, reject) => {
-            const script = document.createElement('script')
-            script.src = src
-
-            script.onload = resolve
-            script.onerror = reject
-            document.head.appendChild(script)
-        })
-
-    loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P')
-        .then(() => {
-            window.dataLayer = window.dataLayer || []
-            function gtag() {
-                dataLayer.push(arguments)
-            }
-            gtag('js', new Date())
-            gtag('config', 'G-3ERP9CTT7P')
-        })
-        .catch((err) => console.log(err))
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P"
 </script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-3ERP9CTT7P");
+</script>
+<!-- <script is:inline> -->
+<!--     const loadScript = (src) => -->
+<!--         new Promise((resolve, reject) => { -->
+<!--             const script = document.createElement('script') -->
+<!--             script.src = src -->
+
+<!--             script.onload = resolve -->
+<!--             script.onerror = reject -->
+<!--             document.head.appendChild(script) -->
+<!--         }) -->
+
+<!--     loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P') -->
+<!--         .then(() => { -->
+<!--             window.dataLayer = window.dataLayer || [] -->
+<!--             function gtag() { -->
+<!--                 dataLayer.push(arguments) -->
+<!--             } -->
+<!--             gtag('js', new Date()) -->
+<!--             gtag('config', 'G-3ERP9CTT7P') -->
+<!--         }) -->
+<!--         .catch((err) => console.log(err)) -->
+<!-- </script> -->
     <title>epps | Tell Señales</title>
     
     <script>
@@ -88,12 +101,14 @@
 <link rel="stylesheet" href="/_astro/_tag_.e0f47bdc.css" />
 <link rel="stylesheet" href="/_astro/_tag_.65f786da.css" />
 <link rel="stylesheet" href="/_astro/index.abd76220.css" />
-<link rel="stylesheet" href="/_astro/_slug_.f3a29d0b.css" />
+<link rel="stylesheet" href="/_astro/_slug_.776d0050.css" />
 <link rel="stylesheet" href="/_astro/index.d1160d96.css" />
-<link rel="stylesheet" href="/_astro/index.e27564fa.css" />
-<link rel="stylesheet" href="/_astro/_tag_.c28fb873.css" />
+<link rel="stylesheet" href="/_astro/index.3398ba89.css" />
+<link rel="stylesheet" href="/_astro/_tag_.829de805.css" />
 <link rel="stylesheet" href="/_astro/index.8388e944.css" />
-<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.dd1526d0.js"></script></head>
+<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.d1b26b72.js"></script>
+<script>!(function(w,p,f,c){c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.7.6 - MIT builder.io */
+!function(t,e,n,i,r,o,a,d,s,c,p,l){function u(){l||(l=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(f,1e4),e.addEventListener("pt0",w),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):f())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.7.6":"sandbox-sw.html?"+Date.now()),e.body.appendChild(c)}function f(n,r){for(w(),i==t&&(o.forward||[]).map((function(e){delete t[e.split(".")[0]]})),n=0;n<s.length;n++)(r=e.createElement("script")).innerHTML=s[n].innerHTML,e.head.appendChild(r);c&&c.parentNode.removeChild(c)}function w(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){p=t,e.split(".").map((function(e,n,i){p=p[i[n]]=n+1<i.length?"push"==i[n+1]?[]:p[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);</script></head>
   <body class="astro-XIQZPJ5E">
     <main class="astro-XIQZPJ5E">
       <header class="astro-MYRN6SJA">
@@ -449,7 +464,7 @@
             
     
     
-    <div class="relative h-24 md:h-32 flex items-center justify-center overflow-hidden mb-4 astro-6XW6WAX5">
+  <div class="relative h-24 md:h-32 flex items-center justify-center overflow-hidden mb-4 astro-6XW6WAX5">
     <div class="absolute inset-0 astro-6XW6WAX5">
         <div class="shadow-image astro-6XW6WAX5"></div>
         <img class="w-full h-full object-cover astro-6XW6WAX5" src="/assets/images/epps.webp" alt="epps">
@@ -458,7 +473,7 @@
         epps
     </h1>
 </div>
-    <div class="mb-5 relative flex justify-center astro-NVUGQINE">
+  <div class="mb-5 relative flex justify-center astro-NVUGQINE">
   <!-- <button class='absolute left-0 top-1/2 -translate-y-1/2 z-20'>prev</button> -->
 
   <button class="next-button astro-NVUGQINE">
@@ -545,25 +560,22 @@
             </a>
   </div>
 </div>
-
     
     <ul class="list-card astro-4PRSA3FU">
-        <a href="/seguridad/barbiquejos-para-cascos" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1WhBmHDZg17dYGLhEUBShn/21142b92662cf91dc729885d333fc452/barbiquejo.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Barbiquejos para cascos" src="https://images.ctfassets.net/hg6rgg2sftfx/2OpjGMW76k752fRpnpA40S/8ff2069d7a814c10e6fba13b257d35bf/Barbiquejos_para_cascos.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            astara
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Barbiquejos para cascos</p>
-        </div>
-        <div class="flex items-center">
+      <li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/barbiquejos-para-cascos" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Barbiquejos para cascos" src="https://images.ctfassets.net/hg6rgg2sftfx/2OpjGMW76k752fRpnpA40S/8ff2069d7a814c10e6fba13b257d35bf/Barbiquejos_para_cascos.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  astara
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Barbiquejos para cascos</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -576,40 +588,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  20.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        20.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.25.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.25.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/botas-de-seguridad-dielectrica" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/FbVvRWPij9oQeolC73KZb/a74d44a0748575bceeefdd5eacb9a4a6/BOTIN_DIELETRICO_2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Botas de Seguridad Dieléctrica" src="https://images.ctfassets.net/hg6rgg2sftfx/ed6ujR6585lRrXuQ0pL87/7fab5cf7f12d6e11da84443577366947/BOTIN_DIELETRICO.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-             Holz&amp; Stein
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Botas de seguridad dieléctrica</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/botas-de-seguridad-dielectrica" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Botas de Seguridad Dieléctrica" src="https://images.ctfassets.net/hg6rgg2sftfx/ed6ujR6585lRrXuQ0pL87/7fab5cf7f12d6e11da84443577366947/BOTIN_DIELETRICO.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                   Holz&amp; Stein
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Botas de seguridad dieléctrica</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -622,40 +631,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  140.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        140.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -7%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.150.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.150.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/careta-para-soldar" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5UGUuDXtj4IL4vU7tubpuA/4123889ef09717007b0e1455b7a7fee3/careta_soldar_2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Careta para Soldar" src="https://images.ctfassets.net/hg6rgg2sftfx/2Rq04LDAidS5ZZWFyzHc3h/6b3eab1a44fbda707ce2390d4a284384/careta_para_soldar.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            crt-sl
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Careta para soldar</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/careta-para-soldar" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Careta para Soldar" src="https://images.ctfassets.net/hg6rgg2sftfx/2Rq04LDAidS5ZZWFyzHc3h/6b3eab1a44fbda707ce2390d4a284384/careta_para_soldar.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  crt-sl
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Careta para soldar</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -668,40 +674,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  20.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        20.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.25.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.25.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/casco-3m-h700-blanco" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3wJczEh80EjHoTwUw1GpYP/7e52dd5e012c0c2ead69dcc1ed316bfa/casco_3m_2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Casco 3M H700 Blanco" src="https://images.ctfassets.net/hg6rgg2sftfx/1JB7i3E5QdRxZLxMXfGFFS/f75a692619c820d515012beb80172b41/casco-3m.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            3M
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Casco 3m h700 blanco</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/casco-3m-h700-blanco" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Casco 3M H700 Blanco" src="https://images.ctfassets.net/hg6rgg2sftfx/1JB7i3E5QdRxZLxMXfGFFS/f75a692619c820d515012beb80172b41/casco-3m.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  3M
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Casco 3m h700 blanco</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -714,40 +717,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  55.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        55.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -8%
 </small>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.60.00</div>
+                  </div>
+
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/casco-de-seguridad-jockey-4-puntas-con-rachet-blanco" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Casco de seguridad Jockey 4 puntas con Rachet Blanco" src="https://images.ctfassets.net/hg6rgg2sftfx/7oLzrfH8drHJ1vfnFeTC5N/da6c8d2fb4ebef3b0f5918d9ea05bcfa/Casco_de_seguridad_Jockey_4_puntas_con_Rachet_Blanco.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  nacional
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Casco de seguridad jockey 4 puntas con rachet blanco</p>
               </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.60.00</div>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/casco-de-seguridad-jockey-4-puntas-con-rachet-blanco" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7oLzrfH8drHJ1vfnFeTC5N/da6c8d2fb4ebef3b0f5918d9ea05bcfa/Casco_de_seguridad_Jockey_4_puntas_con_Rachet_Blanco.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Casco de seguridad Jockey 4 puntas con Rachet Blanco" src="https://images.ctfassets.net/hg6rgg2sftfx/7oLzrfH8drHJ1vfnFeTC5N/da6c8d2fb4ebef3b0f5918d9ea05bcfa/Casco_de_seguridad_Jockey_4_puntas_con_Rachet_Blanco.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            nacional
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Casco de seguridad jockey 4 puntas con rachet blanco</p>
-        </div>
-        <div class="flex items-center">
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -760,31 +760,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 30.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 30.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/casco-importado-con-barbiquejo" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7yJdTZWuSouJqlwP2NrBKV/a37760a9d9abf55dfcca2b375c03c66c/cascos-importandos.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Casco importado con barbiquejo" src="https://images.ctfassets.net/hg6rgg2sftfx/32L2hfoQpNI6bO6vWr4AGl/2bdcd4f3673076ac19e41b988c2f24c0/casco-importando-economico.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            importado
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Casco importado con barbiquejo</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/casco-importado-con-barbiquejo" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Casco importado con barbiquejo" src="https://images.ctfassets.net/hg6rgg2sftfx/32L2hfoQpNI6bO6vWr4AGl/2bdcd4f3673076ac19e41b988c2f24c0/casco-importando-economico.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  importado
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Casco importado con barbiquejo</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -797,40 +794,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  12.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        12.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.15.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.15.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/casco-nacional-economico" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4llew2oPgMvLa1rDA7snVj/c45dadc7ca571945cbd664680c3ba4e9/casco-economico-nacional.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Casco nacional económico" src="https://images.ctfassets.net/hg6rgg2sftfx/58hStEObwaVNjqYETodph5/68fde302c6269ba9617fffe8c502260c/casco-nacional-economico-azul.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            nacional
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Casco nacional económico</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/casco-nacional-economico" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Casco nacional económico" src="https://images.ctfassets.net/hg6rgg2sftfx/58hStEObwaVNjqYETodph5/68fde302c6269ba9617fffe8c502260c/casco-nacional-economico-azul.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  nacional
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Casco nacional económico</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -843,40 +837,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  10.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        10.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -17%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.12.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.12.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/casco-tridente" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4lvSHab1j8xYpno5IWt4fB/476c5fc42511ee2e971a98cac6541153/cascos_tridente.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Casco tridente" src="https://images.ctfassets.net/hg6rgg2sftfx/73SNyORddRMP6yspmJZ1LH/0022ecf7159510c6929dba86dc2b0781/casco_tridente.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            tridente
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Casco tridente</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/casco-tridente" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Casco tridente" src="https://images.ctfassets.net/hg6rgg2sftfx/73SNyORddRMP6yspmJZ1LH/0022ecf7159510c6929dba86dc2b0781/casco_tridente.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  tridente
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Casco tridente</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -889,40 +880,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  20.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        20.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.25.00</div>
+                  </div>
+
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/filtro-de-particulas-fpp3-2097" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Filtro de partículas FPP3 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/5jNlB3JeaguyqPnWch8HB0/63f3e91953936ac583288970844cb88d/2097.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Filtro de partículas fpp3 2097</p>
               </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.25.00</div>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/filtro-de-particulas-fpp3-2097" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4puc3KbJdZwA5PRQOPbfhz/11f18a75ad1a6944025544575c7150c5/filtro_2097_.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Filtro de partículas FPP3 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/5jNlB3JeaguyqPnWch8HB0/63f3e91953936ac583288970844cb88d/2097.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Filtro de partículas fpp3 2097</p>
-        </div>
-        <div class="flex items-center">
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -935,31 +923,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 20.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 20.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/filtro-para-particula-compatible-7093" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4mcAO5Xq7sg9ZnScSEoiBZ/e385612cc514d420ad60ba2e01fc81e0/filtro_de_particulas_7093.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Filtro para partícula compatible 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/2X9uFO5JG6zASWzohtfglA/52094765e5fdfdeb153f079909ceb5d4/filtro_de_particulas_7093_.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Filtro para partícula compatible 7093</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/filtro-para-particula-compatible-7093" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Filtro para partícula compatible 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/2X9uFO5JG6zASWzohtfglA/52094765e5fdfdeb153f079909ceb5d4/filtro_de_particulas_7093_.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Filtro para partícula compatible 7093</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -972,31 +957,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 20.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 20.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/guante-de-carnaza" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3wlFsb5BjrR5NyMw0Nb3X2/bb993eea3423e3497519ba5027b51a98/GUANTE_DE_CARNAZA.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="GUANTE DE CARNAZA" src="https://images.ctfassets.net/hg6rgg2sftfx/3wlFsb5BjrR5NyMw0Nb3X2/bb993eea3423e3497519ba5027b51a98/GUANTE_DE_CARNAZA.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Guante de carnaza</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/guante-de-carnaza" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="GUANTE DE CARNAZA" src="https://images.ctfassets.net/hg6rgg2sftfx/3wlFsb5BjrR5NyMw0Nb3X2/bb993eea3423e3497519ba5027b51a98/GUANTE_DE_CARNAZA.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Guante de carnaza</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1009,31 +991,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/guante-pluremax-negro" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2slvvU36atRguJPsnBPtjT/28c02efb0275b3b0b9faaa7c3deb75f9/Guante_Pluremax_negro.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Guante Pluremax negro" src="https://images.ctfassets.net/hg6rgg2sftfx/2slvvU36atRguJPsnBPtjT/28c02efb0275b3b0b9faaa7c3deb75f9/Guante_Pluremax_negro.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Guante pluremax negro</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/guante-pluremax-negro" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Guante Pluremax negro" src="https://images.ctfassets.net/hg6rgg2sftfx/2slvvU36atRguJPsnBPtjT/28c02efb0275b3b0b9faaa7c3deb75f9/Guante_Pluremax_negro.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Guante pluremax negro</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1046,31 +1025,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/guante-de-cuero-blazefire-16" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5QLzBwkNuF3efQNVkrPjxX/de4d90a9c0e21898804ffb53d195d37c/Guante_de_cuero_Blazefire_16.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Guante de cuero Blazefire 16&#34;" src="https://images.ctfassets.net/hg6rgg2sftfx/5QLzBwkNuF3efQNVkrPjxX/de4d90a9c0e21898804ffb53d195d37c/Guante_de_cuero_Blazefire_16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Guante de cuero blazefire 16&quot;</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/guante-de-cuero-blazefire-16" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Guante de cuero Blazefire 16&#34;" src="https://images.ctfassets.net/hg6rgg2sftfx/5QLzBwkNuF3efQNVkrPjxX/de4d90a9c0e21898804ffb53d195d37c/Guante_de_cuero_Blazefire_16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Guante de cuero blazefire 16&quot;</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1083,31 +1059,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/guante-de-hilo-con-puntos" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6mFgCohplI5VCURaQl2cJj/ca21d9cb2973e82fe95aed1a27f41a30/Guante_de_hilo_con_puntos.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Guante de hilo con puntos" src="https://images.ctfassets.net/hg6rgg2sftfx/6mFgCohplI5VCURaQl2cJj/ca21d9cb2973e82fe95aed1a27f41a30/Guante_de_hilo_con_puntos.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Guante de hilo con puntos</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/guante-de-hilo-con-puntos" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Guante de hilo con puntos" src="https://images.ctfassets.net/hg6rgg2sftfx/6mFgCohplI5VCURaQl2cJj/ca21d9cb2973e82fe95aed1a27f41a30/Guante_de_hilo_con_puntos.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Guante de hilo con puntos</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1120,31 +1093,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/lente-claro-sg-antifog" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5yndXZFDbvR975lpVzV4uc/0408d3dbead8289b9879d749f01f59c4/Lente_Claro_SG_Antifog.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Lente Claro SG Antifog" src="https://images.ctfassets.net/hg6rgg2sftfx/5yndXZFDbvR975lpVzV4uc/0408d3dbead8289b9879d749f01f59c4/Lente_Claro_SG_Antifog.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Lente claro sg antifog</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/lente-claro-sg-antifog" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Lente Claro SG Antifog" src="https://images.ctfassets.net/hg6rgg2sftfx/5yndXZFDbvR975lpVzV4uc/0408d3dbead8289b9879d749f01f59c4/Lente_Claro_SG_Antifog.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Lente claro sg antifog</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1157,31 +1127,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/lente-oscuro-squareglass" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/49694GyG0kW8KsR2kdJjNm/db43eafdd67d15aa413889a61bf65b1e/Lente_Oscuro_SquareGlass.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Lente Oscuro SquareGlass" src="https://images.ctfassets.net/hg6rgg2sftfx/49694GyG0kW8KsR2kdJjNm/db43eafdd67d15aa413889a61bf65b1e/Lente_Oscuro_SquareGlass.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Lente oscuro squareglass</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/lente-oscuro-squareglass" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Lente Oscuro SquareGlass" src="https://images.ctfassets.net/hg6rgg2sftfx/49694GyG0kW8KsR2kdJjNm/db43eafdd67d15aa413889a61bf65b1e/Lente_Oscuro_SquareGlass.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Lente oscuro squareglass</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1194,31 +1161,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 10.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 10.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/mascara-multifuncional-2-vias-6200-con-filtro-7093" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4wZsxC1Rou64P7eJwn1MCr/d650b07992d206265161b604e8f7e31b/mascara_funcional_2_vias_6200_con_filtro_7093_.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Mascara multifuncional 2 vias 6200 con filtro 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/47bGjdhTbahvPecL3dJh60/6a04f9b66f6cb0ec9d7fe772a1a373e4/mascara_funcional_2_vias_6200_con_filtro_7093.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Mascara multifuncional 2 vias 6200 con filtro 7093</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/mascara-multifuncional-2-vias-6200-con-filtro-7093" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Mascara multifuncional 2 vias 6200 con filtro 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/47bGjdhTbahvPecL3dJh60/6a04f9b66f6cb0ec9d7fe772a1a373e4/mascara_funcional_2_vias_6200_con_filtro_7093.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Mascara multifuncional 2 vias 6200 con filtro 7093</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1231,40 +1195,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  60.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        60.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -14%
 </small>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.70.00</div>
+                  </div>
+
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/mascarilla-antipolvo-economico-2-vias" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Mascarilla antipolvo económico 2 vías" src="https://images.ctfassets.net/hg6rgg2sftfx/5idFOdt2224PePT6MJT9Ok/0ad65e7af28ffef623bd89f15dc5574a/Mascarilla_antipolvo_econ__mico_2_v__as.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Mascarilla antipolvo económico 2 vías</p>
               </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.70.00</div>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/mascarilla-antipolvo-economico-2-vias" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5idFOdt2224PePT6MJT9Ok/0ad65e7af28ffef623bd89f15dc5574a/Mascarilla_antipolvo_econ__mico_2_v__as.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Mascarilla antipolvo económico 2 vías" src="https://images.ctfassets.net/hg6rgg2sftfx/5idFOdt2224PePT6MJT9Ok/0ad65e7af28ffef623bd89f15dc5574a/Mascarilla_antipolvo_econ__mico_2_v__as.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Mascarilla antipolvo económico 2 vías</p>
-        </div>
-        <div class="flex items-center">
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1277,31 +1238,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 25.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 25.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/mascara-antigas-economica-2-vias" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7su5xISgFliSHUF1i49xlb/a176fa7e9bd3bd5e5fddccf31c4b12d6/M__scara_antigas.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Máscara antigas económica 2 vías" src="https://images.ctfassets.net/hg6rgg2sftfx/7su5xISgFliSHUF1i49xlb/a176fa7e9bd3bd5e5fddccf31c4b12d6/M__scara_antigas.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Máscara antigas económica 2 vías</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/mascara-antigas-economica-2-vias" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Máscara antigas económica 2 vías" src="https://images.ctfassets.net/hg6rgg2sftfx/7su5xISgFliSHUF1i49xlb/a176fa7e9bd3bd5e5fddccf31c4b12d6/M__scara_antigas.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Máscara antigas económica 2 vías</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1314,40 +1272,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  20.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        20.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.25.00</div>
+                  </div>
+
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/mascara-de-soldar-fotosensible-con-disenos" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Máscara de soldar fotosensible con diseños" src="https://images.ctfassets.net/hg6rgg2sftfx/51cSZuuOJSkrNQxxS1T9hw/a2e2401ccffd450c5056ae55e71ad0cc/M__scara_de_soldar_con_dise__os.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  msc-ds
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Máscara de soldar fotosensible con diseños</p>
               </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.25.00</div>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/mascara-de-soldar-fotosensible-con-disenos" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6jpQF6piDJVIWeOaaIDLnh/a9df5e98663831881c5f44473916aa81/M__scara_de_soldar_con_dise__os_2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Máscara de soldar fotosensible con diseños" src="https://images.ctfassets.net/hg6rgg2sftfx/51cSZuuOJSkrNQxxS1T9hw/a2e2401ccffd450c5056ae55e71ad0cc/M__scara_de_soldar_con_dise__os.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            msc-ds
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Máscara de soldar fotosensible con diseños</p>
-        </div>
-        <div class="flex items-center">
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1360,31 +1315,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 130.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 130.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/mascara-multifuncion-2-vias-6500" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/74eawOnM0Z9PzFBv7xEjHG/8dcf5db6cedaba7cd7288a8164b5a126/M__scara_multifunci__n_2_v__as_6500.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Máscara multifunción 2 vías 6500" src="https://images.ctfassets.net/hg6rgg2sftfx/74eawOnM0Z9PzFBv7xEjHG/8dcf5db6cedaba7cd7288a8164b5a126/M__scara_multifunci__n_2_v__as_6500.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Máscara multifunción 2 vías 6500</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/mascara-multifuncion-2-vias-6500" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Máscara multifunción 2 vías 6500" src="https://images.ctfassets.net/hg6rgg2sftfx/74eawOnM0Z9PzFBv7xEjHG/8dcf5db6cedaba7cd7288a8164b5a126/M__scara_multifunci__n_2_v__as_6500.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Máscara multifunción 2 vías 6500</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1397,31 +1349,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 80.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 80.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/orejera-msa-xls-216746-adaptable-a-casco" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2yOxvvx73DKfTeDwPOXXsb/1747bb7b58811ce6043cd85270cf5bbd/Orejera_MSA_XLS_216746_Adaptable_a_Casco.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Orejera MSA XLS 216746 Adaptable a Casco" src="https://images.ctfassets.net/hg6rgg2sftfx/2yOxvvx73DKfTeDwPOXXsb/1747bb7b58811ce6043cd85270cf5bbd/Orejera_MSA_XLS_216746_Adaptable_a_Casco.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            msa
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Orejera msa xls 216746 adaptable a casco</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/orejera-msa-xls-216746-adaptable-a-casco" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Orejera MSA XLS 216746 Adaptable a Casco" src="https://images.ctfassets.net/hg6rgg2sftfx/2yOxvvx73DKfTeDwPOXXsb/1747bb7b58811ce6043cd85270cf5bbd/Orejera_MSA_XLS_216746_Adaptable_a_Casco.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  msa
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Orejera msa xls 216746 adaptable a casco</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1434,31 +1383,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 70.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 70.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/orejera-para-casco-peltor-h9p3e-3m" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5NcjoVjNKn7Ee0hGURwuTr/868ff37a9ac0c60a86cea3308730c13c/Orejera_Para_Casco_Peltor_H9P3E_3M.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Orejera Para Casco Peltor H9P3E 3M" src="https://images.ctfassets.net/hg6rgg2sftfx/5NcjoVjNKn7Ee0hGURwuTr/868ff37a9ac0c60a86cea3308730c13c/Orejera_Para_Casco_Peltor_H9P3E_3M.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            3m
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Orejera para casco peltor h9p3e 3m</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/orejera-para-casco-peltor-h9p3e-3m" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Orejera Para Casco Peltor H9P3E 3M" src="https://images.ctfassets.net/hg6rgg2sftfx/5NcjoVjNKn7Ee0hGURwuTr/868ff37a9ac0c60a86cea3308730c13c/Orejera_Para_Casco_Peltor_H9P3E_3M.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  3m
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Orejera para casco peltor h9p3e 3m</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1471,31 +1417,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 100.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 100.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/orejeras-xpeltor-zero-noise" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1SDjUSYC2LTUFSxnf2EBSh/e6e48d1e990ec4cd1cd15366902a3c90/Orejeras_Xpeltor_Zero_Noise.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Orejeras Xpeltor Zero Noise" src="https://images.ctfassets.net/hg6rgg2sftfx/1SDjUSYC2LTUFSxnf2EBSh/e6e48d1e990ec4cd1cd15366902a3c90/Orejeras_Xpeltor_Zero_Noise.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Orejeras xpeltor zero noise</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/orejeras-xpeltor-zero-noise" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Orejeras Xpeltor Zero Noise" src="https://images.ctfassets.net/hg6rgg2sftfx/1SDjUSYC2LTUFSxnf2EBSh/e6e48d1e990ec4cd1cd15366902a3c90/Orejeras_Xpeltor_Zero_Noise.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Orejeras xpeltor zero noise</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1508,31 +1451,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 50.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 50.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/respirador-profesional-multiproposito" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4sqnyI1N4Xr3cprO2G1eCZ/d2b038ba4aee9e0fee8dbd687891d7bb/Respirador_Profesional_Multiprop__sito.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Respirador Profesional Multipropósito" src="https://images.ctfassets.net/hg6rgg2sftfx/4sqnyI1N4Xr3cprO2G1eCZ/d2b038ba4aee9e0fee8dbd687891d7bb/Respirador_Profesional_Multiprop__sito.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Respirador profesional multipropósito</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/respirador-profesional-multiproposito" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Respirador Profesional Multipropósito" src="https://images.ctfassets.net/hg6rgg2sftfx/4sqnyI1N4Xr3cprO2G1eCZ/d2b038ba4aee9e0fee8dbd687891d7bb/Respirador_Profesional_Multiprop__sito.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Respirador profesional multipropósito</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1545,31 +1485,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 180.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 180.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/respirador-de-caucho-con-filtro-2097" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1EI7Vki6do1iy1bxH1qPHe/4e3ddb0e0dac823320b78b92fb0b1532/respirado_de_caucho_con_filtro_2097_.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Respirador de caucho con filtro 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/3O1QD9sttL2vI2l7Bp3SgO/a9d36647ede256ff5b6fdbf00b63d394/respirador_de_caucho.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Respirador de caucho con filtro 2097</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/respirador-de-caucho-con-filtro-2097" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Respirador de caucho con filtro 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/3O1QD9sttL2vI2l7Bp3SgO/a9d36647ede256ff5b6fdbf00b63d394/respirador_de_caucho.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Respirador de caucho con filtro 2097</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1582,40 +1519,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  40.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        40.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -20%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.50.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.50.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/respirador-media-cara-siliconado-multiproposito-con-filtro-2097" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1FsElSM2w7rXdz7mIxzaB1/8e5b7e235b28961c9ac261328c37c079/Respirador_media_cara__siliconado_multiproposito.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Respirador media cara, siliconado multiproposito con filtro 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/2oc3WhDVPOV4HbVcSfl4Bo/5e9de9cf82bcd5ee15395e3730338313/Respirador_funcional_Multifuncional.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Respirador media cara, siliconado multiproposito con filtro 2097</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/respirador-media-cara-siliconado-multiproposito-con-filtro-2097" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Respirador media cara, siliconado multiproposito con filtro 2097" src="https://images.ctfassets.net/hg6rgg2sftfx/2oc3WhDVPOV4HbVcSfl4Bo/5e9de9cf82bcd5ee15395e3730338313/Respirador_funcional_Multifuncional.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Respirador media cara, siliconado multiproposito con filtro 2097</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1628,40 +1562,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  65.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        65.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -7%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.70.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.70.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/respirador-media-cara-siliconado-multiproposito-con-filtro-7093" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6bvVVGoJOtyUoZFfA5MYmI/44ece982f158359e2ce78a5295a99795/Respirador_media_siliconado_multiproposito.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Respirador media cara, siliconado multiproposito con filtro 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/6bvVVGoJOtyUoZFfA5MYmI/44ece982f158359e2ce78a5295a99795/Respirador_media_siliconado_multiproposito.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ASTARA
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Respirador media cara, siliconado multiproposito con filtro 7093</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/respirador-media-cara-siliconado-multiproposito-con-filtro-7093" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Respirador media cara, siliconado multiproposito con filtro 7093" src="https://images.ctfassets.net/hg6rgg2sftfx/6bvVVGoJOtyUoZFfA5MYmI/44ece982f158359e2ce78a5295a99795/Respirador_media_siliconado_multiproposito.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  ASTARA
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Respirador media cara, siliconado multiproposito con filtro 7093</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1674,40 +1605,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  70.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        70.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -7%
 </small>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.75.00</div>
+                  </div>
+
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/tapones-auditivos-reutilizables" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Tapones auditivos reutilizables" src="https://images.ctfassets.net/hg6rgg2sftfx/1jS0pzyXjqE2q7EXR8siko/93844e6235ef740d7e046c074864d355/Tapones_auditivos_reutilizables.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  msa
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Tapones auditivos reutilizables</p>
               </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.75.00</div>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/tapones-auditivos-reutilizables" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6PBCKE9YVB9aChw65r45kI/45337e2375df964136a2af9f5d4edbc0/Tapones_auditivos_reutilizables___2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Tapones auditivos reutilizables" src="https://images.ctfassets.net/hg6rgg2sftfx/1jS0pzyXjqE2q7EXR8siko/93844e6235ef740d7e046c074864d355/Tapones_auditivos_reutilizables.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            msa
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Tapones auditivos reutilizables</p>
-        </div>
-        <div class="flex items-center">
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1720,31 +1648,28 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="product-card__price undefined astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. 30.00</span>
-            </div>
+              
+              <div class="product-card__price astro-TJDFHDQB">
+                    <span class="price astro-TJDFHDQB">S/. 30.00</span>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/zapato-modelo-holton-s3-caterpillar" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3i55WWX1dxPx3IaeSKGS3v/ef9e5a3ce53f3dd818e55839e9129b7c/cat-2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zapato Modelo Holton S3 Caterpillar" src="https://images.ctfassets.net/hg6rgg2sftfx/3z6NfwplK0P9wT5egBfsvk/9a724a90f0a478d53bfccc918ff20bad/Zapato_Modelo_Holton_S3_Caterpillar.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            CATERPILLAR
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zapato modelo holton s3 caterpillar</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/zapato-modelo-holton-s3-caterpillar" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Zapato Modelo Holton S3 Caterpillar" src="https://images.ctfassets.net/hg6rgg2sftfx/3z6NfwplK0P9wT5egBfsvk/9a724a90f0a478d53bfccc918ff20bad/Zapato_Modelo_Holton_S3_Caterpillar.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  CATERPILLAR
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Zapato modelo holton s3 caterpillar</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1757,40 +1682,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  550.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        550.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -8%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.600.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.600.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/zapato-de-seguridad-normado-con-punta-de-acero" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4rdELt1IYIV1zd1dIVFPHJ/f20348451bb2548219173f1a88d97fd2/panzer.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zapato de seguridad normado con punta de acero" src="https://images.ctfassets.net/hg6rgg2sftfx/3fxNciGhOY83G3o6ul8KxW/df9132646c35fb7cfce2301146ddeafa/zapato_de_seguridad_panzer.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            panzer
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zapato de seguridad normado con punta de acero</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/zapato-de-seguridad-normado-con-punta-de-acero" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Zapato de seguridad normado con punta de acero" src="https://images.ctfassets.net/hg6rgg2sftfx/3fxNciGhOY83G3o6ul8KxW/df9132646c35fb7cfce2301146ddeafa/zapato_de_seguridad_panzer.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  panzer
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Zapato de seguridad normado con punta de acero</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1803,40 +1725,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  100.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        100.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -9%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.110.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.110.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/zapato-de-seguridad-punta-de-acero-nacional" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7EGkzCv0NWx6euqm52KnXj/bdd5b94bddcca31f2ffeba59e4168bdd/bota_nacional__1_.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zapato de seguridad punta de acero nacional" src="https://images.ctfassets.net/hg6rgg2sftfx/4kDPyBv8N8iG4HlgU9JvWh/124cf6fe915c5b6098b00723aaca1853/bota_nacional_2__1_.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            nacional
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zapato de seguridad punta de acero nacional</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/zapato-de-seguridad-punta-de-acero-nacional" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Zapato de seguridad punta de acero nacional" src="https://images.ctfassets.net/hg6rgg2sftfx/4kDPyBv8N8iG4HlgU9JvWh/124cf6fe915c5b6098b00723aaca1853/bota_nacional_2__1_.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  nacional
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Zapato de seguridad punta de acero nacional</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1849,40 +1768,37 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  35.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        35.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -13%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.40.00</div>
-            </div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.40.00</div>
+                  </div>
 
-      </div>
-    </li>
-  </product-item>
-</a>
-<a href="/seguridad/zapato-modelo-kitson-caterpillar" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4M5DevPe6nGSAl2HgYqx2n/71c6f063789604f3eaa01a4240208973/holson_2.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zapato modelo Kitson Caterpillar" src="https://images.ctfassets.net/hg6rgg2sftfx/1VMC6rPlBKZKmrZVHckWQ6/1aa26d894294e1ab83fcdb999fe05cc5/cat-mujer.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            CATERPILLAR
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zapato modelo kitson caterpillar</p>
-        </div>
-        <div class="flex items-center">
+            </div>
+      </a>
+</product-item>
+    </li><li class="list-none astro-TJDFHDQB">
+  <product-item class="astro-TJDFHDQB">
+          <a href="/seguridad/zapato-modelo-kitson-caterpillar" class="hover:no-underline product-card astro-TJDFHDQB">
+            <div class="product-card__image-container astro-TJDFHDQB">
+              <img class="w-full h-full object-contain astro-TJDFHDQB" alt="Zapato modelo Kitson Caterpillar" src="https://images.ctfassets.net/hg6rgg2sftfx/1VMC6rPlBKZKmrZVHckWQ6/1aa26d894294e1ab83fcdb999fe05cc5/cat-mujer.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+            </div>
+            <div class="product-card__body astro-TJDFHDQB">
+              <small class="product-card__brand astro-TJDFHDQB">
+                  CATERPILLAR
+              </small>
+              <div class="product-card__title astro-TJDFHDQB">
+                <p class="astro-TJDFHDQB">Zapato modelo kitson caterpillar</p>
+              </div>
+              <div class="flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--theme-accent-secondary)" stroke="var(--theme-accent-secondary)" class="ml-0.5 w-4 h-4 star-fill ">
@@ -1895,25 +1811,24 @@
                 <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
             </svg>
 </div>
-        
-        <div class="astro-H7G2PNPG">
-              <div class="product-card__price astro-H7G2PNPG">
-                <span class="price astro-H7G2PNPG">
-                  <sub class="astro-H7G2PNPG">S/&nbsp;</sub>
-                  550.00
-                </span>
-                <small class="astro-W254WJDN">
+              
+              <div class="astro-TJDFHDQB">
+                    <div class="product-card__price astro-TJDFHDQB">
+                      <span class="price astro-TJDFHDQB">
+                        <sub class="astro-TJDFHDQB">S/&nbsp;</sub>
+                        550.00
+                      </span>
+                      <small class="astro-W254WJDN">
   -8%
 </small>
-              </div>
-              <div class="product-card__old-price block astro-H7G2PNPG">S/.600.00</div>
+                    </div>
+                    <div class="product-card__old-price block astro-TJDFHDQB">S/.600.00</div>
+                  </div>
+
             </div>
-
-      </div>
+      </a>
+</product-item>
     </li>
-  </product-item>
-</a>
-
     </ul>
 
 

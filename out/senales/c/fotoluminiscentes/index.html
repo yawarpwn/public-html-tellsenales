@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/theme.css">
 <link rel="stylesheet" href="/reset.css">
 <link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/animations.css">
 <!--
 <link rel="stylesheet" href="/theme-light.css" />
 <!--link rel="stylesheet" href="/theme-dark.css" />
@@ -41,27 +42,39 @@
 
 <!-- Google tag (gtag.js) -->
 <script>
-    const loadScript = (src) =>
-        new Promise((resolve, reject) => {
-            const script = document.createElement('script')
-            script.src = src
-
-            script.onload = resolve
-            script.onerror = reject
-            document.head.appendChild(script)
-        })
-
-    loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P')
-        .then(() => {
-            window.dataLayer = window.dataLayer || []
-            function gtag() {
-                dataLayer.push(arguments)
-            }
-            gtag('js', new Date())
-            gtag('config', 'G-3ERP9CTT7P')
-        })
-        .catch((err) => console.log(err))
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P"
 </script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-3ERP9CTT7P");
+</script>
+<!-- <script is:inline> -->
+<!--     const loadScript = (src) => -->
+<!--         new Promise((resolve, reject) => { -->
+<!--             const script = document.createElement('script') -->
+<!--             script.src = src -->
+
+<!--             script.onload = resolve -->
+<!--             script.onerror = reject -->
+<!--             document.head.appendChild(script) -->
+<!--         }) -->
+
+<!--     loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P') -->
+<!--         .then(() => { -->
+<!--             window.dataLayer = window.dataLayer || [] -->
+<!--             function gtag() { -->
+<!--                 dataLayer.push(arguments) -->
+<!--             } -->
+<!--             gtag('js', new Date()) -->
+<!--             gtag('config', 'G-3ERP9CTT7P') -->
+<!--         }) -->
+<!--         .catch((err) => console.log(err)) -->
+<!-- </script> -->
     <title>fotoluminiscentes | Tell Señales</title>
     
     <script>
@@ -88,11 +101,13 @@
 <link rel="stylesheet" href="/_astro/_tag_.e0f47bdc.css" />
 <link rel="stylesheet" href="/_astro/_tag_.65f786da.css" />
 <link rel="stylesheet" href="/_astro/index.abd76220.css" />
+<link rel="stylesheet" href="/_astro/_tag_.721cb1b8.css" />
 <link rel="stylesheet" href="/_astro/index.d1160d96.css" />
-<link rel="stylesheet" href="/_astro/index.e27564fa.css" />
-<link rel="stylesheet" href="/_astro/_slug_.f3a29d0b.css" />
+<link rel="stylesheet" href="/_astro/index.3398ba89.css" />
 <link rel="stylesheet" href="/_astro/index.8388e944.css" />
-<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.dd1526d0.js"></script></head>
+<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.a61d2d48.js"></script>
+<script>!(function(w,p,f,c){c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.7.6 - MIT builder.io */
+!function(t,e,n,i,r,o,a,d,s,c,p,l){function u(){l||(l=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(f,1e4),e.addEventListener("pt0",w),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):f())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.7.6":"sandbox-sw.html?"+Date.now()),e.body.appendChild(c)}function f(n,r){for(w(),i==t&&(o.forward||[]).map((function(e){delete t[e.split(".")[0]]})),n=0;n<s.length;n++)(r=e.createElement("script")).innerHTML=s[n].innerHTML,e.head.appendChild(r);c&&c.parentNode.removeChild(c)}function w(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){p=t,e.split(".").map((function(e,n,i){p=p[i[n]]=n+1<i.length?"push"==i[n+1]?[]:p[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);</script></head>
   <body class="astro-XIQZPJ5E">
     <main class="astro-XIQZPJ5E">
       <header class="astro-MYRN6SJA">
@@ -529,2484 +544,1197 @@
 </div>
 
         <!-- Product List -->
-        <div class="grid grid-cols-2 md:grid-cols-4 px-4 md:px-0 gap-2">
-            <div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2k2cLd7HWOPmBL6KpcQWiG/fa443378750af4fca2b9c88864a6a0d4/foto-prevencion-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Pozo a tierra" src="https://images.ctfassets.net/hg6rgg2sftfx/2k2cLd7HWOPmBL6KpcQWiG/fa443378750af4fca2b9c88864a6a0d4/foto-prevencion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-02
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Pozo a tierra</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3jpi8QJwpuzGmW8gVyVKGj/bb9243bea707a6d5bd7ff7661596f314/ft-ad-05.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Peligro productos quimicos" src="https://images.ctfassets.net/hg6rgg2sftfx/3jpi8QJwpuzGmW8gVyVKGj/bb9243bea707a6d5bd7ff7661596f314/ft-ad-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-05
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Peligro productos quimicos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1iuqBSO57ag54takmCsn5u/3baecc0da2408d6ac64c381438460677/foto-prevencion-10.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Puesta a tierra" src="https://images.ctfassets.net/hg6rgg2sftfx/1iuqBSO57ag54takmCsn5u/3baecc0da2408d6ac64c381438460677/foto-prevencion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-03
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Puesta a tierra</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/33DUPTU5QhJESg5CMHDF51/0bc32aa38a49f6a440f8f07b3ef73262/foto-prevencion_01.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Riesgo electrico" src="https://images.ctfassets.net/hg6rgg2sftfx/33DUPTU5QhJESg5CMHDF51/0bc32aa38a49f6a440f8f07b3ef73262/foto-prevencion_01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-01
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Riesgo electrico</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5CZxm1xmtjJcTuWFz9iKSm/020dbbfa1372f12b3aea4f59516c2eb5/ft-ad-04.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Balones de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/5CZxm1xmtjJcTuWFz9iKSm/020dbbfa1372f12b3aea4f59516c2eb5/ft-ad-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-04
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Balones de gas</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5nlJ1dZuE3aonKKy7ADPLK/6a6e6d253707eb786dc385ac45203838/ft-ad-06.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Peligro inflamables" src="https://images.ctfassets.net/hg6rgg2sftfx/5nlJ1dZuE3aonKKy7ADPLK/6a6e6d253707eb786dc385ac45203838/ft-ad-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-06
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Peligro inflamables</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/ctR18HexW3kTKoKsOn4OC/c8e0670862d53cf3eed57b88be1ba09b/ft-ad-07..webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Peligro alta temperatura" src="https://images.ctfassets.net/hg6rgg2sftfx/ctR18HexW3kTKoKsOn4OC/c8e0670862d53cf3eed57b88be1ba09b/ft-ad-07..webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-07
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Peligro alta temperatura</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3mgII7nuGCqNimNqtwu83i/71e6257e691f8513bf016a9552c78b3b/ft-ad-07.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Peligro Liquidos toxicos y corrosivos" src="https://images.ctfassets.net/hg6rgg2sftfx/3mgII7nuGCqNimNqtwu83i/71e6257e691f8513bf016a9552c78b3b/ft-ad-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-08
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Peligro liquidos toxicos y corrosivos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/38HnVaVccCruyXOgleHB2N/8756c9ad54b07efd270d783562f9380a/foto-prevencion-18.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Peligro caidas" src="https://images.ctfassets.net/hg6rgg2sftfx/38HnVaVccCruyXOgleHB2N/8756c9ad54b07efd270d783562f9380a/foto-prevencion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-10
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Peligro caidas</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3rX9NVBQaPY0JamFokeYFC/4132112f28d6366efbe14c70b3033c66/foto-prevencion-19.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Atención a las manos" src="https://images.ctfassets.net/hg6rgg2sftfx/3rX9NVBQaPY0JamFokeYFC/4132112f28d6366efbe14c70b3033c66/foto-prevencion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-11
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Atención a las manos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2cmPccpQPPuqe8L75MHLxt/7a4d4448cb956458e08dfaa27bb36f99/ft-ad-14.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Cuidado riesgo de inahalación" src="https://images.ctfassets.net/hg6rgg2sftfx/2cmPccpQPPuqe8L75MHLxt/7a4d4448cb956458e08dfaa27bb36f99/ft-ad-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-14
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Cuidado riesgo de inahalación</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/72wbEWaKJecvoAsbbGCV9B/1a1fa96a5ac0b139c42f99f99668cfbd/ft-ad-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Cuidado con tus manos" src="https://images.ctfassets.net/hg6rgg2sftfx/72wbEWaKJecvoAsbbGCV9B/1a1fa96a5ac0b139c42f99f99668cfbd/ft-ad-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-09
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Cuidado con tus manos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/jq2TALtX1NtFpGYC260nd/c2a1b936a22ee3252866f58d3d1119ea/ft-ad-13.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Precaución válvula de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/jq2TALtX1NtFpGYC260nd/c2a1b936a22ee3252866f58d3d1119ea/ft-ad-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-13
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Precaución válvula de gas</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2JSz6U5YESDJXEJJO3jUKN/2c9ae34f91d5609b58b929cffeb064e4/foto-prevencion-20.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Almacén productos químicos" src="https://images.ctfassets.net/hg6rgg2sftfx/2JSz6U5YESDJXEJJO3jUKN/2c9ae34f91d5609b58b929cffeb064e4/foto-prevencion-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ad-12
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Almacén productos químicos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5mygb7ZIw7Qxt5zAoQBxy1/d5397ee60cafa928498d44cbbd885c28/foto-evacuacion-02.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/5mygb7ZIw7Qxt5zAoQBxy1/d5397ee60cafa928498d44cbbd885c28/foto-evacuacion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-02
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1BjMLGdYTysQln8LwQtVJo/aafae0ea637ac6247670c4ee3152c78b/zona_segura.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zona segura en casos de sismo" src="https://images.ctfassets.net/hg6rgg2sftfx/1BjMLGdYTysQln8LwQtVJo/aafae0ea637ac6247670c4ee3152c78b/zona_segura.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-01
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zona segura en casos de sismo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5prFfPVbWUiXSzXW4f4lTf/08d96692ada6d4537b27ede4b2edef9a/foto-evacuacion-05.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida escalera baja derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5prFfPVbWUiXSzXW4f4lTf/08d96692ada6d4537b27ede4b2edef9a/foto-evacuacion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-05
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida escalera baja derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7uIMxKVBOiIpseeVwiJOOi/f3a116f8a9547c8f4a162209aef73863/foto-evacuacion-04.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida escalera baja izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/7uIMxKVBOiIpseeVwiJOOi/f3a116f8a9547c8f4a162209aef73863/foto-evacuacion-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-04
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida escalera baja izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/w37XpMRN9mcxp1e5wAleC/aab87a65ed36648926ad9d8ae73bbcdd/foto-evacuacion-03.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/w37XpMRN9mcxp1e5wAleC/aab87a65ed36648926ad9d8ae73bbcdd/foto-evacuacion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-03
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/AnwvR1w8MA0885uSQq2YH/9f6d70072f1f2d353d71c94467a2e32a/foto-evacuacion-06.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida escalera subida izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/AnwvR1w8MA0885uSQq2YH/9f6d70072f1f2d353d71c94467a2e32a/foto-evacuacion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-06
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida escalera subida izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2CWUQKZRHYVSNmBA1C4QLg/8960252b05cb0de732b87060372ff4dd/foto-evacuacion-07.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida escalera subida derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/2CWUQKZRHYVSNmBA1C4QLg/8960252b05cb0de732b87060372ff4dd/foto-evacuacion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-07
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida escalera subida derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/876HEEETo0Rg9BHCDpOoC/afafa48912ee999f630694f795f58414/foto-evacuacion-08.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida sola" src="https://images.ctfassets.net/hg6rgg2sftfx/876HEEETo0Rg9BHCDpOoC/afafa48912ee999f630694f795f58414/foto-evacuacion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-08
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida sola</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/xzP0KQCW2KvkSFNNID8Qi/ad6059125ddbc7b2ba3511284b7d26d0/foto-evacuacion-10.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida de emergencia derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/xzP0KQCW2KvkSFNNID8Qi/ad6059125ddbc7b2ba3511284b7d26d0/foto-evacuacion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-10
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida de emergencia derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5pyUAZq7tCgvUVptll5jE3/7200440d120cd39fd7f053342cef261d/foto-evacuacion-12.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Punto de reunion" src="https://images.ctfassets.net/hg6rgg2sftfx/5pyUAZq7tCgvUVptll5jE3/7200440d120cd39fd7f053342cef261d/foto-evacuacion-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-12
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Punto de reunion</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5kdjNqdGMDm255lFwpsYf1/8e817284e47391859dfc372b1b4370c1/foto-evacuacion-11.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida de socorro" src="https://images.ctfassets.net/hg6rgg2sftfx/5kdjNqdGMDm255lFwpsYf1/8e817284e47391859dfc372b1b4370c1/foto-evacuacion-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-11
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida de socorro</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/60xYHC1v5ZfvT03e2WDjT7/3d16f210278071969af4c7743d256170/foto-evacuacion-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida de emergencia izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/60xYHC1v5ZfvT03e2WDjT7/3d16f210278071969af4c7743d256170/foto-evacuacion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-09
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida de emergencia izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6GmgA1g63xCn34lYVO0y6r/e9ccea9ad0433cd30d39bacb0c23320b/foto-evacuacion-15.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Lavaojos de emergencia fotoluminiscente" src="https://images.ctfassets.net/hg6rgg2sftfx/6GmgA1g63xCn34lYVO0y6r/e9ccea9ad0433cd30d39bacb0c23320b/foto-evacuacion-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-15
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Lavaojos de emergencia fotoluminiscente</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3ELe633OSp0iKT93uxwXeD/8bf434d7264b6e783130df2ab043dcf8/foto-evacuacion-16.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Entrada sola" src="https://images.ctfassets.net/hg6rgg2sftfx/3ELe633OSp0iKT93uxwXeD/8bf434d7264b6e783130df2ab043dcf8/foto-evacuacion-16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-16
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Entrada sola</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2nPszCqmD4yIxoc4hc8EKE/65ef1df76f2e87bb300ffe9e7796073e/foto-evacuacion-18.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Entrada izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/2nPszCqmD4yIxoc4hc8EKE/65ef1df76f2e87bb300ffe9e7796073e/foto-evacuacion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-18
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Entrada izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3Dbz4OpgfJzqAaZtQMbe03/0a3c0b481fc45ca8c2c455008dba270c/foto-evacuacion-13.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Botiquin primero auxilios" src="https://images.ctfassets.net/hg6rgg2sftfx/3Dbz4OpgfJzqAaZtQMbe03/0a3c0b481fc45ca8c2c455008dba270c/foto-evacuacion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-13
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Botiquin primero auxilios</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/68dY8yHo2mKxuK2B9hybcF/2f7862f031a74352e47bb2ac72108dda/foto-evacuacion-17.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida de emergencia" src="https://images.ctfassets.net/hg6rgg2sftfx/68dY8yHo2mKxuK2B9hybcF/2f7862f031a74352e47bb2ac72108dda/foto-evacuacion-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-17
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida de emergencia</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5iUcDh1ScyGNG4yo2rr9Yf/b1c101996ae92902842247c180697fb0/foto-evacuacion-14.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Camilla fotoluminiscente" src="https://images.ctfassets.net/hg6rgg2sftfx/5iUcDh1ScyGNG4yo2rr9Yf/b1c101996ae92902842247c180697fb0/foto-evacuacion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-14
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Camilla fotoluminiscente</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5oo3DNMtvnrIutVDlFXrKw/549d80bfbee0b0123a2b782310e1dff9/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida panorámica derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5oo3DNMtvnrIutVDlFXrKw/549d80bfbee0b0123a2b782310e1dff9/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-24
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida panorámica derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5q17X2WDmd8q9B93OIiE0K/eb70caf7b5f6a61e6d3dd7060f15c71c/foto-evacuacion-22.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Entrada izquierda horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/5q17X2WDmd8q9B93OIiE0K/eb70caf7b5f6a61e6d3dd7060f15c71c/foto-evacuacion-22.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-22
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Entrada izquierda horizontal</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6bAbLUK0w2bdx9EpuNccOV/3d7f4a9b68ceafaa827524fdc19a24a2/foto-evacuacion-23.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Entrada derecha horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/6bAbLUK0w2bdx9EpuNccOV/3d7f4a9b68ceafaa827524fdc19a24a2/foto-evacuacion-23.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-23
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Entrada derecha horizontal</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/78ABHGagqIU32kOXruuVDo/f8407ba69dee4c97e293d21b3aeb3ae3/foto-evacuacion-19.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Entrada derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/78ABHGagqIU32kOXruuVDo/f8407ba69dee4c97e293d21b3aeb3ae3/foto-evacuacion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-19
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Entrada derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/71lArohwkcuUiePA9mWq8J/b67d75eb8c1a760e3503f8c5d83964a5/foto-evacuacion-20.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida izquierda horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/71lArohwkcuUiePA9mWq8J/b67d75eb8c1a760e3503f8c5d83964a5/foto-evacuacion-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-20
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida izquierda horizontal</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4omvTvKxRV1idmy1ItIDXm/8650de53c882aa5f2fd4bbc9d5991dd0/foto-evacuacion-21.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida derecha horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/4omvTvKxRV1idmy1ItIDXm/8650de53c882aa5f2fd4bbc9d5991dd0/foto-evacuacion-21.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-21
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida derecha horizontal</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5X7ttv13fNbm9nJbdqlSUa/d363b4e1af193b08f190da77b46fdf54/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida emergencia panorámica derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5X7ttv13fNbm9nJbdqlSUa/d363b4e1af193b08f190da77b46fdf54/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-27
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida emergencia panorámica derecha</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6EXNbFFMB5euBnW8Ne171H/31eddabe97d5569eb373fc193594fa61/foto-evacuacion-31.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida empujar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/6EXNbFFMB5euBnW8Ne171H/31eddabe97d5569eb373fc193594fa61/foto-evacuacion-31.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-29
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida empujar para abrir panorámica</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5Jne6nzkylI7bxnzqNjJMW/86252fdb3068200112475592d7b721b6/foto-evacuacion-28.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida emergencia panorámica izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/5Jne6nzkylI7bxnzqNjJMW/86252fdb3068200112475592d7b721b6/foto-evacuacion-28.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-26
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida emergencia panorámica izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/34dW6CoNZa75lWopjOD22y/e189d1e58d7d26f8b0684e5a12789704/foto-evacuacion-30.png?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida presionar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/34dW6CoNZa75lWopjOD22y/e189d1e58d7d26f8b0684e5a12789704/foto-evacuacion-30.png?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-28
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida presionar para abrir panorámica</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1QAmXttcr45v1szTAz2naG/0e4c154eaafd0f73101ad635a235cc18/foto-evacuacion-25.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida panorámica izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/1QAmXttcr45v1szTAz2naG/0e4c154eaafd0f73101ad635a235cc18/foto-evacuacion-25.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-25
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida panorámica izquierda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/502u95srEd9Xs7bv3NBc0j/43370f72e2a5a9214c7034f1ce0ba38a/foto-evacuacion-32.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Salida deslizar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/502u95srEd9Xs7bv3NBc0j/43370f72e2a5a9214c7034f1ce0ba38a/foto-evacuacion-32.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ev-30
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Salida deslizar para abrir panorámica</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2qz86fiL5Lvc6IRG213qne/e18a36755002e7482a153ce25fb50343/foto-incendio-01.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor PQS" src="https://images.ctfassets.net/hg6rgg2sftfx/2qz86fiL5Lvc6IRG213qne/e18a36755002e7482a153ce25fb50343/foto-incendio-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-01
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor pqs</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4CqJgqVMMehDfWYSToFJVn/2cdd3bf8f32c4fc1caefb4424ea49291/foto-incendio-07.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Avisor sonoro" src="https://images.ctfassets.net/hg6rgg2sftfx/4CqJgqVMMehDfWYSToFJVn/2cdd3bf8f32c4fc1caefb4424ea49291/foto-incendio-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-07
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Avisor sonoro</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1cOqn5I9MWq8zBZKIZcz5y/196c68ecff1801e856e53e75dd46e124/foto-incendio-02.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor CO2" src="https://images.ctfassets.net/hg6rgg2sftfx/1cOqn5I9MWq8zBZKIZcz5y/196c68ecff1801e856e53e75dd46e124/foto-incendio-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-02
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor co2</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/yZyfWpwvRcLnVcZ3nYlky/763e7f62950bf2109ba5bac0b50eca37/foto-incendio-06.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Manguera contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/yZyfWpwvRcLnVcZ3nYlky/763e7f62950bf2109ba5bac0b50eca37/foto-incendio-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-06
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Manguera contra incendio</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/34hlFA2Q9tYGkGx3bsMoNL/0a2cb5b3a07174785b7610cce9f60b96/foto-incendio-03.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor H20" src="https://images.ctfassets.net/hg6rgg2sftfx/34hlFA2Q9tYGkGx3bsMoNL/0a2cb5b3a07174785b7610cce9f60b96/foto-incendio-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-03
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor h20</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6gu5YXFiQsyzH1MwwvuTFV/5f762e1ad81eacdcb8a0f94d91cd2c50/foto-incendio-04.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor Clase K" src="https://images.ctfassets.net/hg6rgg2sftfx/6gu5YXFiQsyzH1MwwvuTFV/5f762e1ad81eacdcb8a0f94d91cd2c50/foto-incendio-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-04
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor clase k</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/LQvYzbDhWGoNcsDEWIUnU/7535baa2565e27f7634feb17ac4644f4/foto-incendio-05.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor" src="https://images.ctfassets.net/hg6rgg2sftfx/LQvYzbDhWGoNcsDEWIUnU/7535baa2565e27f7634feb17ac4644f4/foto-incendio-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-05
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6nNNyHkRFPdAlvFXw5dRct/61e7cf0248a8eee928fa9a89300f3f69/foto-incendio-14.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Valvula para corte de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/6nNNyHkRFPdAlvFXw5dRct/61e7cf0248a8eee928fa9a89300f3f69/foto-incendio-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-14
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Valvula para corte de gas</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/D73TFTyjKudwO6fYWvBBB/bcedc68a1dc80606e7e0fd39e274631f/foto-incendio-12.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Alarma contra incendio (palanca)" src="https://images.ctfassets.net/hg6rgg2sftfx/D73TFTyjKudwO6fYWvBBB/bcedc68a1dc80606e7e0fd39e274631f/foto-incendio-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-12
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Alarma contra incendio (palanca)</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6nYun5DboO65IyncruFsUp/4de80b838113b4afe57b306c7c08a6ee/foto-incendio-13.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Extintor rodante" src="https://images.ctfassets.net/hg6rgg2sftfx/6nYun5DboO65IyncruFsUp/4de80b838113b4afe57b306c7c08a6ee/foto-incendio-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-13
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Extintor rodante</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3tn7t3JOhuT5UluxXNaRIX/94ee186cbe0107f5f87b923b7051ba44/foto-incendio-11.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Alarma contra incendio (pulsador)" src="https://images.ctfassets.net/hg6rgg2sftfx/3tn7t3JOhuT5UluxXNaRIX/94ee186cbe0107f5f87b923b7051ba44/foto-incendio-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-11
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Alarma contra incendio (pulsador)</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4At4GSB50xljlBTH0lebXX/b5604dae48eed79089e50d36f20720ad/foto-incendio-08.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Puerta corta fuego" src="https://images.ctfassets.net/hg6rgg2sftfx/4At4GSB50xljlBTH0lebXX/b5604dae48eed79089e50d36f20720ad/foto-incendio-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-08
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Puerta corta fuego</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/Zm3ewbiP7p2ZQx5vKNTyp/e1e0c41978a37b9d93b0f619b38d87d8/foto-incendio-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Detector de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/Zm3ewbiP7p2ZQx5vKNTyp/e1e0c41978a37b9d93b0f619b38d87d8/foto-incendio-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-09
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Detector de humo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1KrHeo1zOFEcveLnR9YmmT/48ecfe41db35c0cf5ffe421cb0d136ba/foto-incendio-17.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Botiquin primeros auxilios" src="https://images.ctfassets.net/hg6rgg2sftfx/1KrHeo1zOFEcveLnR9YmmT/48ecfe41db35c0cf5ffe421cb0d136ba/foto-incendio-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-16
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Botiquin primeros auxilios</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/66t7eIYUFPulKki282Ionf/d0f29d26329352738c17f9908bb7fcf5/Pase_de_manguera_cuadrado.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Pase de manguera cuadrado" src="https://images.ctfassets.net/hg6rgg2sftfx/66t7eIYUFPulKki282Ionf/d0f29d26329352738c17f9908bb7fcf5/Pase_de_manguera_cuadrado.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-21
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Pase de manguera cuadrado</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/48DhxAHwVVrQXjU7iIZdip/84da32e30040762fefe40acc203f6235/foto-incendio-15.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Centrar de alarma contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/48DhxAHwVVrQXjU7iIZdip/84da32e30040762fefe40acc203f6235/foto-incendio-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-15
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Centrar de alarma contra incendio</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7z70MGFrxQhHv400VwKTE4/d490ecb76b2a41a650ab39dead86ddc3/foto-incendio-19.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Gabinete contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/7z70MGFrxQhHv400VwKTE4/d490ecb76b2a41a650ab39dead86ddc3/foto-incendio-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-18
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Gabinete contra incendio</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1PO2LNRarUENd6iYbUmgJk/4bf1a72a8b193039b376eb5cb92a3e87/foto-incendio-18.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="C.A.C.I" src="https://images.ctfassets.net/hg6rgg2sftfx/1PO2LNRarUENd6iYbUmgJk/4bf1a72a8b193039b376eb5cb92a3e87/foto-incendio-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-17
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">C.a.c.i</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/44pE8VEJn2D8e5gnc5Bh7L/1fdf11ff734e1c4456b63b68c6ce240f/pase_de_manguera_vertical.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Pase de manguera " src="https://images.ctfassets.net/hg6rgg2sftfx/44pE8VEJn2D8e5gnc5Bh7L/1fdf11ff734e1c4456b63b68c6ce240f/pase_de_manguera_vertical.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-20
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Pase de manguera </p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/KfPYsCswhXMinhCqUkZuI/a0ce6662ea923214e15a265f46d66e91/foto-incendio-20.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Luz estroboscopica modelo 1" src="https://images.ctfassets.net/hg6rgg2sftfx/KfPYsCswhXMinhCqUkZuI/a0ce6662ea923214e15a265f46d66e91/foto-incendio-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-22
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Luz estroboscopica modelo 1</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6cs8zMd04mc7zFUVXW8H3o/7bf29e5739f8e2f75eb27648bb67224e/foto-incendio-21.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Luz estroboscopica modelo 2" src="https://images.ctfassets.net/hg6rgg2sftfx/6cs8zMd04mc7zFUVXW8H3o/7bf29e5739f8e2f75eb27648bb67224e/foto-incendio-21.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-23
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Luz estroboscopica modelo 2</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2K746URfBmlhLYyDS2mhrt/6d867191760d42e8547fdee76d8aac83/foto-incendio-22.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Estación manual" src="https://images.ctfassets.net/hg6rgg2sftfx/2K746URfBmlhLYyDS2mhrt/6d867191760d42e8547fdee76d8aac83/foto-incendio-22.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-24
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Estación manual</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7CEFAVNqK2MReX2triRMFc/10ef97c8b9a1ff9fb4fbef4b58d405d8/foto-incendio-10.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Luces de emergencia" src="https://images.ctfassets.net/hg6rgg2sftfx/7CEFAVNqK2MReX2triRMFc/10ef97c8b9a1ff9fb4fbef4b58d405d8/foto-incendio-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-10
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Luces de emergencia</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/29ahUyNerNSlsAjwp62dxI/7b604b148c90308b459d585b1bd74b01/foto-incendio-23.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Detector de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/29ahUyNerNSlsAjwp62dxI/7b604b148c90308b459d585b1bd74b01/foto-incendio-23.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-25
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Detector de humo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4tiD8b948WfI3dFiVKEgXP/f318ccc1eea04d7dab738c1a4adcaa40/foto-incendio-24.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Zona de detectores de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/4tiD8b948WfI3dFiVKEgXP/f318ccc1eea04d7dab738c1a4adcaa40/foto-incendio-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-in-27
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Zona de detectores de humo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4vRSwH3VDm8sGuvF0TaVVn/362e10b27e3c3a55e9da040d9826b334/foto-obligacion-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio botas" src="https://images.ctfassets.net/hg6rgg2sftfx/4vRSwH3VDm8sGuvF0TaVVn/362e10b27e3c3a55e9da040d9826b334/foto-obligacion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-09
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio botas</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6KWQIenDcYNj0qv3UbkxGM/5ddfe5773c7a8dd5eba54942c21c7f40/foto-obligacion-04.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Baño mujeres" src="https://images.ctfassets.net/hg6rgg2sftfx/6KWQIenDcYNj0qv3UbkxGM/5ddfe5773c7a8dd5eba54942c21c7f40/foto-obligacion-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-04
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Baño mujeres</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7qrfN1a04QUdHsTvEBMZf5/81b32949376822df6ebc8a30a114dbc3/foto-obligacion-06.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio usar alcohol gel " src="https://images.ctfassets.net/hg6rgg2sftfx/7qrfN1a04QUdHsTvEBMZf5/81b32949376822df6ebc8a30a114dbc3/foto-obligacion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-06
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio usar alcohol gel </p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3hpoDyHNYETlnRhqj6GsNH/7b3069d97fc3ce950f0889aed9b19bbc/foto-obligacion-01.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Aforo máximo" src="https://images.ctfassets.net/hg6rgg2sftfx/3hpoDyHNYETlnRhqj6GsNH/7b3069d97fc3ce950f0889aed9b19bbc/foto-obligacion-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-01
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Aforo máximo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2PBK3YbTdafVIQfMVymH7v/03396f06243b4cf9fa6817ff913483a6/foto-obligacion-02.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Baño Mixto" src="https://images.ctfassets.net/hg6rgg2sftfx/2PBK3YbTdafVIQfMVymH7v/03396f06243b4cf9fa6817ff913483a6/foto-obligacion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-02
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Baño mixto</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5XqjVQzzXlq4EkI05TZ7DS/2b56a7a305bd4d3a92961a59de1c156c/foto-obligacion-03.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Baño hombres" src="https://images.ctfassets.net/hg6rgg2sftfx/5XqjVQzzXlq4EkI05TZ7DS/2b56a7a305bd4d3a92961a59de1c156c/foto-obligacion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-03
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Baño hombres</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/65unyog114vp9jLTbBh7gm/2a241e6f8a82f0a4803ee254b465dc44/foto-obligacion-05.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio mascarilla" src="https://images.ctfassets.net/hg6rgg2sftfx/65unyog114vp9jLTbBh7gm/2a241e6f8a82f0a4803ee254b465dc44/foto-obligacion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-05
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio mascarilla</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/71imjHlJERpEUHhhA0pJ5g/72337c1d087af247fa29ca625ce685eb/foto-obligacion-07.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio protección auditiva" src="https://images.ctfassets.net/hg6rgg2sftfx/71imjHlJERpEUHhhA0pJ5g/72337c1d087af247fa29ca625ce685eb/foto-obligacion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-07
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio protección auditiva</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/59JEuq1N1X4MmgvzB1NTPJ/3e9c716296149b8e11914eab6dbbf5f4/foto-obligacion-08.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio protección ocular" src="https://images.ctfassets.net/hg6rgg2sftfx/59JEuq1N1X4MmgvzB1NTPJ/3e9c716296149b8e11914eab6dbbf5f4/foto-obligacion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-08
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio protección ocular</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2XcDD7IzuYfyWSJCLOtMiy/8382a0289227c34885214ac3ad18dcca/foto-obligacion-11.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio casco" src="https://images.ctfassets.net/hg6rgg2sftfx/2XcDD7IzuYfyWSJCLOtMiy/8382a0289227c34885214ac3ad18dcca/foto-obligacion-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-11
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio casco</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1NJQDWXG0XPxei9F31RJ8o/bfbfd719f3e9fd494803fb64bb4112f9/foto-obligacion-10.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio guantes" src="https://images.ctfassets.net/hg6rgg2sftfx/1NJQDWXG0XPxei9F31RJ8o/bfbfd719f3e9fd494803fb64bb4112f9/foto-obligacion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-10
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio guantes</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/18lMY2V4rqjqsUhMJjBu5F/9028df6b7eca2116c888ea24519a97ca/foto-obligacion-13.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio orden y limpieza" src="https://images.ctfassets.net/hg6rgg2sftfx/18lMY2V4rqjqsUhMJjBu5F/9028df6b7eca2116c888ea24519a97ca/foto-obligacion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-13
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio orden y limpieza</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/2tekZTrKw1llrlomE7BsCU/d7480b64d968841c90bdb14ab54fbc03/foto-obligacion-12.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio respiratoria" src="https://images.ctfassets.net/hg6rgg2sftfx/2tekZTrKw1llrlomE7BsCU/d7480b64d968841c90bdb14ab54fbc03/foto-obligacion-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-12
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio respiratoria</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5QTsTHGZX450yv5MpKoj3g/24dd281e439f5655c4e5674dd5ef20fa/foto-obligacion-15.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio guantes quírurgicos" src="https://images.ctfassets.net/hg6rgg2sftfx/5QTsTHGZX450yv5MpKoj3g/24dd281e439f5655c4e5674dd5ef20fa/foto-obligacion-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-15
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio guantes quírurgicos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/16o9qYuj8Bad5dLwL7av24/bff8ee7f7360e5753c9ee02f2962b7ee/foto-obligacion-14.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio uniforme" src="https://images.ctfassets.net/hg6rgg2sftfx/16o9qYuj8Bad5dLwL7av24/bff8ee7f7360e5753c9ee02f2962b7ee/foto-obligacion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-14
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio uniforme</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3WZ6i4gG3wWVKsMVXKUj4b/a6183da2a7384c011a6b80793bc379f8/foto-obligacion-19.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio uso de cofía" src="https://images.ctfassets.net/hg6rgg2sftfx/3WZ6i4gG3wWVKsMVXKUj4b/a6183da2a7384c011a6b80793bc379f8/foto-obligacion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-19
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio uso de cofía</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6yrLQJJZbIl07JVekc6MZI/f01b04d2029047d7a9607f25ceb57669/foto-obligacion-16.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio uso de baranda" src="https://images.ctfassets.net/hg6rgg2sftfx/6yrLQJJZbIl07JVekc6MZI/f01b04d2029047d7a9607f25ceb57669/foto-obligacion-16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-16
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio uso de baranda</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/5u6yq5zEX7w3FpMrNOV0NJ/0fe9c9ef0ba7fff48fd653f177d94583/foto-obligacion-18.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="basura aquí" src="https://images.ctfassets.net/hg6rgg2sftfx/5u6yq5zEX7w3FpMrNOV0NJ/0fe9c9ef0ba7fff48fd653f177d94583/foto-obligacion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-18
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Basura aquí</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/34hXo1NmYZ3IHXJgv0Qk3k/1f625f0400242aa347289181134b031b/foto-obligacion-17.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Obligatorio uso pasamanos" src="https://images.ctfassets.net/hg6rgg2sftfx/34hXo1NmYZ3IHXJgv0Qk3k/1f625f0400242aa347289181134b031b/foto-obligacion-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-ob-17
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Obligatorio uso pasamanos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1dalD7yVLHGaSND1jqcnWF/8e5421ea8640bd9dc6d8b71c693666d2/foto-prohibicion-03.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido ingreso persona" src="https://images.ctfassets.net/hg6rgg2sftfx/1dalD7yVLHGaSND1jqcnWF/8e5421ea8640bd9dc6d8b71c693666d2/foto-prohibicion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-03
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido ingreso persona</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7z08AiryCKdDKwCeIQv4XI/03cf19cf4e3e4a6dc18bed7caec45162/foto-prohibicion-02.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido ingreso mano" src="https://images.ctfassets.net/hg6rgg2sftfx/7z08AiryCKdDKwCeIQv4XI/03cf19cf4e3e4a6dc18bed7caec45162/foto-prohibicion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-02
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido ingreso mano</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1qpQzJcoUgxRULxGqMvXgc/8a04806e664e99dfdf54a7bda3b3d264/foto-prohibicion-05.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="No usar ascensor en caso de sismo" src="https://images.ctfassets.net/hg6rgg2sftfx/1qpQzJcoUgxRULxGqMvXgc/8a04806e664e99dfdf54a7bda3b3d264/foto-prohibicion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-04
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">No usar ascensor en caso de sismo</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/77qO2QCuZ2zh3DIZQZB8q9/e43ceefd6c447ae56d03123cc5e2a87f/foto-prohibicion-06.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido correr" src="https://images.ctfassets.net/hg6rgg2sftfx/77qO2QCuZ2zh3DIZQZB8q9/e43ceefd6c447ae56d03123cc5e2a87f/foto-prohibicion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-05
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido correr</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/nuyhk4cKnmzIxHo9zgnvX/196def705f58c3df649390642f8048cf/foto-prohibicion-01.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido fumar" src="https://images.ctfassets.net/hg6rgg2sftfx/nuyhk4cKnmzIxHo9zgnvX/196def705f58c3df649390642f8048cf/foto-prohibicion-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-01
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido fumar</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6qmYhqk2ui7yaeNWY6TYEo/52d7e0f6f5a2964122fa14711bdb78e1/foto-prohibicion-09.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido manipular carga pesada" src="https://images.ctfassets.net/hg6rgg2sftfx/6qmYhqk2ui7yaeNWY6TYEo/52d7e0f6f5a2964122fa14711bdb78e1/foto-prohibicion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-08
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido manipular carga pesada</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/4WEKQy1qnSarNLG7RODEM/2b30e41f6d7f9a95a09da19610255fa3/foto-prohibicion-14.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido tirar objetos al piso" src="https://images.ctfassets.net/hg6rgg2sftfx/4WEKQy1qnSarNLG7RODEM/2b30e41f6d7f9a95a09da19610255fa3/foto-prohibicion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-11
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido tirar objetos al piso</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/1WXMdd7Y4TQcX8vAyvBeYl/ee67bdc4330e99b372d7b39a0d3e7803/foto-prohibicion-13.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido comer" src="https://images.ctfassets.net/hg6rgg2sftfx/1WXMdd7Y4TQcX8vAyvBeYl/ee67bdc4330e99b372d7b39a0d3e7803/foto-prohibicion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-10
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido comer</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/7knMaLwcIcXzIsUh9pGqBK/634f82201dc4f49563cbfd88b312783a/foto-prohibicion-07.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido hacer fuego" src="https://images.ctfassets.net/hg6rgg2sftfx/7knMaLwcIcXzIsUh9pGqBK/634f82201dc4f49563cbfd88b312783a/foto-prohibicion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-06
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido hacer fuego</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/3lHbqMZME9rlWuQxKAKLGL/c2658a6d64359711adf00f7dee5167b2/foto-prohibicion-10.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido celulares" src="https://images.ctfassets.net/hg6rgg2sftfx/3lHbqMZME9rlWuQxKAKLGL/c2658a6d64359711adf00f7dee5167b2/foto-prohibicion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-09
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido celulares</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-<div href="/seguridad/undefined" class="hover:no-underline astro-H7G2PNPG">
-  <product-item data-hover-image="https://images.ctfassets.net/hg6rgg2sftfx/6SvvkjkhK1aABWhTuieTkd/f162419b2258c5eeaf1f96e1f616c2c5/foto-prohibicion-08.webp?fit=pad&#38;w=200&#38;h=200" class="astro-H7G2PNPG">
-    <li class="product-card astro-H7G2PNPG">
-      <div class="product-card__image astro-H7G2PNPG">
-        <img class="w-full h-full object-contain astro-H7G2PNPG" alt="Prohibido obstaculos" src="https://images.ctfassets.net/hg6rgg2sftfx/6SvvkjkhK1aABWhTuieTkd/f162419b2258c5eeaf1f96e1f616c2c5/foto-prohibicion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
-      </div>
-      <div class="product-card__body astro-H7G2PNPG">
-        <div class="product-card__brand astro-H7G2PNPG">
-          <small class="astro-H7G2PNPG">
-            ft-pr-07
-          </small>
-        </div>
-        <div class="product-card__title astro-H7G2PNPG">
-          <p class="astro-H7G2PNPG">Prohibido obstaculos</p>
-        </div>
-        
-        
-        <div class="product-card__price hidden astro-H7G2PNPG">
-              <span class="price astro-H7G2PNPG">S/. .00</span>
-            </div>
-
-      </div>
-    </li>
-  </product-item>
-</div>
-
-        </div>
+        <ul class="list-card astro-ZUTZMXBJ">
+  <li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Pozo a tierra" src="https://images.ctfassets.net/hg6rgg2sftfx/2k2cLd7HWOPmBL6KpcQWiG/fa443378750af4fca2b9c88864a6a0d4/foto-prevencion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-02
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Pozo a tierra</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Peligro productos quimicos" src="https://images.ctfassets.net/hg6rgg2sftfx/3jpi8QJwpuzGmW8gVyVKGj/bb9243bea707a6d5bd7ff7661596f314/ft-ad-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-05
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Peligro productos quimicos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Puesta a tierra" src="https://images.ctfassets.net/hg6rgg2sftfx/1iuqBSO57ag54takmCsn5u/3baecc0da2408d6ac64c381438460677/foto-prevencion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-03
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Puesta a tierra</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Riesgo electrico" src="https://images.ctfassets.net/hg6rgg2sftfx/33DUPTU5QhJESg5CMHDF51/0bc32aa38a49f6a440f8f07b3ef73262/foto-prevencion_01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-01
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Riesgo electrico</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Balones de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/5CZxm1xmtjJcTuWFz9iKSm/020dbbfa1372f12b3aea4f59516c2eb5/ft-ad-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-04
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Balones de gas</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Peligro inflamables" src="https://images.ctfassets.net/hg6rgg2sftfx/5nlJ1dZuE3aonKKy7ADPLK/6a6e6d253707eb786dc385ac45203838/ft-ad-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-06
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Peligro inflamables</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Peligro alta temperatura" src="https://images.ctfassets.net/hg6rgg2sftfx/ctR18HexW3kTKoKsOn4OC/c8e0670862d53cf3eed57b88be1ba09b/ft-ad-07..webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-07
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Peligro alta temperatura</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Peligro Liquidos toxicos y corrosivos" src="https://images.ctfassets.net/hg6rgg2sftfx/3mgII7nuGCqNimNqtwu83i/71e6257e691f8513bf016a9552c78b3b/ft-ad-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-08
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Peligro liquidos toxicos y corrosivos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Peligro caidas" src="https://images.ctfassets.net/hg6rgg2sftfx/38HnVaVccCruyXOgleHB2N/8756c9ad54b07efd270d783562f9380a/foto-prevencion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-10
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Peligro caidas</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Atención a las manos" src="https://images.ctfassets.net/hg6rgg2sftfx/3rX9NVBQaPY0JamFokeYFC/4132112f28d6366efbe14c70b3033c66/foto-prevencion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-11
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Atención a las manos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Cuidado riesgo de inahalación" src="https://images.ctfassets.net/hg6rgg2sftfx/2cmPccpQPPuqe8L75MHLxt/7a4d4448cb956458e08dfaa27bb36f99/ft-ad-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-14
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Cuidado riesgo de inahalación</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Cuidado con tus manos" src="https://images.ctfassets.net/hg6rgg2sftfx/72wbEWaKJecvoAsbbGCV9B/1a1fa96a5ac0b139c42f99f99668cfbd/ft-ad-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-09
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Cuidado con tus manos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Precaución válvula de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/jq2TALtX1NtFpGYC260nd/c2a1b936a22ee3252866f58d3d1119ea/ft-ad-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-13
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Precaución válvula de gas</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Almacén productos químicos" src="https://images.ctfassets.net/hg6rgg2sftfx/2JSz6U5YESDJXEJJO3jUKN/2c9ae34f91d5609b58b929cffeb064e4/foto-prevencion-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ad-12
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Almacén productos químicos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/5mygb7ZIw7Qxt5zAoQBxy1/d5397ee60cafa928498d44cbbd885c28/foto-evacuacion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-02
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Zona segura en casos de sismo" src="https://images.ctfassets.net/hg6rgg2sftfx/1BjMLGdYTysQln8LwQtVJo/aafae0ea637ac6247670c4ee3152c78b/zona_segura.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-01
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Zona segura en casos de sismo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida escalera baja derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5prFfPVbWUiXSzXW4f4lTf/08d96692ada6d4537b27ede4b2edef9a/foto-evacuacion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-05
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida escalera baja derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida escalera baja izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/7uIMxKVBOiIpseeVwiJOOi/f3a116f8a9547c8f4a162209aef73863/foto-evacuacion-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-04
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida escalera baja izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/w37XpMRN9mcxp1e5wAleC/aab87a65ed36648926ad9d8ae73bbcdd/foto-evacuacion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-03
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida escalera subida izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/AnwvR1w8MA0885uSQq2YH/9f6d70072f1f2d353d71c94467a2e32a/foto-evacuacion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-06
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida escalera subida izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida escalera subida derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/2CWUQKZRHYVSNmBA1C4QLg/8960252b05cb0de732b87060372ff4dd/foto-evacuacion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-07
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida escalera subida derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida sola" src="https://images.ctfassets.net/hg6rgg2sftfx/876HEEETo0Rg9BHCDpOoC/afafa48912ee999f630694f795f58414/foto-evacuacion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-08
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida sola</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida de emergencia derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/xzP0KQCW2KvkSFNNID8Qi/ad6059125ddbc7b2ba3511284b7d26d0/foto-evacuacion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-10
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida de emergencia derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Punto de reunion" src="https://images.ctfassets.net/hg6rgg2sftfx/5pyUAZq7tCgvUVptll5jE3/7200440d120cd39fd7f053342cef261d/foto-evacuacion-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-12
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Punto de reunion</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida de socorro" src="https://images.ctfassets.net/hg6rgg2sftfx/5kdjNqdGMDm255lFwpsYf1/8e817284e47391859dfc372b1b4370c1/foto-evacuacion-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-11
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida de socorro</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida de emergencia izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/60xYHC1v5ZfvT03e2WDjT7/3d16f210278071969af4c7743d256170/foto-evacuacion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-09
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida de emergencia izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Lavaojos de emergencia fotoluminiscente" src="https://images.ctfassets.net/hg6rgg2sftfx/6GmgA1g63xCn34lYVO0y6r/e9ccea9ad0433cd30d39bacb0c23320b/foto-evacuacion-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-15
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Lavaojos de emergencia fotoluminiscente</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Entrada sola" src="https://images.ctfassets.net/hg6rgg2sftfx/3ELe633OSp0iKT93uxwXeD/8bf434d7264b6e783130df2ab043dcf8/foto-evacuacion-16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-16
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Entrada sola</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Entrada izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/2nPszCqmD4yIxoc4hc8EKE/65ef1df76f2e87bb300ffe9e7796073e/foto-evacuacion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-18
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Entrada izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Botiquin primero auxilios" src="https://images.ctfassets.net/hg6rgg2sftfx/3Dbz4OpgfJzqAaZtQMbe03/0a3c0b481fc45ca8c2c455008dba270c/foto-evacuacion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-13
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Botiquin primero auxilios</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida de emergencia" src="https://images.ctfassets.net/hg6rgg2sftfx/68dY8yHo2mKxuK2B9hybcF/2f7862f031a74352e47bb2ac72108dda/foto-evacuacion-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-17
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida de emergencia</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Camilla fotoluminiscente" src="https://images.ctfassets.net/hg6rgg2sftfx/5iUcDh1ScyGNG4yo2rr9Yf/b1c101996ae92902842247c180697fb0/foto-evacuacion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-14
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Camilla fotoluminiscente</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida panorámica derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5oo3DNMtvnrIutVDlFXrKw/549d80bfbee0b0123a2b782310e1dff9/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-24
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida panorámica derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Entrada izquierda horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/5q17X2WDmd8q9B93OIiE0K/eb70caf7b5f6a61e6d3dd7060f15c71c/foto-evacuacion-22.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-22
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Entrada izquierda horizontal</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Entrada derecha horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/6bAbLUK0w2bdx9EpuNccOV/3d7f4a9b68ceafaa827524fdc19a24a2/foto-evacuacion-23.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-23
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Entrada derecha horizontal</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Entrada derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/78ABHGagqIU32kOXruuVDo/f8407ba69dee4c97e293d21b3aeb3ae3/foto-evacuacion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-19
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Entrada derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida izquierda horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/71lArohwkcuUiePA9mWq8J/b67d75eb8c1a760e3503f8c5d83964a5/foto-evacuacion-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-20
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida izquierda horizontal</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida derecha horizontal" src="https://images.ctfassets.net/hg6rgg2sftfx/4omvTvKxRV1idmy1ItIDXm/8650de53c882aa5f2fd4bbc9d5991dd0/foto-evacuacion-21.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-21
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida derecha horizontal</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida emergencia panorámica derecha" src="https://images.ctfassets.net/hg6rgg2sftfx/5X7ttv13fNbm9nJbdqlSUa/d363b4e1af193b08f190da77b46fdf54/foto-evacuacion-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-27
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida emergencia panorámica derecha</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida empujar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/6EXNbFFMB5euBnW8Ne171H/31eddabe97d5569eb373fc193594fa61/foto-evacuacion-31.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-29
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida empujar para abrir panorámica</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida emergencia panorámica izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/5Jne6nzkylI7bxnzqNjJMW/86252fdb3068200112475592d7b721b6/foto-evacuacion-28.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-26
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida emergencia panorámica izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida presionar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/34dW6CoNZa75lWopjOD22y/e189d1e58d7d26f8b0684e5a12789704/foto-evacuacion-30.png?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-28
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida presionar para abrir panorámica</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida panorámica izquierda" src="https://images.ctfassets.net/hg6rgg2sftfx/1QAmXttcr45v1szTAz2naG/0e4c154eaafd0f73101ad635a235cc18/foto-evacuacion-25.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-25
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida panorámica izquierda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Salida deslizar para abrir panorámica" src="https://images.ctfassets.net/hg6rgg2sftfx/502u95srEd9Xs7bv3NBc0j/43370f72e2a5a9214c7034f1ce0ba38a/foto-evacuacion-32.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ev-30
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Salida deslizar para abrir panorámica</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor PQS" src="https://images.ctfassets.net/hg6rgg2sftfx/2qz86fiL5Lvc6IRG213qne/e18a36755002e7482a153ce25fb50343/foto-incendio-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-01
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor pqs</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Avisor sonoro" src="https://images.ctfassets.net/hg6rgg2sftfx/4CqJgqVMMehDfWYSToFJVn/2cdd3bf8f32c4fc1caefb4424ea49291/foto-incendio-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-07
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Avisor sonoro</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor CO2" src="https://images.ctfassets.net/hg6rgg2sftfx/1cOqn5I9MWq8zBZKIZcz5y/196c68ecff1801e856e53e75dd46e124/foto-incendio-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-02
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor co2</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Manguera contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/yZyfWpwvRcLnVcZ3nYlky/763e7f62950bf2109ba5bac0b50eca37/foto-incendio-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-06
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Manguera contra incendio</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor H20" src="https://images.ctfassets.net/hg6rgg2sftfx/34hlFA2Q9tYGkGx3bsMoNL/0a2cb5b3a07174785b7610cce9f60b96/foto-incendio-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-03
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor h20</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor Clase K" src="https://images.ctfassets.net/hg6rgg2sftfx/6gu5YXFiQsyzH1MwwvuTFV/5f762e1ad81eacdcb8a0f94d91cd2c50/foto-incendio-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-04
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor clase k</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor" src="https://images.ctfassets.net/hg6rgg2sftfx/LQvYzbDhWGoNcsDEWIUnU/7535baa2565e27f7634feb17ac4644f4/foto-incendio-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-05
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Valvula para corte de gas" src="https://images.ctfassets.net/hg6rgg2sftfx/6nNNyHkRFPdAlvFXw5dRct/61e7cf0248a8eee928fa9a89300f3f69/foto-incendio-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-14
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Valvula para corte de gas</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Alarma contra incendio (palanca)" src="https://images.ctfassets.net/hg6rgg2sftfx/D73TFTyjKudwO6fYWvBBB/bcedc68a1dc80606e7e0fd39e274631f/foto-incendio-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-12
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Alarma contra incendio (palanca)</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Extintor rodante" src="https://images.ctfassets.net/hg6rgg2sftfx/6nYun5DboO65IyncruFsUp/4de80b838113b4afe57b306c7c08a6ee/foto-incendio-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-13
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Extintor rodante</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Alarma contra incendio (pulsador)" src="https://images.ctfassets.net/hg6rgg2sftfx/3tn7t3JOhuT5UluxXNaRIX/94ee186cbe0107f5f87b923b7051ba44/foto-incendio-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-11
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Alarma contra incendio (pulsador)</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Puerta corta fuego" src="https://images.ctfassets.net/hg6rgg2sftfx/4At4GSB50xljlBTH0lebXX/b5604dae48eed79089e50d36f20720ad/foto-incendio-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-08
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Puerta corta fuego</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Detector de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/Zm3ewbiP7p2ZQx5vKNTyp/e1e0c41978a37b9d93b0f619b38d87d8/foto-incendio-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-09
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Detector de humo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Botiquin primeros auxilios" src="https://images.ctfassets.net/hg6rgg2sftfx/1KrHeo1zOFEcveLnR9YmmT/48ecfe41db35c0cf5ffe421cb0d136ba/foto-incendio-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-16
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Botiquin primeros auxilios</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Pase de manguera cuadrado" src="https://images.ctfassets.net/hg6rgg2sftfx/66t7eIYUFPulKki282Ionf/d0f29d26329352738c17f9908bb7fcf5/Pase_de_manguera_cuadrado.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-21
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Pase de manguera cuadrado</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Centrar de alarma contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/48DhxAHwVVrQXjU7iIZdip/84da32e30040762fefe40acc203f6235/foto-incendio-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-15
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Centrar de alarma contra incendio</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Gabinete contra incendio" src="https://images.ctfassets.net/hg6rgg2sftfx/7z70MGFrxQhHv400VwKTE4/d490ecb76b2a41a650ab39dead86ddc3/foto-incendio-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-18
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Gabinete contra incendio</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="C.A.C.I" src="https://images.ctfassets.net/hg6rgg2sftfx/1PO2LNRarUENd6iYbUmgJk/4bf1a72a8b193039b376eb5cb92a3e87/foto-incendio-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-17
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">C.a.c.i</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Pase de manguera " src="https://images.ctfassets.net/hg6rgg2sftfx/44pE8VEJn2D8e5gnc5Bh7L/1fdf11ff734e1c4456b63b68c6ce240f/pase_de_manguera_vertical.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-20
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Pase de manguera </p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Luz estroboscopica modelo 1" src="https://images.ctfassets.net/hg6rgg2sftfx/KfPYsCswhXMinhCqUkZuI/a0ce6662ea923214e15a265f46d66e91/foto-incendio-20.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-22
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Luz estroboscopica modelo 1</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Luz estroboscopica modelo 2" src="https://images.ctfassets.net/hg6rgg2sftfx/6cs8zMd04mc7zFUVXW8H3o/7bf29e5739f8e2f75eb27648bb67224e/foto-incendio-21.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-23
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Luz estroboscopica modelo 2</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Estación manual" src="https://images.ctfassets.net/hg6rgg2sftfx/2K746URfBmlhLYyDS2mhrt/6d867191760d42e8547fdee76d8aac83/foto-incendio-22.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-24
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Estación manual</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Luces de emergencia" src="https://images.ctfassets.net/hg6rgg2sftfx/7CEFAVNqK2MReX2triRMFc/10ef97c8b9a1ff9fb4fbef4b58d405d8/foto-incendio-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-10
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Luces de emergencia</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Detector de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/29ahUyNerNSlsAjwp62dxI/7b604b148c90308b459d585b1bd74b01/foto-incendio-23.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-25
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Detector de humo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Zona de detectores de humo" src="https://images.ctfassets.net/hg6rgg2sftfx/4tiD8b948WfI3dFiVKEgXP/f318ccc1eea04d7dab738c1a4adcaa40/foto-incendio-24.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-in-27
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Zona de detectores de humo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio botas" src="https://images.ctfassets.net/hg6rgg2sftfx/4vRSwH3VDm8sGuvF0TaVVn/362e10b27e3c3a55e9da040d9826b334/foto-obligacion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-09
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio botas</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Baño mujeres" src="https://images.ctfassets.net/hg6rgg2sftfx/6KWQIenDcYNj0qv3UbkxGM/5ddfe5773c7a8dd5eba54942c21c7f40/foto-obligacion-04.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-04
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Baño mujeres</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio usar alcohol gel " src="https://images.ctfassets.net/hg6rgg2sftfx/7qrfN1a04QUdHsTvEBMZf5/81b32949376822df6ebc8a30a114dbc3/foto-obligacion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-06
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio usar alcohol gel </p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Aforo máximo" src="https://images.ctfassets.net/hg6rgg2sftfx/3hpoDyHNYETlnRhqj6GsNH/7b3069d97fc3ce950f0889aed9b19bbc/foto-obligacion-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-01
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Aforo máximo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Baño Mixto" src="https://images.ctfassets.net/hg6rgg2sftfx/2PBK3YbTdafVIQfMVymH7v/03396f06243b4cf9fa6817ff913483a6/foto-obligacion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-02
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Baño mixto</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Baño hombres" src="https://images.ctfassets.net/hg6rgg2sftfx/5XqjVQzzXlq4EkI05TZ7DS/2b56a7a305bd4d3a92961a59de1c156c/foto-obligacion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-03
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Baño hombres</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio mascarilla" src="https://images.ctfassets.net/hg6rgg2sftfx/65unyog114vp9jLTbBh7gm/2a241e6f8a82f0a4803ee254b465dc44/foto-obligacion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-05
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio mascarilla</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio protección auditiva" src="https://images.ctfassets.net/hg6rgg2sftfx/71imjHlJERpEUHhhA0pJ5g/72337c1d087af247fa29ca625ce685eb/foto-obligacion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-07
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio protección auditiva</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio protección ocular" src="https://images.ctfassets.net/hg6rgg2sftfx/59JEuq1N1X4MmgvzB1NTPJ/3e9c716296149b8e11914eab6dbbf5f4/foto-obligacion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-08
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio protección ocular</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio casco" src="https://images.ctfassets.net/hg6rgg2sftfx/2XcDD7IzuYfyWSJCLOtMiy/8382a0289227c34885214ac3ad18dcca/foto-obligacion-11.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-11
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio casco</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio guantes" src="https://images.ctfassets.net/hg6rgg2sftfx/1NJQDWXG0XPxei9F31RJ8o/bfbfd719f3e9fd494803fb64bb4112f9/foto-obligacion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-10
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio guantes</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio orden y limpieza" src="https://images.ctfassets.net/hg6rgg2sftfx/18lMY2V4rqjqsUhMJjBu5F/9028df6b7eca2116c888ea24519a97ca/foto-obligacion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-13
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio orden y limpieza</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio respiratoria" src="https://images.ctfassets.net/hg6rgg2sftfx/2tekZTrKw1llrlomE7BsCU/d7480b64d968841c90bdb14ab54fbc03/foto-obligacion-12.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-12
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio respiratoria</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio guantes quírurgicos" src="https://images.ctfassets.net/hg6rgg2sftfx/5QTsTHGZX450yv5MpKoj3g/24dd281e439f5655c4e5674dd5ef20fa/foto-obligacion-15.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-15
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio guantes quírurgicos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio uniforme" src="https://images.ctfassets.net/hg6rgg2sftfx/16o9qYuj8Bad5dLwL7av24/bff8ee7f7360e5753c9ee02f2962b7ee/foto-obligacion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-14
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio uniforme</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio uso de cofía" src="https://images.ctfassets.net/hg6rgg2sftfx/3WZ6i4gG3wWVKsMVXKUj4b/a6183da2a7384c011a6b80793bc379f8/foto-obligacion-19.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-19
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio uso de cofía</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio uso de baranda" src="https://images.ctfassets.net/hg6rgg2sftfx/6yrLQJJZbIl07JVekc6MZI/f01b04d2029047d7a9607f25ceb57669/foto-obligacion-16.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-16
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio uso de baranda</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="basura aquí" src="https://images.ctfassets.net/hg6rgg2sftfx/5u6yq5zEX7w3FpMrNOV0NJ/0fe9c9ef0ba7fff48fd653f177d94583/foto-obligacion-18.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-18
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Basura aquí</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Obligatorio uso pasamanos" src="https://images.ctfassets.net/hg6rgg2sftfx/34hXo1NmYZ3IHXJgv0Qk3k/1f625f0400242aa347289181134b031b/foto-obligacion-17.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-ob-17
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Obligatorio uso pasamanos</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido ingreso persona" src="https://images.ctfassets.net/hg6rgg2sftfx/1dalD7yVLHGaSND1jqcnWF/8e5421ea8640bd9dc6d8b71c693666d2/foto-prohibicion-03.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-03
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido ingreso persona</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido ingreso mano" src="https://images.ctfassets.net/hg6rgg2sftfx/7z08AiryCKdDKwCeIQv4XI/03cf19cf4e3e4a6dc18bed7caec45162/foto-prohibicion-02.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-02
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido ingreso mano</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="No usar ascensor en caso de sismo" src="https://images.ctfassets.net/hg6rgg2sftfx/1qpQzJcoUgxRULxGqMvXgc/8a04806e664e99dfdf54a7bda3b3d264/foto-prohibicion-05.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-04
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">No usar ascensor en caso de sismo</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido correr" src="https://images.ctfassets.net/hg6rgg2sftfx/77qO2QCuZ2zh3DIZQZB8q9/e43ceefd6c447ae56d03123cc5e2a87f/foto-prohibicion-06.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-05
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido correr</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido fumar" src="https://images.ctfassets.net/hg6rgg2sftfx/nuyhk4cKnmzIxHo9zgnvX/196def705f58c3df649390642f8048cf/foto-prohibicion-01.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-01
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido fumar</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido manipular carga pesada" src="https://images.ctfassets.net/hg6rgg2sftfx/6qmYhqk2ui7yaeNWY6TYEo/52d7e0f6f5a2964122fa14711bdb78e1/foto-prohibicion-09.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-08
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido manipular carga pesada</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido tirar objetos al piso" src="https://images.ctfassets.net/hg6rgg2sftfx/4WEKQy1qnSarNLG7RODEM/2b30e41f6d7f9a95a09da19610255fa3/foto-prohibicion-14.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-11
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido tirar objetos al piso</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido comer" src="https://images.ctfassets.net/hg6rgg2sftfx/1WXMdd7Y4TQcX8vAyvBeYl/ee67bdc4330e99b372d7b39a0d3e7803/foto-prohibicion-13.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-10
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido comer</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido hacer fuego" src="https://images.ctfassets.net/hg6rgg2sftfx/7knMaLwcIcXzIsUh9pGqBK/634f82201dc4f49563cbfd88b312783a/foto-prohibicion-07.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-06
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido hacer fuego</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido celulares" src="https://images.ctfassets.net/hg6rgg2sftfx/3lHbqMZME9rlWuQxKAKLGL/c2658a6d64359711adf00f7dee5167b2/foto-prohibicion-10.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-09
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido celulares</p>
+    </div>
+  </div>
+</li><li class="astro-NEK3A7OT">
+  <div class="senal-card astro-NEK3A7OT">
+    <div class="senal-card__image-container astro-NEK3A7OT">
+      <img class="w-full h-full object-contain astro-NEK3A7OT" alt="Prohibido obstaculos" src="https://images.ctfassets.net/hg6rgg2sftfx/6SvvkjkhK1aABWhTuieTkd/f162419b2258c5eeaf1f96e1f616c2c5/foto-prohibicion-08.webp?fit=pad&#38;w=200&#38;h=200" loading="lazy">
+    </div>
+    <div class="senal-card__body astro-NEK3A7OT">
+      <small class="senal-card__brand astro-NEK3A7OT">
+        ft-pr-07
+      </small>
+      <p class="senal-card__title astro-NEK3A7OT">Prohibido obstaculos</p>
+    </div>
+  </div>
+</li>
+</ul>
     </div>
 
 

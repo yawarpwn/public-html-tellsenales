@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/theme.css">
 <link rel="stylesheet" href="/reset.css">
 <link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/animations.css">
 <!--
 <link rel="stylesheet" href="/theme-light.css" />
 <!--link rel="stylesheet" href="/theme-dark.css" />
@@ -41,27 +42,39 @@
 
 <!-- Google tag (gtag.js) -->
 <script>
-    const loadScript = (src) =>
-        new Promise((resolve, reject) => {
-            const script = document.createElement('script')
-            script.src = src
-
-            script.onload = resolve
-            script.onerror = reject
-            document.head.appendChild(script)
-        })
-
-    loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P')
-        .then(() => {
-            window.dataLayer = window.dataLayer || []
-            function gtag() {
-                dataLayer.push(arguments)
-            }
-            gtag('js', new Date())
-            gtag('config', 'G-3ERP9CTT7P')
-        })
-        .catch((err) => console.log(err))
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P"
 </script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-3ERP9CTT7P");
+</script>
+<!-- <script is:inline> -->
+<!--     const loadScript = (src) => -->
+<!--         new Promise((resolve, reject) => { -->
+<!--             const script = document.createElement('script') -->
+<!--             script.src = src -->
+
+<!--             script.onload = resolve -->
+<!--             script.onerror = reject -->
+<!--             document.head.appendChild(script) -->
+<!--         }) -->
+
+<!--     loadScript('https://www.googletagmanager.com/gtag/js?id=G-3ERP9CTT7P') -->
+<!--         .then(() => { -->
+<!--             window.dataLayer = window.dataLayer || [] -->
+<!--             function gtag() { -->
+<!--                 dataLayer.push(arguments) -->
+<!--             } -->
+<!--             gtag('js', new Date()) -->
+<!--             gtag('config', 'G-3ERP9CTT7P') -->
+<!--         }) -->
+<!--         .catch((err) => console.log(err)) -->
+<!-- </script> -->
     <title> Caja Botiquin blanco de 16&quot; / 40cm | Tell Señales</title>
     
     <script>
@@ -87,10 +100,12 @@
   <link rel="stylesheet" href="/_astro/_slug_.7ba29d85.css" />
 <link rel="stylesheet" href="/_astro/index.5add4793.css" />
 <link rel="stylesheet" href="/_astro/index.d1160d96.css" />
-<link rel="stylesheet" href="/_astro/index.e27564fa.css" />
+<link rel="stylesheet" href="/_astro/index.3398ba89.css" />
 <link rel="stylesheet" href="/_astro/index.8388e944.css" />
-<link rel="stylesheet" href="/_astro/_slug_.f3a29d0b.css" />
-<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.615c02f4.js"></script></head>
+<link rel="stylesheet" href="/_astro/_slug_.776d0050.css" />
+<link rel="stylesheet" href="/_astro/index.65579135.css" /><script type="module" src="/_astro/hoisted.2aa93522.js"></script>
+<script>!(function(w,p,f,c){c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.7.6 - MIT builder.io */
+!function(t,e,n,i,r,o,a,d,s,c,p,l){function u(){l||(l=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(f,1e4),e.addEventListener("pt0",w),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):f())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.7.6":"sandbox-sw.html?"+Date.now()),e.body.appendChild(c)}function f(n,r){for(w(),i==t&&(o.forward||[]).map((function(e){delete t[e.split(".")[0]]})),n=0;n<s.length;n++)(r=e.createElement("script")).innerHTML=s[n].innerHTML,e.head.appendChild(r);c&&c.parentNode.removeChild(c)}function w(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){p=t,e.split(".").map((function(e,n,i){p=p[i[n]]=n+1<i.length?"push"==i[n+1]?[]:p[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);</script></head>
   <body class="astro-XIQZPJ5E">
     <main class="astro-XIQZPJ5E">
       <header class="astro-MYRN6SJA">
@@ -457,7 +472,7 @@
     </div>
 
     <div class="imageViewer-magnifier">
-        <img class="imageViewer-zoomeableImage" src="https://images.ctfassets.net/hg6rgg2sftfx/6Rc7oluikm5oXnlDlkFkEb/8515e8608a9c747465ba602498e82aca/BOTIQUIN_lonchera_grande.webp" loading="lazy" alt="cinta antideslizante amarillo negro">
+        <img class="imageViewer-zoomeableImage" src="https://images.ctfassets.net/hg6rgg2sftfx/6Rc7oluikm5oXnlDlkFkEb/8515e8608a9c747465ba602498e82aca/BOTIQUIN_lonchera_grande.webp" loading="lazy">
         <div class="imageViewer-loadingIndicator"></div>
     </div>
     <div class="relative">
@@ -628,11 +643,11 @@
         </div>
     </div>
     <div class="px-4 md:px-0 astro-OXP7TZUA">
-    <h2 class="text-2xl astro-OXP7TZUA">Productos relacionados sugeridos</h2>
+    <h2 class="text-xl md:text-2xl astro-OXP7TZUA">Productos relacionados sugeridos</h2>
     <suggestions-carousel class="astro-OXP7TZUA">
-        <div class="carousel-wrapper flex gap-2 overflow-x-scroll pb-2 astro-OXP7TZUA">
+        <ul class="carousel-wrapper flex gap-x-2 md:gap-x-4 overflow-x-scroll p-0 astro-OXP7TZUA">
             
-        </div>
+        </ul>
 
         <div class="flex justify-center pt-4 astro-OXP7TZUA">
             <div class="flex gap-x-4 astro-OXP7TZUA">
