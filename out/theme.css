@@ -127,6 +127,8 @@
 
 :root {
     color-scheme: light;
+    --theme-primary-color: hsl(var(--color-base-purple), 50%);
+    --theme-secondary-color: hsl(var(--color-base-orange), 50%);
     --skeleton-gradient: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
     --theme-bg-contrast: var(--colors-white);
     --theme-accent: hsla(var(--color-orange), 1);
@@ -185,6 +187,8 @@
 :root.dark {
     color-scheme: dark;
     /* We lighten-up the orange in dark mode, to help with link contrast. */
+    --theme-primary-color: hsl(var(--color-base-purple), 50%);
+    --theme-secondary-color: hsl(var(--color-base-orange), 50%);
     --skeleton-gradient: linear-gradient(110deg, rgb(71, 0, 107) 8%, rgb(92, 22, 135) 18%, rgb(71, 0, 107) 33%);
     --theme-bg-contrast: rgb(23, 0, 35);
     --color-orange: var(--color-base-orange), 60%;

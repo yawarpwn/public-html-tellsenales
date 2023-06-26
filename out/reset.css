@@ -434,6 +434,7 @@ video {
     padding: var(--details-padding-block) var(--details-padding-inline);
 }
 
+
 .content details:hover {
     background: var(--theme-bg-offset);
 }
@@ -464,6 +465,12 @@ video {
     border: var(--glow-border);
     margin-left: 0;
     margin-right: 0;
+}
+
+.product-page .details {
+  & li {
+    margin-bottom: var(--space-5);
+  }
 }
 
 button {
@@ -621,6 +628,3 @@ html {
     }
 }
 
-.details ul {
-    padding-inline-start: 15px;
-}
