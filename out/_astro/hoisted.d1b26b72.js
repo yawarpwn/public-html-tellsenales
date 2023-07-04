@@ -1,1 +1,0 @@
-import"./hoisted.a61d2d48.js";class d extends HTMLElement{connectedCallback(){const e=this.querySelector(".product-card__image-container"),t=e.querySelector("img");t&&!t.complete?t.addEventListener("load",()=>{e.classList.add("loaded")}):e.classList.add("loaded")}}customElements.define("product-item",d);
