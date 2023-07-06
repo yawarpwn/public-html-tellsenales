@@ -227,3 +227,21 @@ RewriteRule ^senales/covid/$ "https://tellsenales.com/senales/c/covid-19/" [R=30
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/covid-19/colegio/$ "https://tellsenales.com/senales/c/covid-19/" [R=301,L]
 
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/viales/$ "https://tellsenales.com/senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/fotoluminiscentes/$ "https://tellsenales.com/senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/seguridad/$ "https://tellsenales.com/senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/covid-19/$ "https://tellsenales.com/senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/obras/$ "https://tellsenales.com/senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/decorativas/$ "https://tellsenales.com/senales/" [R=301,L]
+
