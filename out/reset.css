@@ -76,11 +76,6 @@ nav ul {
 	padding: 0;
 }
 
-.product-page ul {
-	list-style: inherit;
-	margin-inline-start: 1rem;
-}
-
 .content > section > * + *,
 .content > section > blockquote > * + *,
 .content > section > :is(ul, ol) > li > * + *,
@@ -154,30 +149,30 @@ h2 {
 	font-weight: 400;
 }
 
-.content h1 {
+h1 {
 	font-size: 2rem; /* 40px */
 	font-weight: 900;
 }
 
 @media (min-width: 37.75em) {
-	.content h1 {
+	h1 {
 		font-size: 2.5rem; /* 48px */
 	}
 }
 
-.content h2 {
+h2 {
 	font-size: 1.875rem; /* 30px */
 }
 
-.content h3 {
+h3 {
 	font-size: 1.5rem; /* 24px */
 }
 
-.content h4 {
+h4 {
 	font-size: 1.25rem; /* 20px */
 }
 
-.content h5 {
+h5 {
 	font-size: 1rem; /* 16px */
 }
 
@@ -238,18 +233,29 @@ h2 {
 	opacity: 1;
 }
 
+.product-page ul {
+	padding-inline-start: 1.5em;
+}
+
+.product-page ul li {
+	margin-bottom: 0.5em;
+}
+
 p,
-.content ul {
+.content ul,
+.product-page ul {
 	line-height: 1.65;
 }
 
 p,
-.content ul {
+.content ul,
+.product-page ul {
 	color: var(--theme-text-light);
 }
 
-.content ul {
-  list-style: inherit;
+.content ul,
+.product-page ul {
+	list-style: inherit;
 }
 
 small,
@@ -473,12 +479,6 @@ video {
 	border: var(--glow-border);
 	margin-left: 0;
 	margin-right: 0;
-}
-
-.product-page .details {
-	& li {
-		margin-bottom: var(--space-5);
-	}
 }
 
 button {
