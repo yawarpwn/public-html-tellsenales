@@ -32,9 +32,12 @@
 	--max-width: 100%;
 	--cur-viewport-height: 100vh;
 	/* Font sizes */
+  --theme-text-lg: 1.25rem;
 	--theme-text-base: 1rem;
 	--theme-text-sm: 0.9375rem;
 	--theme-text-xs: 0.875rem;
+  	/* Animation helpers */
+	--theme-ease-bounce: cubic-bezier(0.4, 2.5, 0.6, 1);
 }
 
 @media (min-width: 50em) {
@@ -63,7 +66,9 @@
 /*
 	Define common fonts and colors
 */
-:root {
+:root,
+::backdrop
+{
 	--font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
 		Apple Color Emoji, Segoe UI Emoji;
 	--font-body: system-ui, var(--font-fallback);
@@ -121,7 +126,9 @@
 	--color-yellow: var(--color-base-yellow), 59%;
 }
 
-:root {
+:root,
+::backdrop
+{
 	color-scheme: light;
 	--theme-primary-color: hsl(var(--color-base-purple), 50%);
 	--theme-secondary-color: hsl(var(--color-base-orange), 50%);
@@ -177,7 +184,9 @@
 	--theme-glow-blur: 10px;
 }
 
-:root.dark {
+:root.dark,
+::backdrop
+{
 	color-scheme: dark;
 	/* We lighten-up the orange in dark mode, to help with link contrast. */
 	--theme-primary-color: hsl(var(--color-base-purple), 50%);
