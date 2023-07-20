@@ -233,28 +233,39 @@ h5 {
 	opacity: 1;
 }
 
-.product-page ul {
+ul {
+	display: block;
+	list-style: none;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 0;
+}
+
+.content ul,
+.product-desc ul
+{
 	padding-inline-start: 1.5em;
 }
 
-.product-page ul li {
+.content ul li,
+.product-desc ul li{
 	margin-bottom: 0.5em;
 }
 
 p,
-.content ul,
-.product-page ul {
+.content ul {
 	line-height: 1.65;
 }
 
 p,
-.content ul,
-.product-page ul {
+.content ul{
 	color: var(--theme-text-light);
 }
 
 .content ul,
-.product-page ul {
+.product-desc ul{
 	list-style: inherit;
 }
 
