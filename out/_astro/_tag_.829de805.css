@@ -1,1 +1,0 @@
-.list-card:where(.astro-4PRSA3FU){--width-card: 165px;display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));grid-template-columns:repeat(auto-fit,minmax(var(--width-card),1fr));list-style:none;grid-gap:var(--space-4);gap:var(--space-4);margin:0;padding:0 var(--space-4)}@media (min-width: 50.001em){.list-card:where(.astro-4PRSA3FU){--width-card: 200px;gap:1.5rem}}
