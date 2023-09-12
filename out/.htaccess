@@ -25,6 +25,8 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/cintas\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/cintas\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-3m-diamond-grade-serie-983-azul-50-mm-x-45-7-m/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
 
 
 # Articulos Seguridad 
