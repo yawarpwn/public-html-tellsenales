@@ -10,15 +10,15 @@ class t extends HTMLElement{open=!1;$button;$window;$anchor;WhatsappIcon='<svg x
       }
 
       a {
-      color: currentColor;
-      text-decoration: none;
+        color: currentColor;
+        text-decoration: none;
       }
 
-p { 
-margin: 0.5rem 0;
-font-weigh: 400;
-text-align: center;
-}
+      p { 
+        margin: 0.5rem 0;
+        font-weigh: 400;
+        text-align: center;
+      }
 
       .container {
         position: fixed;

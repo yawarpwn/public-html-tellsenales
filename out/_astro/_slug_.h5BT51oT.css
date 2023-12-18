@@ -1,0 +1,1 @@
+.feature-hidden{display:none}.feature-show{display:block}.rotate{transform:rotate(180deg)}.product-desc{& header{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:var(--space-4);border-bottom:1px solid var(--theme-text)}& header h4{margin:0}& aside{margin-top:1rem}}.chevron-icon{transition:transform .3s ease}
