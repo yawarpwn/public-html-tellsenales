@@ -24,7 +24,7 @@ class t extends HTMLElement{open=!1;$button;$window;$anchor;WhatsappIcon='<svg x
         position: fixed;
         bottom: 10px;
         right: 10px;
-        z-index: 999;
+        z-index: var(--z-index-whatsapp);
         display: flex;
         justify-content: center;
         align-items: center;
