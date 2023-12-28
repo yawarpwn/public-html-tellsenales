@@ -1,1 +1,0 @@
-class e extends HTMLElement{btn;constructor(){super(),this.btn=this.querySelector("button"),this.btn.addEventListener("click",()=>this.toggle())}toggle(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}setExpanded(t){this.setAttribute("aria-expanded",String(t))}}customElements.define("whatsapp-popup",e);
