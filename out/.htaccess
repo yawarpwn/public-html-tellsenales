@@ -246,4 +246,5 @@ RewriteRule ^senales/c/obras/$ "https://tellsenales.com/senales/" [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/decorativas/$ "https://tellsenales.com/senales/" [R=301,L]
+RewriteRule ^seguridad/placa-fibra-de-vidrio-60x90-de-4mm-cm-con-resina-poliester/$ "https://tellsenales.com/seguridad/placa-fibra-de-vidrio-60x90-cm-de-4mm-con-resina-poliester/" [R=301,L]
 
