@@ -1,1 +1,0 @@
-import{P as o,_ as i}from"./photoswipe-lightbox.esm.B_ESmT9Z.js";import"./hoisted.DxG-re0M.js";import"./hoisted.CeC4rRmk.js";const t=new o({gallery:"#my-gallery",children:"a",pswpModule:()=>i(()=>import("./photoswipe.esm.CKijkUPa.js"),[])});t.init();
