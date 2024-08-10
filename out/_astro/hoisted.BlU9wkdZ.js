@@ -1,4 +1,4 @@
-import"./hoisted.CMxJZ3lq.js";import"./hoisted._Y4teEFn.js";class o extends HTMLElement{img;container;spinner;constructor(){super();const e=this.attachShadow({mode:"open"}),t=document.createElement("div");t.classList.add("container");const i=document.createElement("div");i.classList.add("spinner"),i.textContent="loading...",t.appendChild(i);const n=document.createElement("img");n.alt=this.getAttribute("alt")||"",t.appendChild(n),e.appendChild(t);const s=document.createElement("style");s.textContent=`
+import"./hoisted.Bns3XE8P.js";import"./hoisted.DjP5jZu0.js";class o extends HTMLElement{img;container;spinner;constructor(){super();const e=this.attachShadow({mode:"open"}),t=document.createElement("div");t.classList.add("container");const i=document.createElement("div");i.classList.add("spinner"),i.textContent="loading...",t.appendChild(i);const n=document.createElement("img");n.alt=this.getAttribute("alt")||"",t.appendChild(n),e.appendChild(t);const s=document.createElement("style");s.textContent=`
       .container {
         position: relative;
         display: inline-block;
