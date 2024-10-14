@@ -13,9 +13,29 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
 
+#Redirect senales
+
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/viales/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/seguridad/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/obras/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/fotoluminiscentes/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/decorativas/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
 # seguridad senalizaciones
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina\-poliester\/$ "https\:\/\/tellsenales\.com\/seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina-poliester\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/vinil-fotoluminiscente-verde-mate-61cm\/$ "https\:\/\/tellsenales\.com\/seguridad\/vinil-fotoluminiscente-verde-brilloso-61cm\/" [R=301,L]
 
 # Proteccion vial
 RewriteCond %{HTTP_HOST} ^.*$
@@ -29,7 +49,7 @@ RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/cintas\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/cintas\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
-
+RewriteRule ^seguridad/cinta-verde-mate-fotoluminiscente/$ "https\:\/\/tellsenales\.com/seguridad/cinta-verde-brillo-fotoluminiscente/" [R=301,L]
 # Articulos Seguridad 
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/articulos\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/articulos\-seguridad\/" [R=301,L]
@@ -137,3 +157,4 @@ RewriteRule ^seguridad\/pedestal\-con\-base\-y\-baranda\-chico\/$ "https\:\/\/te
 #Tachon
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^seguridad\/tachon\-reflectivo\-amarillo\/$ "https\:\/\/tellsenales\.com\/seguridad/tachon\-reflectivo\-rojo\/" [R=301,L]
+
