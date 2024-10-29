@@ -1,6 +1,10 @@
 User-agent: *
 Disallow: /preguntas-frecuentes
 Disallow: /politicas-de-devolucion
+Disallow: /ficha-tecnica/*
+Disallow: /documents/*
+Disallow: /normativa/*
+Disallow: /icons/*
 Disallow: /test
 Allow: /
 Sitemap: https://tellsenales.com/sitemap-index.xml

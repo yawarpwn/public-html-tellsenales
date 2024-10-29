@@ -3,31 +3,31 @@ RewriteOptions inherit
 RewriteEngine on
 ErrorDocument 404 /404.html
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.tellsenales.com [NC]
-RewriteRule ^(.*)$ https://tellsenales.com/$1 [L,R=301,NC] 
+# Redirección de www a la versión sin www
+RewriteCond %{HTTP_HOST} ^www\.tellsenales\.com [NC]
+RewriteRule ^(.*)$ https://tellsenales.com/$1 [L,R=301,NC]
+
+# Redirección a HTTPS
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Añadir trailing slash solo a URLs que no son archivos (sin extensión)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,4}$  # Excluye URLs con extensiones
+RewriteRule ^(.*[^/])$ https://%{HTTP_HOST}/$1/ [L,R=301]
 
-#Redirect senales
-
-
+#Redirect a Catalogo senales
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/viales/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
-
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/seguridad/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
-
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/obras/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
-
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/fotoluminiscentes/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
-
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^senales/c/decorativas/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
 
