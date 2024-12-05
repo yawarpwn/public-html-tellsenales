@@ -1,0 +1,168 @@
+RewriteOptions inherit
+
+RewriteEngine on
+ErrorDocument 404 /404.html
+
+# Redirección de www a la versión sin www
+RewriteCond %{HTTP_HOST} ^www\.tellsenales\.com [NC]
+RewriteRule ^(.*)$ https://tellsenales.com/$1 [L,R=301,NC]
+
+# Redirección a HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Añadir trailing slash solo a URLs que no son archivos (sin extensión)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,4}$  # Excluye URLs con extensiones
+RewriteRule ^(.*[^/])$ https://%{HTTP_HOST}/$1/ [L,R=301]
+
+#redirect 3m Vhb 4010
+RewriteCond %{HTTP_HOST} ^(www\.)?tellsenales\.com$ [NC]
+RewriteRule ^seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-delgado/$ https://tellsenales.com/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-grueso/ [R=301,L]
+
+#Rediect Botin madera
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/botiquin-de-madera-30x40cm/$ "https://tellsenales.com/seguridad/botiquin-de-madera-20x30cm/" [R=301,L]
+
+#Redirect a Catalogo senales
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/viales/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/seguridad/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/obras/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/fotoluminiscentes/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales/c/decorativas/$ "https://tellsenales.com/catalogo-senales/" [R=301,L]
+
+# seguridad senalizaciones
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina\-poliester\/$ "https\:\/\/tellsenales\.com\/seguridad\/placa\-fibra\-de\-vidrio\-60x90\-cm\-de\-4mm\-con\-resina-poliester\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/vinil-fotoluminiscente-verde-mate-61cm\/$ "https\:\/\/tellsenales\.com\/seguridad\/vinil-fotoluminiscente-verde-brilloso-61cm\/" [R=301,L]
+
+# Proteccion vial
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/proteccion\-vial$ "https\:\/\/tellsenales\.com\/seguridad\/c\/proteccion\-vial\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/proteccion\-vial\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/proteccion\-vial\/" [R=301,L]
+RewriteRule ^seguridad/rollo-cinta-reflectiva-3m-diamond-grade-serie-983-azul-50-mm-x-45-7-m/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
+
+# Cintas seguridad
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/cintas\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/cintas\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/cintas\-seguridad\/" [R=301,L]
+RewriteRule ^seguridad/cinta-verde-mate-fotoluminiscente/$ "https\:\/\/tellsenales\.com/seguridad/cinta-verde-brillo-fotoluminiscente/" [R=301,L]
+# Articulos Seguridad 
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/articulos\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/articulos\-seguridad\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/articulos\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/articulos\-seguridad\/" [R=301,L]
+
+# Ropa Seguridad
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/ropa\-seguridad$ "https\:\/\/tellsenales\.com\/seguridad\/c\/ropa\-seguridad\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/ropa\-seguridad\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/ropa\-seguridad\/" [R=301,L]
+
+# Seguridad Epp
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/c\/proteccion/-auditiva\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/epps\/" [R=301,L]
+
+# Lucha contra incendio
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/lucha\-contra\-incendio$ "https\:\/\/tellsenales\.com\/seguridad\/c\/lucha\-contra\-incendio\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/lucha\-contra\-incendio\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/lucha\-contra\-incendio\/" [R=301,L]
+
+# Viniles
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/viniles$ "https\:\/\/tellsenales\.com\/seguridad\/c\/viniles\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/viniles\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/viniles\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/vinil\-reflectivo\-grado\-ingenieria\-verde\-61\-cm\/$ "https\:\/\/tellsenales\.com\/seguridad\/vinil\-reflectivo\-grado\-ingenieria\-reflexlite\-de\-61cm\/" [R=301,L]
+
+# Senales viales
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/$ "https\:\/\/tellsenales\.com\/posts\/senales\-viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales$ "https\:\/\/tellsenales\.com\/posts\/senales\-viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/preventivas$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/reguladoras$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/informativas$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/turisticas$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/preventivas\/$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/reguladoras\/$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^senales\/viales\/informativas\/$ "https\:\/\/tellsenales\.com\/senales\/c\/viales\/" [R=301,L]
+
+#rojo-blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-rojo-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#limon
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-amarillo-limon-2-x45-7mts-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Azul
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-azul/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Amarillo-ambar
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-amarillo-ambar-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#verde
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-verde/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#rojo
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-rojo-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-2-x45-7mts-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+
+# Cintas 4" Reflixlite 
+#rojo-blanco
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-4-x45-7mts-rojo-blanco-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-4-pulgadas-10-cm-x-45-7mts-reflexlite/" [R=301,L]
+#amarillo-limon
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-reflectiva-4-x45-7mts-amarillo-limon-reflexlite/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-4-pulgadas-10-cm-x-45-7mts-reflexlite/" [R=301,L]
+#GI 3M
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-rojo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-verde/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-naranjado/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+
+#Antideslizante Astara
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-amarillo/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/cinta-antideslizante-2-x18mts-amarillo-negro/$ "https\:\/\/tellsenales\.com\/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+
+#chalecos
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/chaleco-reflectivo-naranjado-2-bandas/$ "https\:\/\/tellsenales\.com\/seguridad/chaleco-reflectivo-100-poliester-2-bandas/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad/placa-fibra-de-vidrio-60x90-de-4mm-cm-con-resina-poliester/$ "https://tellsenales.com/seguridad/placa-fibra-de-vidrio-60x90-cm-de-4mm-con-resina-poliester/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/pedestal\-con\-base\-y\-baranda\-chico\/$ "https\:\/\/tellsenales\.com\/seguridad\/pedestal\-tipo\-parante\-con\-base\-para\-extintores\-de\-6\-12kg\-con\-porta\-senal\/" [R=301,L]
+
+#Tachon
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^seguridad\/tachon\-reflectivo\-amarillo\/$ "https\:\/\/tellsenales\.com\/seguridad/tachon\-reflectivo\-rojo\/" [R=301,L]
+
