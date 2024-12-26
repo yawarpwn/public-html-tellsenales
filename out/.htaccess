@@ -20,6 +20,15 @@ RewriteRule ^(.*[^/])$ https://%{HTTP_HOST}/$1/ [L,R=301]
 #redirect 3m Vhb 4010
 RewriteRule ^seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-delgado/$ "https://tellsenales.com/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-grueso/" [R=301,L]
 
+#Redirect Cinta 2" reflexlite"
+RewriteRule ^seguridad/(cinta-reflectiva-2-x45-7mts-rojo-blanco-reflexlite|cinta-reflectiva-2-x45-7mts-rojo-reflexlite|cinta-amarillo-limon-2-x45-7mts-reflexlite|cinta-reflectiva-2-x45-7mts-blanco-reflexlite|cinta-reflectiva-2-x45-7mts-azul|cinta-reflectiva-2-x45-7mts-amarillo-ambar-reflexlite|cinta-reflectiva-2-x45-7mts-verde)/$ "https://tellsenales.com/seguridad/cinta-reflectiva-2-pulgadas-5-cm-x-45-7mts-reflexlite/" [R=301,L]
+#Redirect Cinta 4" reflexlite"
+RewriteRule ^seguridad/cinta-reflectiva-4-x45-7mts-amarillo-limon-reflexlite/$ "https://tellsenales.com/seguridad/cinta-reflectiva-4-pulgadas-10-cm-x-45-7mts-reflexlite/" [R=301,L]
+#redict Cinta 2" cinta gi 3M"
+RewriteRule ^seguridad/(rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-verde|rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-rojo|rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-verde|rollo-cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m-naranjado)/$ "https://tellsenales.com/seguridad/cinta-reflectiva-grado-ingenieria-2-x45-7mts-3m/" [R=301,L]
+#redirect Antideslizante Astara
+RewriteRule ^seguridad/(cinta-antideslizante-2-x18mts-amarillo-negro|cinta-antideslizante-2-x18mts-negro|cinta-antideslizante-2-x18mts-amarillo)/$ "https://tellsenales.com/seguridad/cinta-antideslizante-2-pulgadas-5cm-x-18-metros/" [R=301,L]
+
 #Tachon reflectivo
 RewriteRule ^seguridad/tachon-reflectivo-amarillo/$ "https://tellsenales.com/seguridad/tachon-reflectivo-rojo/" [R=301,L]
 
