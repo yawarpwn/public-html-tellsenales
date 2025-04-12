@@ -22,25 +22,17 @@ import{_ as r}from"./preload-helper.CLcXU_4U.js";import{A as c}from"./index.D3IK
   <svg aria-label="true" width="16" height="16" viewBox="0 0 24 24" stroke-width="0" fill="currentColor" data-astro-cid-patnjmll="" style="--icon-size: 1.7;">
     <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"></path>
   </svg> 
-`,u=async()=>{d.innerHTML=S;const{default:t}=await r(async()=>{const{default:e}=await import("./algoliasearch-lite.umd.igwhkkoY.js").then(a=>a.a);return{default:e}},__vite__mapDeps([0,1])),{default:h}=await r(async()=>{const{default:e}=await import("./index.BIa8YObW.js");return{default:e}},__vite__mapDeps([2,1,3])),{searchBox:p,hits:g}=await r(async()=>{const{searchBox:e,hits:a}=await import("./index.CECOJJHr.js");return{searchBox:e,hits:a}},__vite__mapDeps([4,1,3]));d.innerHTML=_,document.body.appendChild(o),o.show(),n=!0,document.body.style.overflowY="hidden";const s=h({indexName:c.IndexName,searchClient:t(c.AppId,y),stalledSearchDelay:500,future:{preserveSharedStateOnUnmount:!0}}),v={senalizaciones:"Señalizaciones",cintasSeguridad:"Cintas de Seguridad",articulosSeguridad:"Articulos de Seguridad",ropaSeguridad:"Ropa de seguridad",proteccionVial:"Proteccion Vial",luchaContraIncendio:"Lucha contra Incendios",epps:"Epps"},m=p({container:"#searchbox",autofocus:!0,showLoadingIndicator:!0,placeholder:"Buscar producto..",showReset:!0,showSubmit:!0}),f=g({container:"#hits",cssClasses:{item:"item-custom-class"},transformItems:e=>e.map(a=>({...a,category:v[a.tag]})),templates:{item:(e,{html:a,components:w})=>a`
+`,u=async()=>{d.innerHTML=S;const{default:t}=await r(async()=>{const{default:e}=await import("./algoliasearch-lite.umd.igwhkkoY.js").then(a=>a.a);return{default:e}},__vite__mapDeps([0,1])),{default:h}=await r(async()=>{const{default:e}=await import("./index.BIa8YObW.js");return{default:e}},__vite__mapDeps([2,1,3])),{searchBox:p,hits:g}=await r(async()=>{const{searchBox:e,hits:a}=await import("./index.CECOJJHr.js");return{searchBox:e,hits:a}},__vite__mapDeps([4,1,3]));d.innerHTML=_,document.body.appendChild(o),o.show(),n=!0,document.body.style.overflowY="hidden";const s=h({indexName:c.IndexName,searchClient:t(c.AppId,y),stalledSearchDelay:500,future:{preserveSharedStateOnUnmount:!0}}),v={senalizaciones:"Señalizaciones",cintasSeguridad:"Cintas de Seguridad",articulosSeguridad:"Articulos de Seguridad",ropaSeguridad:"Ropa de seguridad",proteccionVial:"Proteccion Vial",luchaContraIncendio:"Lucha contra Incendios",epps:"Epps"},f=p({container:"#searchbox",autofocus:!0,showLoadingIndicator:!0,placeholder:"Buscar producto..",showReset:!1,showSubmit:!0}),m=g({container:"#hits",cssClasses:{item:"item-custom-class"},transformItems:e=>e.map(a=>({...a,category:v[a.tag]})),templates:{item:(e,{html:a,components:w})=>a`
         <div class="Hit">
           <a href="/seguridad/${e.slug}/">
             <div class="Hit-Container">
-              <img
-                class="hit-image"
-                src="${e.image}?fit=pad&w=60&h=60"
-              />
+              <img class="hit-image" src="${e.image}?fit=pad&w=60&h=60" />
               <div class="Hit-Content">
                 <span class="Hit-Title"> ${w.Highlight({hit:e,attribute:"name"})} </span>
                 <span class="Hit-Category">${e.category}</span>
               </div>
               <div class="Hit-Action">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  class="Hit-Select-Icon"
-                >
+                <svg width="20" height="20" viewBox="0 0 20 20" class="Hit-Select-Icon">
                   <g
                     stroke="currentColor"
                     fill="none"
@@ -76,4 +68,4 @@ import{_ as r}from"./preload-helper.CLcXU_4U.js";import{A as c}from"./index.D3IK
             </div>
             <p class="Search-title">No hay resultados para "<strong>${e.query}</strong>"</p>
           </div>
-        `}});s.addWidgets([f,m]),s.start(),document.querySelector(".ais-SearchBox-input").focus(),s.on("render",()=>{o.setAttribute("data-state",s.status)})},i=()=>{o.close(),document.body.style.overflowY="auto",n=!1};window.addEventListener("keydown",t=>{t.key.toLowerCase()==="k"&&(t.metaKey||t.ctrlKey)&&(t.preventDefault(),u())});window.addEventListener("keydown",t=>{t.key==="Escape"&&n&&(t.preventDefault(),i())});l.addEventListener("click",u);E.addEventListener("click",i);o.addEventListener("click",t=>{t.target===t.currentTarget&&i()});
+        `}});s.addWidgets([m,f]),s.start(),document.querySelector(".ais-SearchBox-input").focus(),s.on("render",()=>{o.setAttribute("data-state",s.status)})},i=()=>{o.close(),document.body.style.overflowY="auto",n=!1};window.addEventListener("keydown",t=>{t.key.toLowerCase()==="k"&&(t.metaKey||t.ctrlKey)&&(t.preventDefault(),u())});window.addEventListener("keydown",t=>{t.key==="Escape"&&n&&(t.preventDefault(),i())});l.addEventListener("click",u);E.addEventListener("click",i);o.addEventListener("click",t=>{t.target===t.currentTarget&&i()});
