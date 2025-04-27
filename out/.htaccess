@@ -17,6 +17,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,4}$  # Excluye URLs con extensiones
 RewriteRule ^(.*[^/])$ https://%{HTTP_HOST}/$1/ [L,R=301]
 
+#redirect vara luminosa verde
+RewriteRule ^seguridad/vara-luminosa-verde-con-pilas/$ "https://tellsenales.com/seguridad/vara-luminosa-rojo-con-pilas/" [R=301,L]
+
 #redirect 3m Vhb 4010
 RewriteRule ^seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-delgado/$ "https://tellsenales.com/seguridad/cinta-doble-contacto-3m-vhb-4910-transparente-19mm-x-33-m-grueso/" [R=301,L]
 
