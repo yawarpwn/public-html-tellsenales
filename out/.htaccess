@@ -62,7 +62,8 @@ RewriteRule ^seguridad\/vinil-fotoluminiscente-verde-mate-61cm\/$ "https\:\/\/te
 RewriteRule ^seguridad\/proteccion\-vial$ "https\:\/\/tellsenales\.com\/seguridad\/c\/proteccion\-vial\/" [R=301,L]
 RewriteRule ^seguridad\/proteccion\-vial\/$ "https\:\/\/tellsenales\.com\/seguridad\/c\/proteccion\-vial\/" [R=301,L]
 RewriteRule ^seguridad/rollo-cinta-reflectiva-3m-diamond-grade-serie-983-azul-50-mm-x-45-7-m/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
-
 RewriteRule ^seguridad/cinta-verde-mate-fotoluminiscente/$ "https\:\/\/tellsenales\.com/seguridad/cinta-verde-brillo-fotoluminiscente/" [R=301,L]
 
-
+#cintas 3M reflectivas
+RewriteRule ^seguridad/rollo-de-cinta-reflectiva-3m-tm-de-4-x-45-7m-alta-intensidad-prismatica/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
+RewriteRule ^seguridad/rollo-cinta-reflectiva-4-x45-7mts-amarillo-ambar-3m/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
