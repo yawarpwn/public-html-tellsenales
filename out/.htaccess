@@ -67,3 +67,6 @@ RewriteRule ^seguridad/cinta-verde-mate-fotoluminiscente/$ "https\:\/\/tellsenal
 #cintas 3M reflectivas
 RewriteRule ^seguridad/rollo-de-cinta-reflectiva-3m-tm-de-4-x-45-7m-alta-intensidad-prismatica/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
 RewriteRule ^seguridad/rollo-cinta-reflectiva-4-x45-7mts-amarillo-ambar-3m/$ "https://tellsenales.com/seguridad/rollo-cinta-reflectiva-3m-hip-alta-intensidad-prismatico/" [R=301,L]
+
+#Cinta grado ingenieria
+RewriteRule ^seguridad/cinta-senalizacion-grado-ingenieria-amarillo/$ "https://tellsenales.com/seguridad/cinta-senalizacion-grado-ingenieria-amarillo-negro/" [R=301,L]
