@@ -70,3 +70,11 @@ RewriteRule ^seguridad/rollo-cinta-reflectiva-4-x45-7mts-amarillo-ambar-3m/$ "ht
 
 #Cinta grado ingenieria
 RewriteRule ^seguridad/cinta-senalizacion-grado-ingenieria-amarillo/$ "https://tellsenales.com/seguridad/cinta-senalizacion-grado-ingenieria-amarillo-negro/" [R=301,L]
+
+#Tachas
+RewriteRule ^seguridad/tacha-reflectiva-rojo-3m/$ "https://tellsenales.com/seguridad/tacha-reflectiva-amarilla-3m/" [R=301,L]
+RewriteRule ^seguridad/tacha-reflectiva-bicolor-3m/$ "https://tellsenales.com/seguridad/tacha-reflectiva-amarilla-3m/" [R=301,L]
+RewriteRule ^seguridad/tacha-reflectiva-blanca-3m/$ "https://tellsenales.com/seguridad/tacha-reflectiva-amarilla-3m/" [R=301,L]
+
+
+
